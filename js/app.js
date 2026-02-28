@@ -33,7 +33,7 @@ function loadProgress() {
 
 function getDefaultProgress() {
   return {
-    version: "2.1",
+    version: "3.1",
     lastUpdated: null,
     buildSteps: Object.fromEntries(
       Array.from({length: 12}, (_, i) => [
