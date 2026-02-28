@@ -1,0 +1,1279 @@
+{
+  "meta": {
+    "title": "Consolidated Solar Battery System",
+    "subtitle": "Design & Build Specification — Rev 3.1",
+    "location": "Solariver Salvage — Salt Lake City Outdoor Installation",
+    "revision": "3.1"
+  },
+  "overview": {
+    "battery_chemistry": "LiFePO4 (lithium iron phosphate)",
+    "nominal_voltage": "12.8V (4S)",
+    "cell_configuration": "4S3P — 12× Grade B cells, triplet-matched within 2%",
+    "usable_capacity": "~6,144 Wh (80% DoD)",
+    "nominal_capacity": "~7,680 Wh (600Ah @ 12.8V)",
+    "solar_inputs": "2× 40W + 1× 25W (105W total, 18V panels)",
+    "dc_outputs": "3× 12V regulated (one per pump controller)",
+    "output_fusing": "2× 5A (470 GPH pumps), 1× 3A (235 GPH pump)",
+    "thermal_range": "−26°C to +49°C (−15°F to 120°F)",
+    "thermal_mgmt": "Active — thermostat-controlled heat + ventilation",
+    "max_thermal_draw": "20W",
+    "design_load": "~65W average (all pumps running)",
+    "autonomy": "65+ hours / 2.7 days (fully cloudy, no solar)",
+    "installation": "Salt Lake City, outdoors, freestanding boulder enclosure"
+  },
+  "sections": [
+    {
+      "id": "hardware",
+      "number": 2,
+      "title": "Confirmed Solariver Hardware",
+      "icon": "⚙️",
+      "content": [
+        {
+          "type": "table",
+          "headers": [
+            "Unit",
+            "Kit",
+            "Panel",
+            "Pump",
+            "Original Battery"
+          ],
+          "rows": [
+            [
+              "Unit 1",
+              "470+ GPH Kit",
+              "40W, 18V",
+              "18V DC submersible, ~20–30W draw",
+              "12V / 8,000 mAh (96 Wh)"
+            ],
+            [
+              "Unit 2",
+              "470+ GPH Kit",
+              "40W, 18V",
+              "18V DC submersible, ~20–30W draw",
+              "12V / 8,000 mAh (96 Wh)"
+            ],
+            [
+              "Unit 3",
+              "235+ GPH Kit",
+              "25W, 18V",
+              "18V DC submersible, ~10–15W draw",
+              "12V / 6,000 mAh (72 Wh)"
+            ],
+            [
+              "Totals",
+              "—",
+              "105W solar",
+              "~50–75W combined draw",
+              "264 Wh combined (replacing)"
+            ]
+          ]
+        },
+        {
+          "type": "text",
+          "body": "All three pump controllers are confirmed to operate without a battery, powered directly from the solar panel. This means they will accept any clean 12V supply without proprietary handshaking or pairing requirements. The consolidated 12.8V LiFePO4 bank is a direct drop-in replacement for all three original 12V battery packs, with approximately 23× the combined capacity."
+        }
+      ]
+    },
+    {
+      "id": "energy",
+      "number": 3,
+      "title": "Energy Balance & Autonomy",
+      "icon": "⚡",
+      "content": [
+        {
+          "type": "heading",
+          "text": "3.1 Daytime Solar Pass-Through"
+        },
+        {
+          "type": "text",
+          "body": "During daylight hours with solar available, the EPever MPPT controllers' load output terminals power the pump controllers directly from solar, bypassing the battery for the pump load. The battery only receives net surplus power after the pump load is satisfied. This reduces battery cycling and extends cell life significantly."
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Condition",
+            "Solar In",
+            "Load",
+            "Net",
+            "Notes"
+          ],
+          "rows": [
+            [
+              "Full sun, all pumps running",
+              "105W",
+              "~65W",
+              "+40W charging",
+              "Normal sunny day in SLC"
+            ],
+            [
+              "50% cloud cover",
+              "~52W",
+              "~65W",
+              "−13W (battery supplements)",
+              "Common afternoon cloud"
+            ],
+            [
+              "Heavy overcast",
+              "~15W",
+              "~65W",
+              "−50W (battery)",
+              "Battery carries most load"
+            ],
+            [
+              "Night / no sun",
+              "0W",
+              "~65W",
+              "−65W (battery)",
+              "Full battery draw"
+            ]
+          ]
+        },
+        {
+          "type": "text",
+          "body": "On a typical clear SLC day with 5.5 peak sun hours, solar harvests approximately 578 Wh net after powering the pumps."
+        },
+        {
+          "type": "heading",
+          "text": "3.2 24-Hour Energy Budget (Real Load)"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Item",
+            "Power",
+            "Duration",
+            "Energy"
+          ],
+          "rows": [
+            [
+              "Pumps — all three running (average)",
+              "65W",
+              "24 hrs",
+              "1,560 Wh"
+            ],
+            [
+              "Thermal system (worst case, continuous)",
+              "20W",
+              "24 hrs",
+              "480 Wh"
+            ],
+            [
+              "BMS + wiring losses (~10%)",
+              "—",
+              "—",
+              "204 Wh"
+            ],
+            [
+              "Total consumption (worst case)",
+              "—",
+              "—",
+              "2,244 Wh"
+            ],
+            [
+              "Solar offset — clear day (5.5 peak hrs)",
+              "—",
+              "—",
+              "−578 Wh"
+            ],
+            [
+              "Net battery draw — clear day",
+              "—",
+              "—",
+              "1,666 Wh"
+            ],
+            [
+              "Net battery draw — fully cloudy day",
+              "—",
+              "—",
+              "2,244 Wh"
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "3.3 Autonomy Analysis"
+        },
+        {
+          "type": "text",
+          "body": "With 6,144 Wh usable capacity (7,680 Wh nominal at 80% DoD):"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Fully cloudy days: 6,144 ÷ 2,244 = 2.7 days autonomy — nearly triple the 24-hour target",
+            "With solar on a clear day: net draw of 1,666 Wh leaves 4,478 Wh reserve after 24 hours",
+            "Consecutive cloudy days: bank can sustain approximately 65+ hours at real load without any solar input",
+            "The 4S3P upgrade from 4S2P provides 50% more capacity at ~35% additional cell cost (buying Grade B)"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "electrical",
+      "number": 4,
+      "title": "Electrical Architecture",
+      "icon": "🔌",
+      "content": [
+        {
+          "type": "heading",
+          "text": "4.1 Voltage Design"
+        },
+        {
+          "type": "text",
+          "body": "The 12.8V nominal LiFePO4 bank (4S configuration) directly matches all three pump controllers' 12V input requirements. No boost or step-up converters are needed anywhere in the system. The three 18V solar panels each feed a dedicated MPPT controller that charges the shared 12.8V bank."
+        },
+        {
+          "type": "heading",
+          "text": "4.2 Solar Pass-Through (Load Output)"
+        },
+        {
+          "type": "text",
+          "body": "EPever Tracer MPPT controllers include dedicated load output terminals that intelligently manage solar pass-through. When the battery is full and solar is available, pump load is powered directly from solar. When solar is insufficient, the battery supplements or takes over automatically."
+        },
+        {
+          "type": "list",
+          "items": [
+            "Set load output mode to 'Normal' or 'Always On' in EPever settings",
+            "Confirm load output current rating covers your pump draw (Tracer 2210AN: 20A load output)",
+            "Wire all three pump controller inputs to the load output terminals of their respective MPPT controllers"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "4.3 Wiring Architecture"
+        },
+        {
+          "type": "text",
+          "body": "Solar panels (3× 18V) → EPever MPPT controllers (3×, isolated inputs) → load output terminals → pump controllers (3× 12V). Simultaneously: MPPT charge outputs → 12.8V LiFePO4 bank with BMS → distribution bus → fused 12V taps → pump controllers (battery backup path). The BMS sits on the battery negative bus. An 80A ANL fuse sits on the battery positive bus as close to the cells as practical."
+        },
+        {
+          "type": "heading",
+          "text": "4.4 Output Fusing"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Output",
+            "Device",
+            "Draw",
+            "Fuse",
+            "Wire Gauge"
+          ],
+          "rows": [
+            [
+              "Output 1",
+              "470 GPH pump controller",
+              "~3A",
+              "5A blade fuse",
+              "18 AWG min"
+            ],
+            [
+              "Output 2",
+              "470 GPH pump controller",
+              "~3A",
+              "5A blade fuse",
+              "18 AWG min"
+            ],
+            [
+              "Output 3",
+              "235 GPH pump controller",
+              "~1.5A",
+              "3A blade fuse",
+              "20 AWG min"
+            ],
+            [
+              "Main bus",
+              "All loads + charging",
+              "60A+",
+              "80A ANL fuse",
+              "8 AWG"
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "4.5 Component Specifications"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Component",
+            "Specification",
+            "Notes"
+          ],
+          "rows": [
+            [
+              "LiFePO4 cells",
+              "12× 200Ah 3.2V prismatic, 4S3P (Grade B)",
+              "Capacity-tested, triplet-matched within 2%"
+            ],
+            [
+              "BMS",
+              "4S LiFePO4, 60A+ continuous, temp cutoff ports",
+              "JK BMS B2A20S20P or Daly 4S 60A"
+            ],
+            [
+              "MPPT controllers (×3)",
+              "EPever Tracer 2210AN",
+              "Load output terminals essential for pass-through"
+            ],
+            [
+              "Distribution bus bar",
+              "12V positive + negative bus, 6+ terminals",
+              "Narva or similar"
+            ],
+            [
+              "Output fuse block",
+              "Blade fuse holder, 3-way",
+              "2× 5A + 1× 3A fuses"
+            ],
+            [
+              "Main fuse",
+              "80A ANL fuse + weatherproof holder",
+              "On positive bus, close to battery terminal"
+            ],
+            [
+              "Wiring — main bus",
+              "8 AWG tinned marine wire",
+              "Battery to bus bar"
+            ],
+            [
+              "Wiring — branch",
+              "18–20 AWG tinned marine wire",
+              "Bus to pump controllers"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "battery",
+      "number": 5,
+      "title": "Battery Bank",
+      "icon": "🔋",
+      "content": [
+        {
+          "type": "heading",
+          "text": "5.1 Why LiFePO4"
+        },
+        {
+          "type": "text",
+          "body": "LiFePO4 is strongly preferred over LiPo for this application. LiPo cells perform poorly in cold temperatures, require more careful management to avoid thermal runaway, and have significantly shorter cycle lives (300–500 cycles vs 2,000+ for LiFePO4). For an unattended outdoor installation in Salt Lake City's climate extremes, LiFePO4's chemical stability, cold-temperature tolerance, and long service life make it the clear choice."
+        },
+        {
+          "type": "heading",
+          "text": "5.2 Why Grade B Cells"
+        },
+        {
+          "type": "text",
+          "body": "Grade B LiFePO4 prismatic cells are typically units that tested slightly below the manufacturer's capacity threshold (e.g. 185–195Ah on a 200Ah cell), were pulled from new-but-unsold battery packs, or have minor cosmetic defects that do not affect function. For this duty cycle — one partial cycle per day, rarely below 60% SOC — the practical differences from Grade A are minimal."
+        },
+        {
+          "type": "text",
+          "body": "By purchasing 12 Grade B cells at $45–75/cell instead of 8 Grade A cells at $80–120/cell, the total cell cost is comparable ($540–900 vs $640–960) while gaining 50% more capacity (4S3P vs 4S2P). The key requirement is individual capacity testing and careful matching of parallel triplets within 2%."
+        },
+        {
+          "type": "heading",
+          "text": "5.3 Cell Configuration"
+        },
+        {
+          "type": "text",
+          "body": "12× 200Ah 3.2V LiFePO4 prismatic cells in 4S3P:"
+        },
+        {
+          "type": "list",
+          "items": [
+            "4S = 4 cells in series = 12.8V nominal (direct match for 12V pump controllers)",
+            "3P = 3 parallel strings = 600Ah effective",
+            "Total bank: 12.8V × 600Ah = 7,680 Wh nominal",
+            "Usable at 80% DoD: ~6,144 Wh — nearly triple the worst-case 24-hour draw"
+          ]
+        },
+        {
+          "type": "text",
+          "body": "Recommended sources: EVE LF280K or CATL/CALB 200Ah prismatic cells, Grade B. Budget approximately $45–75 per cell ($540–900 for 12 cells). Cell dimensions approximately 174mm × 71mm × 207mm each; 4S3P stack occupies roughly 350mm × 315mm × 210mm."
+        },
+        {
+          "type": "heading",
+          "text": "5.4 Parallel Triplet Matching"
+        },
+        {
+          "type": "text",
+          "body": "For a 3P configuration, cells in each parallel group must be closely matched. Capacity-test all 12 cells individually, then sort into four triplets where all three cells in each group are within 2% of each other."
+        },
+        {
+          "type": "callout",
+          "severity": "warning",
+          "body": "Unlike 2P where you match pairs, 3P matching is harder — you need three cells to agree, not two. Buying exactly 12 cells for a 12-cell pack leaves no matching margin. Consider purchasing 13–14 cells if budget allows, to ensure four clean triplets."
+        },
+        {
+          "type": "heading",
+          "text": "5.5 Critical Temperature Rules"
+        },
+        {
+          "type": "callout",
+          "severity": "danger",
+          "body": "These constraints are enforced by the BMS and thermostat system and must never be bypassed."
+        },
+        {
+          "type": "list",
+          "items": [
+            "Charging prohibited below 0°C (32°F) — causes lithium plating and permanent cell damage",
+            "Discharging acceptable down to −20°C (−4°F) at reduced current",
+            "Optimal operating range: 10°C to 35°C (50°F to 95°F)",
+            "Maximum charge temperature: 45°C (113°F)",
+            "BMS charge-inhibit port wired to temperature probe — enforces 0°C charge floor automatically"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "thermal",
+      "number": 6,
+      "title": "Thermal Management",
+      "icon": "🌡️",
+      "content": [
+        {
+          "type": "heading",
+          "text": "6.1 Salt Lake City Climate"
+        },
+        {
+          "type": "text",
+          "body": "SLC winters regularly reach −15°F (−26°C) and summers push 105°F (40°C+). The approach is insulation-first, with active thermostat-controlled heating and ventilation within the 20W power budget. The larger 4S3P pack provides additional thermal mass, which slows temperature changes and reduces heater cycling in winter."
+        },
+        {
+          "type": "heading",
+          "text": "6.2 Heating (Winter)"
+        },
+        {
+          "type": "text",
+          "body": "A 12V PTC ceramic heater element (10–15W) inside the battery zone, wired to the thermostat heating relay. PTC elements are self-regulating — resistance increases as temperature rises, naturally throttling power draw."
+        },
+        {
+          "type": "list",
+          "items": [
+            "Heater ON below +5°C (41°F)",
+            "Heater OFF at +10°C (50°F)",
+            "BMS charge inhibit released only above 0°C (32°F)",
+            "Typical draw: 10–15W active, self-throttles as setpoint approaches"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "6.3 Cooling (Summer)"
+        },
+        {
+          "type": "text",
+          "body": "Forced ventilation via a 12V brushless fan (3–5W) in the electronics outer zone. LiFePO4 tolerates 45°C during discharge, providing meaningful headroom on SLC's hottest days."
+        },
+        {
+          "type": "list",
+          "items": [
+            "Fan ON above +35°C (95°F) inside battery zone",
+            "Fan OFF below +30°C (86°F)"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "6.4 Thermostat Setpoints"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Function",
+            "Threshold",
+            "Action"
+          ],
+          "rows": [
+            [
+              "Heating ON",
+              "+5°C (41°F)",
+              "PTC heater activates"
+            ],
+            [
+              "Heating OFF",
+              "+10°C (50°F)",
+              "PTC heater deactivates"
+            ],
+            [
+              "Cooling ON",
+              "+35°C (95°F)",
+              "Fan activates"
+            ],
+            [
+              "Cooling OFF",
+              "+30°C (86°F)",
+              "Fan deactivates"
+            ],
+            [
+              "Charge inhibit (BMS)",
+              "0°C (32°F)",
+              "MPPT charge output disconnected via BMS temp port"
+            ]
+          ]
+        },
+        {
+          "type": "text",
+          "body": "Controller: STC-1000 dual-stage thermostat (~$15). Single unit manages both heating and cooling relays with one temperature probe mounted against the cell surface inside the battery zone."
+        }
+      ]
+    },
+    {
+      "id": "enclosure",
+      "number": 7,
+      "title": "Enclosure Design",
+      "icon": "🪨",
+      "content": [
+        {
+          "type": "heading",
+          "text": "7.1 Overview — Three-Shell Architecture"
+        },
+        {
+          "type": "text",
+          "body": "The enclosure uses a three-shell design that separates structural insulation from serviceable components. Every electrical component is removable and replaceable without destroying the enclosure. No component is permanently entombed in foam."
+        },
+        {
+          "type": "callout",
+          "severity": "info",
+          "body": "Design principle: Foam is only structural/thermal. No wires, no components, and no connections exist inside the foam cavity. Everything serviceable lives inside the inner service shell, accessed through insulated service panels."
+        },
+        {
+          "type": "heading",
+          "text": "7.2 Shell Layers (Outside → Inside)"
+        },
+        {
+          "type": "table",
+          "headers": ["Layer", "Material", "Purpose", "Permanent?"],
+          "rows": [
+            ["Shell 1 — Outer boulder", "ASA filament, stone-textured", "Cosmetic, weather barrier, structural outer wall", "Yes — solvent-welded"],
+            ["Foam cavity (25–40mm)", "2 lb closed-cell polyurethane pour foam", "Insulation + structural rigidity between shells 1 and 2", "Yes — poured and cured permanently"],
+            ["Shell 2 — Middle structural shell", "ASA filament", "Inner wall of foam cavity, structural support, mounting surface for inner hardware", "Yes — solvent-welded to outer shell before foam pour"],
+            ["Shell 3 — Inner service shell", "ASA filament, bolted panels", "Houses ALL components: cells, BMS, electronics, thermal system. Fully accessible via removable insulated panels", "Removable panels — bolted with M4 hardware"]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "7.3 Foam Cavity (Between Shell 1 and Shell 2)"
+        },
+        {
+          "type": "text",
+          "body": "The foam cavity exists only between the outer boulder shell and the middle structural shell. It contains no components, no wiring, and no connections. The foam is injected after shells 1 and 2 are solvent-welded together and all cable conduit sleeves are in place. Cable conduits are printed ASA tubes that pass through the foam wall — the foam bonds around the outside of the conduit, but the conduit interior remains hollow and clear, allowing wires to be pulled through at any time."
+        },
+        {
+          "type": "list",
+          "items": [
+            "Foam cavity: 25–40mm between shell 1 (outer) and shell 2 (middle)",
+            "Printed ASA conduit sleeves installed before foam pour — one per cable penetration",
+            "Conduit inner diameter sized for cable + PG gland (PG9 or PG13.5)",
+            "Foam is poured through injection ports in shell 1 after conduits are verified clear",
+            "This step IS irreversible — but nothing serviceable lives in the foam cavity",
+            "After foam cures, the outer structure is rigid, insulated, and weatherproof"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "7.4 Inner Service Shell (Shell 3) — Component Access"
+        },
+        {
+          "type": "text",
+          "body": "All serviceable components mount inside the inner service shell, which is attached to the middle structural shell (shell 2) with bolted connections — not solvent-welded. The inner service shell has two access zones, each with its own removable insulated panel."
+        },
+        {
+          "type": "table",
+          "headers": ["Zone", "Components", "Access Panel", "Insulation"],
+          "rows": [
+            ["Battery zone", "12× LiFePO4 cells (4S3P), BMS, PTC heater, temp probe", "Large rear panel — full cell stack width. M4 bolts + EPDM gasket.", "Removable rigid foam board panels (25mm XPS or polyiso) friction-fit inside the panel opening. Removed during service, replaced when closing."],
+            ["Electronics zone", "3× MPPT controllers, bus bars, fuse block, thermostat, fan", "Side/rear panel — sized for controller access. M4 bolts + EPDM gasket.", "Removable rigid foam board panel. Electronics zone is also passively vented, so insulation is less critical here than battery zone."]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "7.5 Component Mounting (All Removable)"
+        },
+        {
+          "type": "text",
+          "body": "Every component mounts mechanically to the inner service shell or to DIN rail / mounting plates bolted to it. No component is glued, foamed, or permanently bonded."
+        },
+        {
+          "type": "table",
+          "headers": ["Component", "Mounting Method", "Removal"],
+          "rows": [
+            ["LiFePO4 cells", "Compression hardware (threaded rod + end plates) sitting on a printed shelf/cradle in battery zone", "Unbolt compression hardware, slide cells out through battery access panel"],
+            ["BMS", "Bolted to mounting plate or DIN rail clip in battery zone", "Disconnect balance leads and power, unbolt, remove through access panel"],
+            ["PTC heater", "Bolted bracket or thermal-adhesive pad on mounting plate (not on cell surface directly)", "Unplug from thermostat relay, unbolt bracket"],
+            ["Temp probe", "Kapton tape to cell surface — not permanent", "Peel tape, reroute probe through conduit"],
+            ["MPPT controllers (×3)", "DIN rail mount or bolted to standoffs in electronics zone", "Disconnect PV/battery/load terminals, unclip from DIN rail"],
+            ["Bus bars", "Bolted to insulated standoffs in electronics zone", "Disconnect ring terminals, unbolt standoffs"],
+            ["Fuse block", "Bolted to mounting plate in electronics zone", "Disconnect leads, unbolt"],
+            ["STC-1000 thermostat", "Panel-mount through electronics zone access panel, or DIN rail clip", "Unplug probe and relay connections, unclip"],
+            ["Fan", "Bolted to vent port frame in electronics zone", "Disconnect power leads, unbolt 4 screws"],
+            ["All wiring", "Routed through ASA conduit sleeves that pass through foam cavity", "Disconnect at both ends, pull through conduit. New wire feeds back through the same conduit."]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "7.6 Cable Routing Through Foam Cavity"
+        },
+        {
+          "type": "text",
+          "body": "All cables between the exterior (solar panels, pumps) and the inner service shell pass through printed ASA conduit sleeves embedded in the foam cavity. The conduits are installed before the foam pour. Their inner diameter is sized so cables (with connectors removed) can be pulled through freely. PG cable glands thread into the outer end of each conduit for weather sealing."
+        },
+        {
+          "type": "list",
+          "items": [
+            "Main bus conduit: 1× large conduit (ID ~20mm) for 8 AWG battery bus runs between zones",
+            "Solar conduits: 3× conduits (ID ~12mm each) for MC4/panel wiring from exterior to MPPT zone",
+            "Pump conduits: 3× conduits (ID ~10mm each) for load output wiring to external pump controllers",
+            "Sensor conduit: 1× small conduit (ID ~8mm) for thermostat probe and any monitoring wiring",
+            "All conduits terminate with PG cable glands at the outer shell for IP68 weather sealing",
+            "Conduit interiors remain permanently clear — foam bonds around the outside only"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "7.7 Service Panel Design"
+        },
+        {
+          "type": "text",
+          "body": "Each access panel is a printed ASA plate that sits in a recessed frame (5–10mm recess so the panel sits flush). Closed-cell EPDM foam tape gasket (3–5mm, self-adhesive) bonded to the frame provides a weather seal. Stainless M4 socket-head bolts (6–8 per panel) thread into heat-set brass inserts in the frame. A removable rigid foam insulation board sits inside the opening behind the panel, held in place by friction fit or simple clips."
+        },
+        {
+          "type": "list",
+          "items": [
+            "Battery access panel: Large enough to slide 4S3P cell stack out. Minimum clear opening ~360mm × 220mm.",
+            "Electronics access panel: Sized for removing an MPPT controller. Minimum clear opening ~200mm × 180mm.",
+            "Both panels printed in matching ASA granite texture for cosmetic consistency",
+            "EPDM gasket replaced if damaged during service — self-adhesive, peel-and-stick",
+            "Rigid foam insulation boards (25mm XPS or polyiso) cut to fit panel openings — cheap, replaceable"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "7.8 Vent Ports"
+        },
+        {
+          "type": "text",
+          "body": "Two filtered vent ports on lower back face with printed ASA baffles preventing direct water ingress. Stainless mesh or foam filter inserts keep insects and debris out of electronics zone. Removable foam plugs available for winter to reduce heat loss. Vents connect through the foam cavity via dedicated vent conduits (no electrical sharing)."
+        },
+        {
+          "type": "heading",
+          "text": "7.9 Exterior Finish"
+        },
+        {
+          "type": "text",
+          "body": "Print in mid-gray ASA base. Apply stone-texture spray paint (Rust-Oleum Stone or similar) to match existing landscape features. UV-resistant clear topcoat protects finish and reduces solar heat gain. Light/reflective color is important — a dark boulder in SLC summer sun would significantly increase thermal load on the system."
+        },
+        {
+          "type": "heading",
+          "text": "7.10 Mounting"
+        },
+        {
+          "type": "text",
+          "body": "Flat printed base with four heat-set M8 threaded inserts for optional anchor bolts into concrete or patio surface. System weight approximately 28–33kg (cells alone ~24kg) — inherently stable freestanding. Optional printed anchor skirt with landscape stake holes for high-wind environments."
+        }
+      ]
+    },
+    {
+      "id": "salvage",
+      "number": 8,
+      "title": "Salvage from Solariver Units",
+      "icon": "♻️",
+      "content": [
+        {
+          "type": "table",
+          "headers": [
+            "Item",
+            "Action",
+            "Notes"
+          ],
+          "rows": [
+            [
+              "Solar panels (40W × 2, 25W × 1)",
+              "Reuse all three",
+              "Test Voc and Isc before integration."
+            ],
+            [
+              "Pump controllers / timer boards",
+              "Reuse all three",
+              "Confirmed compatible with external 12V supply."
+            ],
+            [
+              "Pump units",
+              "Reuse all three",
+              "Powered by controllers; no changes."
+            ],
+            [
+              "Panel mounting hardware",
+              "Reuse",
+              "Brackets, tilt adjusters, fasteners."
+            ],
+            [
+              "Wiring harnesses and MC4 connectors",
+              "Reuse where possible",
+              "Inspect insulation; replace cracked runs."
+            ],
+            [
+              "Original batteries",
+              "Discard / recycle",
+              "Hazardous waste disposal."
+            ],
+            [
+              "Original PWM charge controllers",
+              "Discard",
+              "Replace with EPever MPPT units."
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "build",
+      "number": 9,
+      "title": "Build Sequence",
+      "icon": "🔨",
+      "content": [
+        {
+          "type": "steps",
+          "items": [
+            {
+              "step": 1,
+              "title": "Test salvaged panels",
+              "body": "Measure Voc and Isc on each panel in direct sun. Expected: ~21–22V Voc, 1–2.3A Isc depending on wattage.",
+              "checkpoints": [
+                "Panel 1 (40W) — Voc and Isc measured",
+                "Panel 2 (40W) — Voc and Isc measured",
+                "Panel 3 (25W) — Voc and Isc measured",
+                "All panels produce usable output"
+              ]
+            },
+            {
+              "step": 2,
+              "title": "Test pump controllers with external 12V",
+              "body": "Power each pump controller from a bench 12V supply and confirm normal pump operation.",
+              "checkpoints": [
+                "Controller 1 (470 GPH) — runs on 12V bench supply",
+                "Controller 2 (470 GPH) — runs on 12V bench supply",
+                "Controller 3 (235 GPH) — runs on 12V bench supply",
+                "Measured current draw on each unit"
+              ]
+            },
+            {
+              "step": 3,
+              "title": "Grade and test LiFePO4 cells",
+              "body": "Capacity-test all 12 cells individually. Match into four parallel triplets within 2% capacity. Any cell outside tolerance becomes a spare.",
+              "checkpoints": [
+                "All 12 cells individually capacity-tested",
+                "Cells sorted by capacity",
+                "Four triplets matched within 2% capacity",
+                "Triplet assignments documented",
+                "Any unmatched cells set aside as spares"
+              ]
+            },
+            {
+              "step": 4,
+              "title": "Build and bench-test battery pack",
+              "body": "Wire 4S3P, connect BMS, verify cell voltages balance, confirm BMS protection triggers. The 3P configuration requires bus bars connecting three parallel cells per series group.",
+              "checkpoints": [
+                "4S3P wired with compression hardware",
+                "Bus bars connecting parallel triplets installed",
+                "BMS connected — balance leads + power",
+                "Cell group voltages balance within 20mV",
+                "BMS over-discharge cutoff test passed",
+                "BMS over-temp simulation test passed",
+                "Pack voltage reads ~12.8–13.2V"
+              ]
+            },
+            {
+              "step": 5,
+              "title": "Build and bench-test full electronics stack",
+              "body": "Wire EPever MPPT controllers, distribution bus, fuse block, and thermostat. Verify solar pass-through and thermal controls.",
+              "checkpoints": [
+                "All 3 MPPTs programmed with LiFePO4 settings",
+                "MPPT battery terminals connected to bus bars",
+                "Fuse block wired with correct fuses (2× 5A, 1× 3A)",
+                "Solar pass-through verified on load output",
+                "All 3 pumps run from MPPT load output",
+                "Thermostat heater ON/OFF at correct temps",
+                "Thermostat fan ON/OFF at correct temps",
+                "BMS charge inhibit activates below 0°C"
+              ]
+            },
+            {
+              "step": 6,
+              "title": "24-hour bench endurance test",
+              "body": "Run all pumps for 24 hours without solar. Target: >3,900 Wh remaining (>50% SOC with 4S3P pack).",
+              "checkpoints": [
+                "Start SOC and voltage recorded",
+                "24-hour test completed without interruption",
+                "End SOC and voltage recorded",
+                "Remaining capacity >3,900 Wh (>50% SOC)"
+              ]
+            },
+            {
+              "step": 7,
+              "title": "Design three-shell enclosure in CAD",
+              "body": "Design the three-shell boulder: outer shell (cosmetic), middle shell (foam cavity inner wall), and inner service shell with removable access panels. Design cable conduit sleeves for all penetrations through the foam cavity. Segment all shells for Prusa Core One bed.",
+              "checkpoints": [
+                "Cell stack dimensions measured and documented",
+                "Electronics stack dimensions measured",
+                "Three-shell boulder designed in CAD",
+                "Foam cavity 25–40mm between shell 1 and shell 2",
+                "Cable conduit sleeves designed (correct ID per cable run)",
+                "Battery access panel opening ≥360mm × 220mm",
+                "Electronics access panel opening ≥200mm × 180mm",
+                "Vent conduits placed (separate from cable conduits)",
+                "All shells segmented for Prusa bed size"
+              ]
+            },
+            {
+              "step": 8,
+              "title": "Print shells and conduit sleeves",
+              "body": "Print all three shells, access panel covers, cable conduit sleeves, and vent conduit sleeves in ASA. Access panels printed in matching granite texture.",
+              "checkpoints": [
+                "Outer boulder shell sections printed (ASA)",
+                "Middle structural shell sections printed (ASA)",
+                "Inner service shell + panel frames printed",
+                "Access panel covers printed (battery + electronics)",
+                "All cable conduit sleeves printed and test-fit",
+                "Vent conduit sleeves printed"
+              ]
+            },
+            {
+              "step": 9,
+              "title": "Assemble outer structure and pour foam",
+              "body": "Solvent-weld shell 1 (outer) and shell 2 (middle) with conduit sleeves positioned between them. Verify all conduits are clear with pull wires. Pour foam into cavity. This is the only irreversible step — but no components live in the foam.",
+              "checkpoints": [
+                "Shell 1 and shell 2 solvent-welded with MEK",
+                "All cable conduit sleeves positioned and secured",
+                "Vent conduit sleeves positioned",
+                "24-hour MEK cure observed",
+                "Pull wire passed through EVERY conduit — all clear",
+                "All conduit ends capped to prevent foam entry",
+                "Foam injected through injection ports",
+                "24-hour foam cure observed",
+                "Post-cure: all conduits still clear (pull wire test)"
+              ]
+            },
+            {
+              "step": 10,
+              "title": "Install inner service shell and mount components",
+              "body": "Bolt (not weld) inner service shell to middle shell. Mount all components mechanically — no glue, no foam. Route cables through conduit sleeves. Every component must be removable through an access panel.",
+              "checkpoints": [
+                "Inner service shell bolted to middle shell",
+                "Cell compression cradle installed in battery zone",
+                "12 cells installed with compression hardware",
+                "BMS bolted to mounting plate or DIN rail",
+                "PTC heater mounted on bracket (bolted, not glued)",
+                "Temp probe on cell surface with kapton tape",
+                "MPPT controllers on DIN rail or standoffs",
+                "Bus bars on insulated standoffs",
+                "Fuse block mounted",
+                "STC-1000 thermostat installed",
+                "Fan bolted to vent port frame",
+                "All cables routed through conduit sleeves",
+                "PG cable glands threaded into conduit outer ends",
+                "Full electrical test BEFORE closing panels"
+              ]
+            },
+            {
+              "step": 11,
+              "title": "Install insulation and close access panels",
+              "body": "Cut rigid foam insulation boards (25mm XPS or polyiso) for each access panel opening. Friction-fit insulation behind panels. Apply EPDM gasket to frames. Bolt access panels closed. Install vent baffles.",
+              "checkpoints": [
+                "Battery zone insulation board cut and fit-checked",
+                "Electronics zone insulation board cut and fit-checked",
+                "EPDM gasket applied to battery panel frame",
+                "EPDM gasket applied to electronics panel frame",
+                "Battery access panel bolted (stainless M4)",
+                "Electronics access panel bolted (stainless M4)",
+                "Vent baffles installed with insect mesh",
+                "Winter vent plugs prepared"
+              ]
+            },
+            {
+              "step": 12,
+              "title": "Finish and install",
+              "body": "Apply stone-texture paint and UV topcoat. Place in position, connect panels and pumps, verify operation. Confirm serviceability by opening and re-closing one access panel.",
+              "checkpoints": [
+                "Stone texture paint applied (light color)",
+                "UV-resistant clear topcoat applied",
+                "Boulder placed in final position",
+                "Panels connected — solar charging confirmed",
+                "All pump controllers connected and running",
+                "Serviceability test: open battery panel, verify access, re-close",
+                "Full system operational verification complete"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "components",
+      "number": 10,
+      "title": "Full Component List",
+      "icon": "📦",
+      "content": [
+        {
+          "type": "table",
+          "headers": [
+            "Component",
+            "Qty",
+            "Specification",
+            "Est. Cost"
+          ],
+          "rows": [
+            [
+              "LiFePO4 prismatic cells (Grade B)",
+              "12",
+              "200Ah 3.2V (EVE/CATL/CALB)",
+              "$540–900"
+            ],
+            [
+              "4S LiFePO4 BMS",
+              "1",
+              "60A+, temp cutoff, balance (JK or Daly)",
+              "$40–80"
+            ],
+            [
+              "EPever Tracer MPPT controller",
+              "3",
+              "2210AN — 20A load output",
+              "$35–55 ea."
+            ],
+            [
+              "Distribution bus bar",
+              "1",
+              "12V pos + neg, 6+ terminals",
+              "$15–25"
+            ],
+            [
+              "3-way blade fuse block",
+              "1",
+              "With 2× 5A + 1× 3A fuses",
+              "$8–15"
+            ],
+            [
+              "80A ANL fuse + holder",
+              "1",
+              "Weatherproof, on positive bus",
+              "$10–18"
+            ],
+            [
+              "STC-1000 thermostat controller",
+              "1",
+              "Dual stage, relay output",
+              "$12–18"
+            ],
+            [
+              "PTC ceramic heater element",
+              "1",
+              "12V, 10–15W, self-limiting",
+              "$8–15"
+            ],
+            [
+              "12V brushless fan",
+              "1",
+              "80–120mm, 3–5W",
+              "$8–12"
+            ],
+            [
+              "8 AWG tinned marine wire",
+              "~5m",
+              "Main bus runs",
+              "$15–25"
+            ],
+            [
+              "18–20 AWG tinned marine wire",
+              "~10m",
+              "Branch runs",
+              "$10–18"
+            ],
+            [
+              "PG cable glands (assorted)",
+              "6–8",
+              "PG9 and PG13.5",
+              "$10–20"
+            ],
+            [
+              "EPDM foam tape (gasket)",
+              "~1m",
+              "3–5mm closed-cell",
+              "$5–10"
+            ],
+            [
+              "Stainless M4 bolts + inserts",
+              "8–10 sets",
+              "Service panel fasteners",
+              "$8–15"
+            ],
+            [
+              "Stainless M8 inserts + anchors",
+              "4 sets",
+              "Base anchoring (optional)",
+              "$8–12"
+            ],
+            [
+              "Cell compression kit",
+              "1",
+              "Threaded rod + end plates for 4S3P",
+              "$15–30"
+            ],
+            [
+              "Nickel-plated copper bus bars",
+              "12",
+              "Cell-to-cell connections",
+              "$12–25"
+            ],
+            [
+              "2-part pour foam kit",
+              "1",
+              "2 lb closed-cell, 1–2 gallon",
+              "$20–35"
+            ],
+            [
+              "ASA filament",
+              "5–7 kg",
+              "Larger boulder for 4S3P stack",
+              "$80–175"
+            ],
+            [
+              "Stone texture paint + UV topcoat",
+              "1 set",
+              "Light color, exterior",
+              "$20–35"
+            ],
+            [
+              "MC4 connectors (pairs)",
+              "6",
+              "Panel-to-controller connections",
+              "$10–18"
+            ],
+            [
+              "DIN rail (35mm)",
+              "~0.5m",
+              "Standard mounting rail for MPPTs, thermostat, BMS clip",
+              "$5–10"
+            ],
+            [
+              "Rigid foam insulation board (XPS or polyiso)",
+              "1 sheet",
+              "25mm thick, cut to fit access panel openings. Cheap, replaceable.",
+              "$8–15"
+            ]
+          ]
+        },
+        {
+          "type": "text",
+          "body": "Estimated total (excluding salvaged panels, pump units, and controllers): $980–$1,650. The cell pack represents 55–60% of total cost. The 4S3P Grade B approach costs roughly the same as the original 4S2P Grade A design while providing 50% more usable capacity. The three-shell serviceable design adds minimal cost (~$15–25 for DIN rail and insulation board) while making every component replaceable."
+        }
+      ]
+    },
+    {
+      "id": "safety",
+      "number": 11,
+      "title": "Safety Notes",
+      "icon": "🛑",
+      "content": [
+        {
+          "type": "callout",
+          "severity": "danger",
+          "body": "Review ALL safety notes before beginning any electrical work. LiFePO4 cells at 200Ah can deliver thousands of amps into a short circuit."
+        },
+        {
+          "type": "list",
+          "items": [
+            "Never short cell terminals — even briefly. Cover all terminals with tape when not actively being connected.",
+            "Always connect the BMS before connecting any load or charge source to the pack.",
+            "Do not charge below 0°C — the thermostat/BMS interlock exists for this reason. Never bypass it.",
+            "The foam pour (step 9) is irreversible — but no components live in the foam cavity. Verify all conduit sleeves are clear with pull wires before and after foam pour.",
+            "Every component must remain removable through an access panel. Never glue, foam, or permanently bond any electrical component to the enclosure.",
+            "Test thermostat, heater, and fan independently during step 10 before closing access panels in step 11.",
+            "The ANL fuse on the positive bus is your primary fault protection. Install within 30cm of battery positive terminal.",
+            "When disposing of old Solariver batteries, take to a battery recycling facility.",
+            "The 4S3P pack stores 7,680 Wh — significantly more energy than the original 4S2P design. Treat it with proportional respect.",
+            "With 3P parallel strings, connect all three cells in each group simultaneously. Never connect a charged cell in parallel with a discharged cell."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "epever",
+      "number": 12,
+      "title": "EPever MPPT Configuration",
+      "icon": "⚙️",
+      "content": [
+        {
+          "type": "text",
+          "body": "All three Tracer 2210AN controllers must be programmed with identical LiFePO4 battery settings."
+        },
+        {
+          "type": "heading",
+          "text": "Battery Settings"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Parameter",
+            "Value",
+            "Notes"
+          ],
+          "rows": [
+            [
+              "Battery Type",
+              "USER (LiFePO4)",
+              "Select USER then set voltages below"
+            ],
+            [
+              "Overvoltage Disconnect",
+              "14.6V",
+              "4S max (3.65V/cell)"
+            ],
+            [
+              "Charging Limit Voltage",
+              "14.4V",
+              "Absorption (3.60V/cell)"
+            ],
+            [
+              "Overvoltage Reconnect",
+              "14.2V",
+              "Resume after trip"
+            ],
+            [
+              "Equalization Voltage",
+              "14.4V",
+              "Same as absorption"
+            ],
+            [
+              "Boost Voltage",
+              "14.4V",
+              "Same as absorption"
+            ],
+            [
+              "Float Voltage",
+              "13.6V",
+              "3.40V/cell"
+            ],
+            [
+              "Boost Reconnect Voltage",
+              "13.2V",
+              "Resume boost below this"
+            ],
+            [
+              "Low Voltage Reconnect",
+              "12.2V",
+              "Re-enable load"
+            ],
+            [
+              "Under Voltage Warning",
+              "11.6V",
+              "Low battery warning"
+            ],
+            [
+              "Low Voltage Disconnect",
+              "11.2V",
+              "Cut load (2.80V/cell)"
+            ],
+            [
+              "Discharging Limit Voltage",
+              "10.8V",
+              "Absolute minimum"
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Critical Settings"
+        },
+        {
+          "type": "callout",
+          "severity": "danger",
+          "body": "Temperature Compensation must be set to 0 mV/°C/2V for LiFePO4. The default lead-acid compensation will overcharge cells in cold weather."
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Parameter",
+            "Value",
+            "Notes"
+          ],
+          "rows": [
+            [
+              "Temperature Compensation",
+              "0 mV/°C/2V",
+              "CRITICAL — disable for LiFePO4"
+            ],
+            [
+              "Load Working Mode",
+              "Always ON",
+              "Or Light ON/OFF for daytime only"
+            ],
+            [
+              "Equalization Duration",
+              "0 min",
+              "Disable EQ cycling"
+            ],
+            [
+              "Boost Duration",
+              "120 min",
+              "Time at absorption before float"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "monitoring",
+      "number": 13,
+      "title": "Monitoring & Maintenance",
+      "icon": "📡",
+      "content": [
+        {
+          "type": "heading",
+          "text": "BMS Bluetooth Monitoring"
+        },
+        {
+          "type": "text",
+          "body": "The JK B2A20S20P BMS has built-in Bluetooth. Use the 'JK BMS' app to view individual cell group voltages (4 series groups), pack current, SOC, temperature, and MOSFET status. For persistent logging, use a Raspberry Pi Zero W with jkbms_ble."
+        },
+        {
+          "type": "heading",
+          "text": "EPever MPPT Monitoring"
+        },
+        {
+          "type": "text",
+          "body": "A Raspberry Pi Zero W with an RS485-to-USB adapter can poll all three controllers on a shared Modbus bus using the epevermodbus Python library (~$50 total)."
+        },
+        {
+          "type": "heading",
+          "text": "Seasonal Maintenance"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Season",
+            "Tasks"
+          ],
+          "rows": [
+            [
+              "Spring (Mar–Apr)",
+              "Remove winter vent plugs. Check cell balance. Inspect seals. Clean panels. Test all pumps."
+            ],
+            [
+              "Summer (Jun–Aug)",
+              "Monitor battery temp weekly (<42°C). Verify fan cycling. Check solar harvest. Inspect vents."
+            ],
+            [
+              "Fall (Sep–Oct)",
+              "Install winter vent plugs. Test heater. Verify charge inhibit. Clean panels. Full health check."
+            ],
+            [
+              "Winter (Dec–Feb)",
+              "Monitor heater cycling. Confirm charge inhibit. Winterize pumps if not needed. Battery sustains thermal alone for ~11.6 days with 4S3P."
+            ]
+          ]
+        }
+      ]
+    }
+  ]
+}

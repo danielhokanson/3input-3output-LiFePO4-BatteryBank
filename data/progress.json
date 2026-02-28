@@ -1,0 +1,44 @@
+{
+  "version": "2.1",
+  "lastUpdated": null,
+  "buildSteps": {
+    "1": { "completed": false, "checkpoints": {} },
+    "2": { "completed": false, "checkpoints": {} },
+    "3": { "completed": false, "checkpoints": {} },
+    "4": { "completed": false, "checkpoints": {} },
+    "5": { "completed": false, "checkpoints": {} },
+    "6": { "completed": false, "checkpoints": {} },
+    "7": { "completed": false, "checkpoints": {} },
+    "8": { "completed": false, "checkpoints": {} },
+    "9": { "completed": false, "checkpoints": {} },
+    "10": { "completed": false, "checkpoints": {} },
+    "11": { "completed": false, "checkpoints": {} },
+    "12": { "completed": false, "checkpoints": {} }
+  },
+  "notes": {},
+  "measurements": {
+    "panel1_voc": "",
+    "panel1_isc": "",
+    "panel2_voc": "",
+    "panel2_isc": "",
+    "panel3_voc": "",
+    "panel3_isc": "",
+    "ctrl1_amps": "",
+    "ctrl2_amps": "",
+    "ctrl3_amps": "",
+    "cell_pairs": [
+      { "a": "", "b": "", "c": "", "delta": "" },
+      { "a": "", "b": "", "c": "", "delta": "" },
+      { "a": "", "b": "", "c": "", "delta": "" },
+      { "a": "", "b": "", "c": "", "delta": "" }
+    ],
+    "pack_voltage_no_load": "",
+    "endurance_start_soc": "",
+    "endurance_start_v": "",
+    "endurance_end_soc": "",
+    "endurance_end_v": "",
+    "endurance_wh_consumed": "",
+    "cell_stack_dims": "",
+    "enclosure_dims": ""
+  }
+}
