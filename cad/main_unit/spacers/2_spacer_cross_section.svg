@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="-336.0 -40 672.0 413.0">
+<rect x="-336.0" y="-40" width="672.0" height="413.0" fill="#1a1a1a"/>
+<rect x="-296.0" y="0.0" width="592.0" height="333.0" stroke="#ff4444" stroke-width="0.8" fill="none"/>
+<rect x="-293.0" y="3.0" width="586.0" height="327.0" stroke="#ff8800" stroke-width="0.8" fill="rgba(255,136,0,0.1)"/>
+<rect x="-263.0" y="33.0" width="526.0" height="297.0" stroke="#44cc44" stroke-width="0.8" fill="none"/>
+<rect x="-293.0" y="109.6" width="30.0" height="25.0" stroke="#cc44cc" stroke-width="0.8" fill="rgba(204,68,204,0.4)"/>
+<rect x="263.0" y="109.6" width="30.0" height="25.0" stroke="#cc44cc" stroke-width="0.8" fill="rgba(204,68,204,0.4)"/>
+<circle cx="-278.0" cy="122.1" r="2.2" stroke="#cccc44" stroke-width="0.6" fill="none"/>
+<circle cx="278.0" cy="122.1" r="2.2" stroke="#cccc44" stroke-width="0.6" fill="none"/>
+<rect x="-293.0" y="213.6" width="30.0" height="25.0" stroke="#cc44cc" stroke-width="0.8" fill="rgba(204,68,204,0.4)"/>
+<rect x="263.0" y="213.6" width="30.0" height="25.0" stroke="#cc44cc" stroke-width="0.8" fill="rgba(204,68,204,0.4)"/>
+<circle cx="-278.0" cy="226.1" r="2.2" stroke="#cccc44" stroke-width="0.6" fill="none"/>
+<circle cx="278.0" cy="226.1" r="2.2" stroke="#cccc44" stroke-width="0.6" fill="none"/>
+<text x="-331.0" y="363.0" fill="#cccccc" font-family="monospace" font-size="6">FRONT CROSS-SECTION — spacers in foam cavity</text>
+</svg>

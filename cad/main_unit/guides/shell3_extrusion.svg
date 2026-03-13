@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="750" viewBox="0 0 1100 750">
+  <style>text { font-family: Arial, Helvetica, sans-serif; }</style>
+  <rect width="1100" height="750" fill="white"/>
+  <text x="20" y="30" font-size="18" fill="#333" text-anchor="start" font-weight="bold">SHELL 3 (PETG) —EXTRUSION GUIDE (Rev 3.2)</text>
+  <text x="20" y="50" font-size="12" fill="#555" text-anchor="start" font-weight="normal">Plan: 518 x 288mm  |  Height: 293mm  |  Z-offset: 41mm</text>
+  <text x="20" y="90" font-size="13" fill="#333" text-anchor="start" font-weight="bold">PLAN VIEW (top-down)</text>
+  <rect x="80.0" y="118.8030888030888" width="400.0" height="222.3938223938224" fill="#f0f4ff" stroke="#339af0" stroke-width="2.5" opacity="1.0" rx="3"/>
+  <text x="280" y="234" font-size="12" fill="#1864ab" text-anchor="middle" font-weight="bold">518 x 288mm</text>
+  <line x1="80.0" y1="98.8030888030888" x2="480.0" y2="98.8030888030888" stroke="#555" stroke-width="1"/>
+  <line x1="80.0" y1="94.8030888030888" x2="80.0" y2="102.8030888030888" stroke="#555" stroke-width="1"/>
+  <line x1="480.0" y1="94.8030888030888" x2="480.0" y2="102.8030888030888" stroke="#555" stroke-width="1"/>
+  <text x="280.0" y="93.8030888030888" font-size="9" fill="#555" text-anchor="middle" font-weight="normal">518mm</text>
+  <line x1="60.0" y1="118.8030888030888" x2="60.0" y2="341.1969111969112" stroke="#555" stroke-width="1"/>
+  <line x1="56.0" y1="118.8030888030888" x2="64.0" y2="118.8030888030888" stroke="#555" stroke-width="1"/>
+  <line x1="56.0" y1="341.1969111969112" x2="64.0" y2="341.1969111969112" stroke="#555" stroke-width="1"/>
+  <text x="5.0" y="234.0" font-size="9" fill="#555" text-anchor="start" font-weight="normal">288mm</text>
+  <text x="20" y="400" font-size="13" fill="#333" text-anchor="start" font-weight="bold">SIDE PROFILE (extrusion direction)</text>
+  <rect x="130.0" y="510.30888030888036" width="300.0" height="169.69111969111967" fill="#f0f4ff" stroke="#339af0" stroke-width="2.5" opacity="1.0" rx="2"/>
+  <text x="280" y="599.1544401544402" font-size="11" fill="#1864ab" text-anchor="middle" font-weight="bold">Extrude Z = 293mm</text>
+  <line x1="460.0" y1="680" x2="460.0" y2="500.30888030888036" stroke="#339af0" stroke-width="2"/>
+  <polygon points="460.0,500.30888030888036 455.0,510.30888030888036 465.0,510.30888030888036" fill="#339af0"/>
+  <text x="472.0" y="599.1544401544402" font-size="11" fill="#1864ab" text-anchor="start" font-weight="bold">293mm</text>
+  <line x1="90.0" y1="680" x2="440.0" y2="680" stroke="#999" stroke-width="1" stroke-dasharray="4 2"/>
+  <text x="85.0" y="684" font-size="9" fill="#666" text-anchor="end" font-weight="normal">Z=41mm</text>
+  <line x1="130.0" y1="700" x2="430.0" y2="700" stroke="#555" stroke-width="1"/>
+  <line x1="130.0" y1="696" x2="130.0" y2="704" stroke="#555" stroke-width="1"/>
+  <line x1="430.0" y1="696" x2="430.0" y2="704" stroke="#555" stroke-width="1"/>
+  <text x="280.0" y="695" font-size="9" fill="#555" text-anchor="middle" font-weight="normal">518mm</text>
+  <rect x="580" y="75" width="490" height="610" fill="#f0f4ff" stroke="#339af0" stroke-width="1.5" opacity="1.0" rx="6"/>
+  <text x="600" y="100" font-size="14" fill="#1864ab" text-anchor="start" font-weight="bold">FUSION 360 WORKFLOW</text>
+  <text x="600" y="130" font-size="11" fill="#333" text-anchor="start" font-weight="bold">1. Insert DXF &gt; select 1_top_view.dxf (inner shell profile)</text>
+  <text x="600" y="152" font-size="11" fill="#333" text-anchor="start" font-weight="normal">   (File &gt; Insert &gt; Insert DXF, place at origin)</text>
+  <text x="600" y="174" font-size="11" fill="#999" text-anchor="start" font-weight="normal"></text>
+  <text x="600" y="196" font-size="11" fill="#333" text-anchor="start" font-weight="bold">2. Extrude the profile upward</text>
+  <text x="600" y="218" font-size="11" fill="#333" text-anchor="start" font-weight="normal">   Select closed profile &gt; Extrude &gt; Distance = 293mm</text>
+  <text x="600" y="240" font-size="11" fill="#333" text-anchor="start" font-weight="normal">   Direction: One Side (positive Z)</text>
+  <text x="600" y="262" font-size="11" fill="#999" text-anchor="start" font-weight="normal"></text>
+  <text x="600" y="284" font-size="11" fill="#333" text-anchor="start" font-weight="bold">3. Shell command: 3mm wall</text>
+  <text x="600" y="306" font-size="11" fill="#333" text-anchor="start" font-weight="normal">   Modify &gt; Shell &gt; select top face</text>
+  <text x="600" y="328" font-size="11" fill="#333" text-anchor="start" font-weight="normal">   Inside thickness = 3mm</text>
+  <text x="600" y="350" font-size="11" fill="#999" text-anchor="start" font-weight="normal"></text>
+  <text x="600" y="372" font-size="11" fill="#333" text-anchor="start" font-weight="bold">4. Position the body at Z-offset</text>
+  <text x="600" y="394" font-size="11" fill="#333" text-anchor="start" font-weight="normal">   Move/Copy &gt; Z translation = 41mm</text>
+  <text x="600" y="416" font-size="11" fill="#333" text-anchor="start" font-weight="normal">   (aligns shell base to correct height in assembly)</text>
+  <text x="600" y="438" font-size="11" fill="#999" text-anchor="start" font-weight="normal"></text>
+  <text x="600" y="460" font-size="11" fill="#333" text-anchor="start" font-weight="bold">5. Verify dimensions</text>
+  <text x="600" y="482" font-size="11" fill="#333" text-anchor="start" font-weight="normal">   Outer: 518 x 288 x 293mm</text>
+  <text x="600" y="504" font-size="11" fill="#333" text-anchor="start" font-weight="normal">   Wall thickness: 3mm</text>
+  <text x="600" y="526" font-size="11" fill="#333" text-anchor="start" font-weight="normal">   Shell base at Z = 41mm</text>
+  <rect x="580" y="695" width="490" height="30" fill="#339af0" stroke="#1864ab" stroke-width="1" opacity="1.0" rx="4"/>
+  <text x="825" y="715" font-size="12" fill="white" text-anchor="middle" font-weight="bold">Material: PETG  |  Wall: 3mm</text>
+</svg>

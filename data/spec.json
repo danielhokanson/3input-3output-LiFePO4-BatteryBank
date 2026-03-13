@@ -1,24 +1,24 @@
 {
   "meta": {
     "title": "Consolidated Solar Battery System",
-    "subtitle": "Design & Build Specification — Rev 3.1",
+    "subtitle": "Design & Build Specification — Rev 3.2",
     "location": "Solariver Salvage — Salt Lake City Outdoor Installation",
-    "revision": "3.1"
+    "revision": "3.2"
   },
   "overview": {
-    "battery_chemistry": "LiFePO4 (lithium iron phosphate)",
+    "battery_chemistry": "LiFePO4 (lithium iron phosphate) — Narada 105Ah prismatic cells",
     "nominal_voltage": "12.8V (4S)",
-    "cell_configuration": "4S3P — 12× Grade B cells, triplet-matched within 2%",
-    "usable_capacity": "~6,144 Wh (80% DoD)",
-    "nominal_capacity": "~7,680 Wh (600Ah @ 12.8V)",
-    "solar_inputs": "2× 40W + 1× 25W (105W total, 18V panels)",
+    "cell_configuration": "4S×P scalable — 26× Narada 105Ah new cells; initial build 4S2P (8 cells), expandable to 4S6P (24 cells) in main unit or via satellite units",
+    "usable_capacity": "~6,451 Wh at 80% DoD (full 4S6P build); ~2,150 Wh initial 4S2P",
+    "nominal_capacity": "~8,064 Wh / 630Ah @ 12.8V (full 4S6P); ~2,688 Wh / 210Ah (initial 4S2P)",
+    "solar_inputs": "2× 40W + 1× 25W (EPever Tracer 2210AN MPPT, one per pump) + 2× 100W Renogy RNG-100D-SS (4th EPever Tracer 2210AN MPPT) = 305W total",
     "dc_outputs": "3× 12V regulated (one per pump controller)",
     "output_fusing": "2× 5A (470 GPH pumps), 1× 3A (235 GPH pump)",
     "thermal_range": "−26°C to +49°C (−15°F to 120°F)",
-    "thermal_mgmt": "Active — thermostat-controlled heat + ventilation",
+    "thermal_mgmt": "Active — thermostat-controlled heat + internal fan recirculation",
     "max_thermal_draw": "20W",
-    "design_load": "~65W average (all pumps running)",
-    "autonomy": "65+ hours / 2.7 days (fully cloudy, no solar)",
+    "design_load": "~65W average (all pumps) + up to 20W thermal management",
+    "autonomy": "99+ hours / 4.1 days (full 4S6P, pump load only); 3.2 days including worst-case thermal",
     "installation": "Salt Lake City, outdoors, freestanding boulder enclosure"
   },
   "sections": [
@@ -65,12 +65,19 @@
               "105W solar",
               "~50–75W combined draw",
               "264 Wh combined (replacing)"
+            ],
+            [
+              "Supplemental",
+              "— (storage)",
+              "2× 100W Renogy RNG-100D-SS, Vmp 20.4V, Voc 24.3V — via 4th EPever Tracer 2210AN MPPT",
+              "— (dedicated battery charging only, no pump)",
+              "—"
             ]
           ]
         },
         {
           "type": "text",
-          "body": "All three pump controllers are confirmed to operate without a battery, powered directly from the solar panel. This means they will accept any clean 12V supply without proprietary handshaking or pairing requirements. The consolidated 12.8V LiFePO4 bank is a direct drop-in replacement for all three original 12V battery packs, with approximately 23× the combined capacity."
+          "body": "All three pump controllers are confirmed to operate without a battery, powered directly from the solar panel. They accept any clean 12V supply without proprietary handshaking. The consolidated 12.8V LiFePO4 bank replaces all three original 12V battery packs with 23–77× the combined capacity (initial 4S2P through full 4S6P build).\n\nTwo additional 100W Renogy RNG-100D-SS panels (found in storage) are integrated as a dedicated charging source via a 4th EPever Tracer 2210AN MPPT controller. The panels run in parallel (20.4V Vmp, ~190W effective) into the MPPT which charges the battery bank only — no load output used for this controller. The included Renogy Wanderer PWM controller is retained as a backup spare."
         }
       ]
     },
@@ -173,13 +180,13 @@
               "Solar offset — clear day (5.5 peak hrs)",
               "—",
               "—",
-              "−578 Wh"
+              "−1,677 Wh (305W × 5.5 peak sun hrs)"
             ],
             [
               "Net battery draw — clear day",
               "—",
               "—",
-              "1,666 Wh"
+              "883 Wh (clear-day surplus — system is solar-positive)"
             ],
             [
               "Net battery draw — fully cloudy day",
@@ -195,15 +202,16 @@
         },
         {
           "type": "text",
-          "body": "With 6,144 Wh usable capacity (7,680 Wh nominal at 80% DoD):"
+          "body": "With 6,451 Wh usable capacity (8,064 Wh nominal at 80% DoD, full 4S6P build):"
         },
         {
           "type": "list",
           "items": [
-            "Fully cloudy days: 6,144 ÷ 2,244 = 2.7 days autonomy — nearly triple the 24-hour target",
-            "With solar on a clear day: net draw of 1,666 Wh leaves 4,478 Wh reserve after 24 hours",
-            "Consecutive cloudy days: bank can sustain approximately 65+ hours at real load without any solar input",
-            "The 4S3P upgrade from 4S2P provides 50% more capacity at ~35% additional cell cost (buying Grade B)"
+            "Fully cloudy days: 6,451 ÷ 2,244 = 2.9 days autonomy",
+            "With 305W solar on a clear day (1,677 Wh harvest): system is solar-positive, battery gains ~117 Wh net",
+            "Consecutive cloudy days: ~99 hours / 4.1 days at pump-only load without any solar input",
+            "Initial 4S2P build (2,150 Wh usable): ~33 hours autonomy — sufficient for commissioning and testing",
+            "Each satellite expansion unit adds one 4S string (105Ah / 1,344 Wh nominal) by connecting leads only"
           ]
         }
       ]
@@ -220,7 +228,7 @@
         },
         {
           "type": "text",
-          "body": "The 12.8V nominal LiFePO4 bank (4S configuration) directly matches all three pump controllers' 12V input requirements. No boost or step-up converters are needed anywhere in the system. The three 18V solar panels each feed a dedicated MPPT controller that charges the shared 12.8V bank."
+          "body": "The 12.8V nominal LiFePO4 bank (4S configuration) directly matches all three pump controllers 12V input requirements. No boost or step-up converters are needed. The three salvaged 18V solar panels each feed a dedicated EPever Tracer 2210AN MPPT controller for pump pass-through and battery charging. The two additional 100W Renogy panels (Vmp 20.4V) feed a 4th EPever Tracer 2210AN MPPT for battery charging only — no load output wired on this controller."
         },
         {
           "type": "heading",
@@ -244,7 +252,7 @@
         },
         {
           "type": "text",
-          "body": "Solar panels (3× 18V) → EPever MPPT controllers (3×, isolated inputs) → load output terminals → pump controllers (3× 12V). Simultaneously: MPPT charge outputs → 12.8V LiFePO4 bank with BMS → distribution bus → fused 12V taps → pump controllers (battery backup path). The BMS sits on the battery negative bus. An 80A ANL fuse sits on the battery positive bus as close to the cells as practical."
+          "body": "Solariver panels (3× 18V) → EPever Tracer 2210AN MPPT (3×, isolated inputs) → load output terminals → pump controllers (3× 12V). Simultaneously: MPPT charge outputs → 12.8V LiFePO4 bank via 2× Smart BMS → distribution bus → fused 12V taps → pump controllers (battery backup). Renogy panels (2× 100W, Vmp 20.4V, parallel) → 4th EPever Tracer 2210AN MPPT → battery bank (charging only). The two Smart BMS units each manage one 4S parallel sub-bank; outputs combine at the positive bus. 80A ANL fuse on the battery positive bus, close to the cells. LEM HASS 200-S current sensor inline on the main bus for system-wide monitoring.\n\nSatellite battery units connect to the main bus via heavy leads only. Each satellite contains 4 cells (one 4S string) plus active thermal management (heater + fan + thermostat). No charge controllers, BMS, or monitoring electronics are installed in satellite enclosures. BMS balance/sense wires extend from the main unit to each satellite string."
         },
         {
           "type": "heading",
@@ -304,23 +312,33 @@
           "rows": [
             [
               "LiFePO4 cells",
-              "12× 200Ah 3.2V prismatic, 4S3P (Grade B)",
-              "Capacity-tested, triplet-matched within 2%"
+              "26× Narada 105Ah 3.2V prismatic (new)",
+              "8 cells initial (4S2P); expandable to 24 active + 2 spare (4S6P)"
             ],
             [
-              "BMS",
-              "4S LiFePO4, 60A+ continuous, temp cutoff ports",
-              "JK BMS B2A20S20P or Daly 4S 60A"
+              "BMS (×2)",
+              "4S 100A Smart LiFePO4 BMS with low-temp cutoff",
+              "Each manages one 4S sub-bank; Bluetooth module attached"
             ],
             [
               "MPPT controllers (×3)",
               "EPever Tracer 2210AN",
-              "Load output terminals essential for pass-through"
+              "Salvaged from Solariver kits — load output terminals essential"
+            ],
+            [
+              "MPPT controller — Renogy panels (×1)",
+              "EPever Tracer 2210AN (4th unit), max PV 50V, 20A charge",
+              "For 2× 100W Renogy panels in parallel — charging only, no load output used. ~190W effective harvest."
+            ],
+            [
+              "Current sensor",
+              "LEM HASS 200-S, 200A hall-effect",
+              "Inline on main positive bus"
             ],
             [
               "Distribution bus bar",
               "12V positive + negative bus, 6+ terminals",
-              "Narva or similar"
+              "Narova or similar"
             ],
             [
               "Output fuse block",
@@ -335,12 +353,12 @@
             [
               "Wiring — main bus",
               "8 AWG tinned marine wire",
-              "Battery to bus bar"
+              "Battery to bus + satellite unit leads"
             ],
             [
               "Wiring — branch",
               "18–20 AWG tinned marine wire",
-              "Bus to pump controllers"
+              "Bus to pump controllers; BMS sense wires to satellite units"
             ]
           ]
         }
@@ -362,44 +380,46 @@
         },
         {
           "type": "heading",
-          "text": "5.2 Why Grade B Cells"
+          "text": "5.2 Why Narada New (Rated) Cells"
         },
         {
           "type": "text",
-          "body": "Grade B LiFePO4 prismatic cells are typically units that tested slightly below the manufacturer's capacity threshold (e.g. 185–195Ah on a 200Ah cell), were pulled from new-but-unsold battery packs, or have minor cosmetic defects that do not affect function. For this duty cycle — one partial cycle per day, rarely below 60% SOC — the practical differences from Grade A are minimal."
+          "body": "The purchased cells are new Narada 3.2V 105Ah 336Wh LiFePO4 prismatic cells — not surplus or Grade B stock. Narada is a reputable Chinese LiFePO4 manufacturer. At $30/cell for new cells this represents excellent value. Each cell is rated 105Ah (336Wh); 24 cells in 4S6P yield 630Ah / 8,064Wh nominal — comparable to the original 200Ah 4S3P design at 7,680Wh, with the added benefit of scalability and two spare cells."
         },
         {
           "type": "text",
-          "body": "By purchasing 12 Grade B cells at $45–75/cell instead of 8 Grade A cells at $80–120/cell, the total cell cost is comparable ($540–900 vs $640–960) while gaining 50% more capacity (4S3P vs 4S2P). The key requirement is individual capacity testing and careful matching of parallel triplets within 2%."
+          "body": "With 26 cells purchased and 24 needed for full 4S6P, two cells remain as tested spares. Measure and record actual capacity of all 26 cells before assignment. Any cell measuring significantly below 105Ah should be reserved as a spare or placed in a lower-priority string position."
         },
         {
           "type": "heading",
-          "text": "5.3 Cell Configuration"
+          "text": "5.3 Cell Configuration — Scalable 4S×P"
         },
         {
           "type": "text",
-          "body": "12× 200Ah 3.2V LiFePO4 prismatic cells in 4S3P:"
+          "body": "26× Narada 105Ah 3.2V LiFePO4 prismatic cells in scalable 4S×P configuration:\n4S = 4 cells in series = 12.8V nominal. ×P = number of parallel strings.\nInitial build: 4S2P (8 cells, 210Ah, 2,688Wh nominal, ~2,150Wh usable)\nFull main-unit build: 4S6P (24 cells, 630Ah, 8,064Wh nominal, ~6,451Wh usable) + 2 spare cells\nSatellite expansion: each satellite unit adds one 4S string (4 cells, +105Ah, +1,344Wh nominal)\nTotal bank: 12.8V × (105Ah × number of parallel strings)"
         },
         {
           "type": "list",
           "items": [
-            "4S = 4 cells in series = 12.8V nominal (direct match for 12V pump controllers)",
-            "3P = 3 parallel strings = 600Ah effective",
-            "Total bank: 12.8V × 600Ah = 7,680 Wh nominal",
-            "Usable at 80% DoD: ~6,144 Wh — nearly triple the worst-case 24-hour draw"
+            "4S = 4 cells in series per string = 12.8V nominal",
+            "×P = number of parallel strings (1–6 in main unit; additional via satellite units)",
+            "Initial build: 4S2P = 210Ah, 2,688 Wh nominal",
+            "Full main-unit build: 4S6P = 630Ah, 8,064 Wh nominal",
+            "Satellite expansion: plug in additional 4S strings via leads — no extra electronics required",
+            "Two spare cells remain after full 4S6P build — capacity-test and store for replacement"
           ]
         },
         {
           "type": "text",
-          "body": "Recommended sources: EVE LF280K or CATL/CALB 200Ah prismatic cells, Grade B. Budget approximately $45–75 per cell ($540–900 for 12 cells). Cell dimensions approximately 174mm × 71mm × 207mm each; 4S3P stack occupies roughly 350mm × 315mm × 210mm."
+          "body": "Cell dimensions: measure actual Narada 105Ah cells before finalizing enclosure design. Approximate dimensions ~175mm × 60mm × 158mm (verify against physical cells). Enclosure design requires significant revision from original 200Ah cell spec."
         },
         {
           "type": "heading",
-          "text": "5.4 Parallel Triplet Matching"
+          "text": "5.4 Parallel String Matching"
         },
         {
           "type": "text",
-          "body": "For a 3P configuration, cells in each parallel group must be closely matched. Capacity-test all 12 cells individually, then sort into four triplets where all three cells in each group are within 2% of each other."
+          "body": "For any ×P configuration, cells at the same series position across parallel strings should be matched. Capacity-test all 26 cells individually. Sort into groups where cells at the same series position are within 2% of each other. With 26 cells and 4 series positions, select the best-matching 6 per position for the full 4S6P build; the remaining 2 become spares."
         },
         {
           "type": "callout",
@@ -439,7 +459,7 @@
         },
         {
           "type": "text",
-          "body": "SLC winters regularly reach −15°F (−26°C) and summers push 105°F (40°C+). The approach is insulation-first, with active thermostat-controlled heating and ventilation within the 20W power budget. The larger 4S3P pack provides additional thermal mass, which slows temperature changes and reduces heater cycling in winter."
+          "body": "SLC winters regularly reach −15°F (−26°C) and summers push 105°F (40°C+). The approach is insulation-first, with active thermostat-controlled heating and internal fan recirculation within the 20W power budget. The larger 4S3P pack provides additional thermal mass, which slows temperature changes and reduces heater cycling in winter."
         },
         {
           "type": "heading",
@@ -464,7 +484,7 @@
         },
         {
           "type": "text",
-          "body": "Forced ventilation via a 12V brushless fan (3–5W) in the electronics outer zone. LiFePO4 tolerates 45°C during discharge, providing meaningful headroom on SLC's hottest days."
+          "body": "Internal recirculation via a 12V brushless fan (3–5W) mounted in the electronics zone. The sealed enclosure has no external vents — the fan circulates air between the battery and electronics zones to equalize temperatures. LiFePO4 tolerates 45°C during discharge, providing meaningful headroom on SLC's hottest days."
         },
         {
           "type": "list",
@@ -525,17 +545,21 @@
       "icon": "🪨",
       "content": [
         {
+          "type": "callout",
+          "body": "ENCLOSURE REDESIGN IN PROGRESS (Rev 3.2): Cell change from 200Ah to Narada 105Ah and adoption of a modular main-unit + satellite architecture requires significant updates to all enclosure dimensions, cell stack layout, and internal zone assignments. STL/DXF files from Rev 3.1 are superseded. Measure actual Narada 105Ah cells before designing new enclosures."
+        },
+        {
           "type": "heading",
           "text": "7.1 Overview — Three-Shell Architecture"
         },
         {
           "type": "text",
-          "body": "The enclosure uses a three-shell design that separates structural insulation from serviceable components. Every electrical component is removable and replaceable without destroying the enclosure. No component is permanently entombed in foam."
+          "body": "The system uses a modular two-tier enclosure architecture:\n\nMAIN UNIT: One boulder-style three-shell enclosure housing all electronics (2× Smart BMS, 3× EPever MPPT, 1× Renogy Wanderer PWM, distribution bus, fuses, LEM HASS current sensor, thermostat/heater/fan) plus the initial 4S2P cell bank (expandable to 4S6P within the main unit). All control electronics and monitoring live here.\n\nSATELLITE UNITS: Minimal boulder-style enclosures housing additional 4S cell strings only. Internal hardware limited to: cells, heater element, recirculation fan, and thermostat. Connect to main unit via heavy positive/negative leads. No BMS, no charge controllers, no monitoring. Add satellite units to expand capacity without touching main unit electronics.\n\nBoth unit types use the same three-shell ASA/PETG construction. Satellite units are smaller (4 cells vs up to 24 in main unit) and have no dedicated electronics zone."
         },
         {
           "type": "callout",
           "severity": "info",
-          "body": "Design principle: Foam is only structural/thermal. No wires, no components, and no connections exist inside the foam cavity. Everything serviceable lives inside the inner service shell, accessed through insulated service panels."
+          "body": "Design principle: Foam is only structural/thermal. No wires, no components, and no connections exist inside the foam cavity. Everything serviceable lives inside the inner service shell, accessed by removing the bolted top lid."
         },
         {
           "type": "heading",
@@ -543,12 +567,37 @@
         },
         {
           "type": "table",
-          "headers": ["Layer", "Material", "Purpose", "Permanent?"],
+          "headers": [
+            "Layer",
+            "Material",
+            "Purpose",
+            "Permanent?"
+          ],
           "rows": [
-            ["Shell 1 — Outer boulder", "ASA filament, stone-textured", "Cosmetic, weather barrier, structural outer wall", "Yes — solvent-welded"],
-            ["Foam cavity (25–40mm)", "2 lb closed-cell polyurethane pour foam", "Insulation + structural rigidity between shells 1 and 2", "Yes — poured and cured permanently"],
-            ["Shell 2 — Middle structural shell", "ASA filament", "Inner wall of foam cavity, structural support, mounting surface for inner hardware", "Yes — solvent-welded to outer shell before foam pour"],
-            ["Shell 3 — Inner service shell", "ASA filament, bolted panels", "Houses ALL components: cells, BMS, electronics, thermal system. Fully accessible via removable insulated panels", "Removable panels — bolted with M4 hardware"]
+            [
+              "Shell 1 — Outer boulder",
+              "ASA filament, stone-textured",
+              "Cosmetic, weather barrier, structural outer wall. ASA required for UV resistance. Print in enclosed chamber (Prusa Core One).",
+              "Yes — foam-bonded to Shell 2"
+            ],
+            [
+              "Foam cavity (25–40mm)",
+              "2 lb closed-cell polyurethane pour foam",
+              "Insulation + structural rigidity between shells 1 and 2",
+              "Yes — poured and cured permanently"
+            ],
+            [
+              "Shell 2 — Middle structural shell",
+              "PETG filament",
+              "Inner wall of foam cavity, structural support. No UV exposure (inside foam). PETG chosen over ASA for superior layer adhesion and minimal warping on large parts.",
+              "Yes — bonded to outer shell before foam pour"
+            ],
+            [
+              "Shell 3 — Inner service shell",
+              "PETG filament",
+              "Houses ALL components: cells, BMS, electronics, thermal system. PETG provides excellent layer adhesion for structural integrity. 80°C HDT gives 30°C+ margin over worst-case internal temp.",
+              "Bolted to Shell 2 — removable lid access from top"
+            ]
           ]
         },
         {
@@ -557,13 +606,13 @@
         },
         {
           "type": "text",
-          "body": "The foam cavity exists only between the outer boulder shell and the middle structural shell. It contains no components, no wiring, and no connections. The foam is injected after shells 1 and 2 are solvent-welded together and all cable conduit sleeves are in place. Cable conduits are printed ASA tubes that pass through the foam wall — the foam bonds around the outside of the conduit, but the conduit interior remains hollow and clear, allowing wires to be pulled through at any time."
+          "body": "The foam cavity exists only between the outer boulder shell and the middle structural shell. It contains no components, no wiring, and no connections. The foam is injected after shells 1 (ASA) and 2 (PETG) are aligned with printed tabs and clamped, with all cable conduit sleeves in place. The expanding pour foam bonds mechanically to both shell surfaces, permanently locking them together — no solvent welding needed between the dissimilar materials. Cable conduits are printed PETG tubes that pass through the foam wall — the foam bonds around the outside of the conduit, but the conduit interior remains hollow and clear, allowing wires to be pulled through at any time."
         },
         {
           "type": "list",
           "items": [
             "Foam cavity: 25–40mm between shell 1 (outer) and shell 2 (middle)",
-            "Printed ASA conduit sleeves installed before foam pour — one per cable penetration",
+            "Printed PETG conduit sleeves installed before foam pour — one per cable penetration",
             "Conduit inner diameter sized for cable + PG gland (PG9 or PG13.5)",
             "Foam is poured through injection ports in shell 1 after conduits are verified clear",
             "This step IS irreversible — but nothing serviceable lives in the foam cavity",
@@ -576,14 +625,26 @@
         },
         {
           "type": "text",
-          "body": "All serviceable components mount inside the inner service shell, which is attached to the middle structural shell (shell 2) with bolted connections — not solvent-welded. The inner service shell has two access zones, each with its own removable insulated panel."
+          "body": "All serviceable components mount inside the inner service shell, which is attached to the middle structural shell (shell 2) with bolted connections — not solvent-welded. Full top-down access to all components is provided by removing the bolted lid from the cap rim. No side-wall openings are needed."
         },
         {
           "type": "table",
-          "headers": ["Zone", "Components", "Access Panel", "Insulation"],
+          "headers": [
+            "Zone",
+            "Components",
+            "Access Method"
+          ],
           "rows": [
-            ["Battery zone", "12× LiFePO4 cells (4S3P), BMS, PTC heater, temp probe", "Large rear panel — full cell stack width. M4 bolts + EPDM gasket.", "Removable rigid foam board panels (25mm XPS or polyiso) friction-fit inside the panel opening. Removed during service, replaced when closing."],
-            ["Electronics zone", "3× MPPT controllers, bus bars, fuse block, thermostat, fan", "Side/rear panel — sized for controller access. M4 bolts + EPDM gasket.", "Removable rigid foam board panel. Electronics zone is also passively vented, so insulation is less critical here than battery zone."]
+            [
+              "Battery zone",
+              "12× LiFePO4 cells (4S3P), BMS, PTC heater, temp probe",
+              "Remove lid — full top-down access to cell stack and BMS"
+            ],
+            [
+              "Electronics zone",
+              "3× MPPT controllers, bus bars, fuse block, thermostat, fan",
+              "Remove lid — full top-down access to electronics DIN rail and bus bars"
+            ]
           ]
         },
         {
@@ -596,18 +657,62 @@
         },
         {
           "type": "table",
-          "headers": ["Component", "Mounting Method", "Removal"],
+          "headers": [
+            "Component",
+            "Mounting Method",
+            "Removal"
+          ],
           "rows": [
-            ["LiFePO4 cells", "Compression hardware (threaded rod + end plates) sitting on a printed shelf/cradle in battery zone", "Unbolt compression hardware, slide cells out through battery access panel"],
-            ["BMS", "Bolted to mounting plate or DIN rail clip in battery zone", "Disconnect balance leads and power, unbolt, remove through access panel"],
-            ["PTC heater", "Bolted bracket or thermal-adhesive pad on mounting plate (not on cell surface directly)", "Unplug from thermostat relay, unbolt bracket"],
-            ["Temp probe", "Kapton tape to cell surface — not permanent", "Peel tape, reroute probe through conduit"],
-            ["MPPT controllers (×3)", "DIN rail mount or bolted to standoffs in electronics zone", "Disconnect PV/battery/load terminals, unclip from DIN rail"],
-            ["Bus bars", "Bolted to insulated standoffs in electronics zone", "Disconnect ring terminals, unbolt standoffs"],
-            ["Fuse block", "Bolted to mounting plate in electronics zone", "Disconnect leads, unbolt"],
-            ["STC-1000 thermostat", "Panel-mount through electronics zone access panel, or DIN rail clip", "Unplug probe and relay connections, unclip"],
-            ["Fan", "Bolted to vent port frame in electronics zone", "Disconnect power leads, unbolt 4 screws"],
-            ["All wiring", "Routed through ASA conduit sleeves that pass through foam cavity", "Disconnect at both ends, pull through conduit. New wire feeds back through the same conduit."]
+            [
+              "LiFePO4 cells",
+              "Compression hardware (threaded rod + end plates) sitting on a printed shelf/cradle in battery zone",
+              "Unbolt compression hardware, lift cells out through top"
+            ],
+            [
+              "BMS",
+              "Bolted to mounting plate or DIN rail clip in battery zone",
+              "Disconnect balance leads and power, unbolt, lift out through top"
+            ],
+            [
+              "PTC heater",
+              "Bolted bracket or thermal-adhesive pad on mounting plate (not on cell surface directly)",
+              "Unplug from thermostat relay, unbolt bracket"
+            ],
+            [
+              "Temp probe",
+              "Kapton tape to cell surface — not permanent",
+              "Peel tape, reroute probe through conduit"
+            ],
+            [
+              "MPPT controllers (×3)",
+              "DIN rail mount or bolted to standoffs in electronics zone",
+              "Disconnect PV/battery/load terminals, unclip from DIN rail"
+            ],
+            [
+              "Bus bars",
+              "Bolted to insulated standoffs in electronics zone",
+              "Disconnect ring terminals, unbolt standoffs"
+            ],
+            [
+              "Fuse block",
+              "Bolted to mounting plate in electronics zone",
+              "Disconnect leads, unbolt"
+            ],
+            [
+              "STC-1000 thermostat",
+              "DIN rail clip in electronics zone",
+              "Unplug probe and relay connections, unclip"
+            ],
+            [
+              "Fan",
+              "Bolted to bracket or standoffs in electronics zone",
+              "Disconnect power leads, unbolt 4 screws"
+            ],
+            [
+              "All wiring",
+              "Routed through PETG conduit sleeves that pass through foam cavity",
+              "Disconnect at both ends, pull through conduit. New wire feeds back through the same conduit."
+            ]
           ]
         },
         {
@@ -616,7 +721,7 @@
         },
         {
           "type": "text",
-          "body": "All cables between the exterior (solar panels, pumps) and the inner service shell pass through printed ASA conduit sleeves embedded in the foam cavity. The conduits are installed before the foam pour. Their inner diameter is sized so cables (with connectors removed) can be pulled through freely. PG cable glands thread into the outer end of each conduit for weather sealing."
+          "body": "All cables between the exterior (solar panels, pumps) and the inner service shell pass through printed PETG conduit sleeves embedded in the foam cavity. The conduits are installed before the foam pour. Their inner diameter is sized so cables (with connectors removed) can be pulled through freely. PG cable glands thread into the outer end of each conduit for weather sealing."
         },
         {
           "type": "list",
@@ -631,37 +736,87 @@
         },
         {
           "type": "heading",
-          "text": "7.7 Service Panel Design"
+          "text": "7.7 Cap Rim & Removable Lid"
         },
         {
           "type": "text",
-          "body": "Each access panel is a printed ASA plate that sits in a recessed frame (5–10mm recess so the panel sits flush). Closed-cell EPDM foam tape gasket (3–5mm, self-adhesive) bonded to the frame provides a weather seal. Stainless M4 socket-head bolts (6–8 per panel) thread into heat-set brass inserts in the frame. A removable rigid foam insulation board sits inside the opening behind the panel, held in place by friction fit or simple clips."
+          "body": "A structural ASA cap rim spans all three shells at the top of the enclosure. Shell 3 is placed first, then the cap is lowered on top with its inner lip entering Shell 3. Foam is poured (step 9) to bond the cap permanently — no mechanical fasteners to the shells. A foam flange extends 20mm into the foam cavity, providing a large bonding surface. Brass M4 heat-set inserts (OD ~5.6mm, length 8mm) are embedded in the foam flange zone; the expanding foam bonds around them for secondary anchoring. The cap's outer lip overhangs Shell 1 by 10mm and drops 15mm down the outer wall. An inner lip (5mm overhang, 15mm drop) extends inside Shell 3, capturing it from within."
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Feature",
+            "Dimension",
+            "Notes"
+          ],
+          "rows": [
+            [
+              "Cap outer dimensions",
+              "712 × 437 mm",
+              "Shell 1 outer (692 × 417) + 10mm lip on each side"
+            ],
+            [
+              "Cap inner dimensions",
+              "594 × 319 mm",
+              "Inside Shell 3 wall + inner lip overhang"
+            ],
+            [
+              "Cap body thickness",
+              "8 mm",
+              "Flat top surface — dual gasket grooves and bolt holes"
+            ],
+            [
+              "Outer lip overhang",
+              "10 mm beyond Shell 1",
+              "Drops 15mm down Shell 1 outer wall"
+            ],
+            [
+              "Foam flange depth",
+              "20 mm into foam cavity",
+              "Brass inserts embedded here — foam bonds around them"
+            ],
+            [
+              "Inner lip",
+              "5 mm overhang × 15 mm drop",
+              "Drops inside Shell 3 — captures Shell 3 from inside"
+            ],
+            [
+              "Dual gasket grooves",
+              "2× 4 mm wide × 2 mm deep",
+              "Outer + inner grooves with bolt pattern between them"
+            ],
+            [
+              "Bolt pattern",
+              "22× M4 at ~90mm spacing",
+              "Stainless socket head cap screws through lid into brass inserts"
+            ],
+            [
+              "Material",
+              "ASA",
+              "UV resistant — cap top surface is exterior-exposed"
+            ]
+          ]
+        },
+        {
+          "type": "text",
+          "body": "The removable lid is a flat 712 × 437 × 5mm ASA panel with M4 clearance holes matching the cap's insert pattern. Two 3D-printed TPU gaskets (4mm wide × 2mm thick, ~95A Shore hardness) sit in the cap's dual grooves — one outside the bolt pattern, one inside — and are compressed when the lid is bolted down. This dual-seal arrangement provides redundant water sealing. To service any component, unbolt the lid (22× M4 bolts), lift it off, and you have full top-down access to the interior through the 594 × 319mm opening."
         },
         {
           "type": "list",
           "items": [
-            "Battery access panel: Large enough to slide 4S3P cell stack out. Minimum clear opening ~360mm × 220mm.",
-            "Electronics access panel: Sized for removing an MPPT controller. Minimum clear opening ~200mm × 180mm.",
-            "Both panels printed in matching ASA granite texture for cosmetic consistency",
-            "EPDM gasket replaced if damaged during service — self-adhesive, peel-and-stick",
-            "Rigid foam insulation boards (25mm XPS or polyiso) cut to fit panel openings — cheap, replaceable"
+            "Cap rim printed in ASA (UV-exposed top surface). Sand contact surfaces before foam pour to improve mechanical bond.",
+            "Lid printed flat in ASA — single piece if printer bed allows, otherwise segmented and solvent-welded.",
+            "TPU gaskets are printed components (95A Shore) — two separate loops, each printed as a continuous spiral that fits on one print bed. Press-fit into cap grooves. Reprint if damaged during service.",
+            "Assembly order: Shell 3 placed inside Shell 2 first, then cap lowered on top (inner lip enters Shell 3). Foam poured to bond cap (step 9). Lid bolted last (step 11)."
           ]
         },
         {
           "type": "heading",
-          "text": "7.8 Vent Ports"
+          "text": "7.8 Exterior Finish"
         },
         {
           "type": "text",
-          "body": "Two filtered vent ports on lower back face with printed ASA baffles preventing direct water ingress. Stainless mesh or foam filter inserts keep insects and debris out of electronics zone. Removable foam plugs available for winter to reduce heat loss. Vents connect through the foam cavity via dedicated vent conduits (no electrical sharing)."
-        },
-        {
-          "type": "heading",
-          "text": "7.9 Exterior Finish"
-        },
-        {
-          "type": "text",
-          "body": "Print in mid-gray ASA base. Apply stone-texture spray paint (Rust-Oleum Stone or similar) to match existing landscape features. UV-resistant clear topcoat protects finish and reduces solar heat gain. Light/reflective color is important — a dark boulder in SLC summer sun would significantly increase thermal load on the system."
+          "body": "Shell 1 (outer boulder) printed in ASA for UV resistance — the only component requiring ASA. Apply stone-texture spray paint (Rust-Oleum Stone or similar) to match existing landscape features. UV-resistant clear topcoat protects finish and reduces solar heat gain. Light/reflective color is important — a dark boulder in SLC summer sun would significantly increase thermal load on the system."
         },
         {
           "type": "heading",
@@ -812,53 +967,58 @@
             {
               "step": 7,
               "title": "Design three-shell enclosure in CAD",
-              "body": "Design the three-shell boulder: outer shell (cosmetic), middle shell (foam cavity inner wall), and inner service shell with removable access panels. Design cable conduit sleeves for all penetrations through the foam cavity. Segment all shells for Prusa Core One bed.",
+              "body": "Design the three-shell boulder: outer shell (cosmetic), middle shell (foam cavity inner wall), and inner service shell. Design cable conduit sleeves for all penetrations through the foam cavity. Design cap rim (spans all three shells, bonds during foam pour) and removable lid. Segment all shells for Prusa Core One bed.",
               "checkpoints": [
                 "Cell stack dimensions measured and documented",
                 "Electronics stack dimensions measured",
                 "Three-shell boulder designed in CAD",
                 "Foam cavity 25–40mm between shell 1 and shell 2",
                 "Cable conduit sleeves designed (correct ID per cable run)",
-                "Battery access panel opening ≥360mm × 220mm",
-                "Electronics access panel opening ≥200mm × 180mm",
-                "Vent conduits placed (separate from cable conduits)",
+                "Cap rim designed — outer lip, foam flange, inner lip profiled",
+                "Brass insert positions marked in cap foam flange zone (22× M4)",
+                "Dual gasket grooves (2× 4mm × 2mm) routed in cap top surface",
+                "Lid designed — flat panel with M4 clearance holes matching cap",
                 "All shells segmented for Prusa bed size"
               ]
             },
             {
               "step": 8,
               "title": "Print shells and conduit sleeves",
-              "body": "Print all three shells, access panel covers, cable conduit sleeves, and vent conduit sleeves in ASA. Access panels printed in matching granite texture.",
+              "body": "Print Shell 1 (outer boulder) and cap rim in ASA for UV resistance — enclosed chamber required (Prusa Core One). Print Shell 2, Shell 3, conduit sleeves, and all internal brackets in PETG for superior layer adhesion and minimal warping. Print lid in ASA (UV-exposed). Print two TPU gaskets (95A Shore) as separate spiral loops on one print bed. PETG's 80°C HDT provides ample margin for internal temperatures.",
               "checkpoints": [
-                "Outer boulder shell sections printed (ASA)",
-                "Middle structural shell sections printed (ASA)",
-                "Inner service shell + panel frames printed",
-                "Access panel covers printed (battery + electronics)",
-                "All cable conduit sleeves printed and test-fit",
-                "Vent conduit sleeves printed"
+                "Outer boulder shell sections printed (ASA, enclosed chamber)",
+                "Cap rim sections printed (ASA) — sand foam-contact surfaces",
+                "Lid sections printed (ASA) — flat panel, segmented if needed",
+                "TPU gaskets printed (95A Shore) — 2 spiral loops for dual grooves",
+                "Middle structural shell sections printed (PETG)",
+                "Inner service shell sections printed (PETG)",
+                "All cable conduit sleeves printed (PETG) and test-fit",
+                "Heat-set brass M4 inserts installed in cap foam flange (22×)"
               ]
             },
             {
               "step": 9,
               "title": "Assemble outer structure and pour foam",
-              "body": "Solvent-weld shell 1 (outer) and shell 2 (middle) with conduit sleeves positioned between them. Verify all conduits are clear with pull wires. Pour foam into cavity. This is the only irreversible step — but no components live in the foam.",
+              "body": "Align Shell 1 (ASA, outer) and Shell 2 (PETG, middle) with printed alignment tabs and temporary clamps or screws. These are different materials and cannot be solvent-welded — the expanding pour foam bonds mechanically to both surfaces. Position all conduit sleeves between shells before pouring. Place the cap rim on top — lip resting over Shell 1 outer edge, foam flange hanging into the cavity with brass inserts. Verify all conduits are clear with pull wires. Pour foam — it bonds cap, shells, and conduits permanently. This is the only irreversible step — but no components live in the foam cavity.",
               "checkpoints": [
-                "Shell 1 and shell 2 solvent-welded with MEK",
-                "All cable conduit sleeves positioned and secured",
-                "Vent conduit sleeves positioned",
-                "24-hour MEK cure observed",
+                "Shell 1 (ASA) and Shell 2 (PETG) aligned with tabs/clamps",
+                "All cable conduit sleeves (PETG) positioned and secured",
                 "Pull wire passed through EVERY conduit — all clear",
                 "All conduit ends capped to prevent foam entry",
-                "Foam injected through injection ports",
-                "24-hour foam cure observed",
-                "Post-cure: all conduits still clear (pull wire test)"
+                "Cap rim placed on top — lip over Shell 1, foam flange into cavity",
+                "Brass inserts in cap flange verified positioned correctly",
+                "Foam injected through injection ports in Shell 1",
+                "24-hour foam cure observed — foam locks shells + cap together",
+                "Post-cure: all conduits still clear (pull wire test)",
+                "Post-cure: cap rim firmly bonded — no movement"
               ]
             },
             {
               "step": 10,
               "title": "Install inner service shell and mount components",
-              "body": "Bolt (not weld) inner service shell to middle shell. Mount all components mechanically — no glue, no foam. Route cables through conduit sleeves. Every component must be removable through an access panel.",
+              "body": "Shell 3 is already in position (placed before cap in step 9). Cap's inner lip captures Shell 3 from inside. Bolt Shell 3 to Shell 2 (not welded). Mount all components mechanically — no glue, no foam. Route cables through conduit sleeves. Every component is accessible by lifting out through the top opening.",
               "checkpoints": [
+                "Shell 3 already in position (placed before cap) — captured by inner lip",
                 "Inner service shell bolted to middle shell",
                 "Cell compression cradle installed in battery zone",
                 "12 cells installed with compression hardware",
@@ -869,38 +1029,35 @@
                 "Bus bars on insulated standoffs",
                 "Fuse block mounted",
                 "STC-1000 thermostat installed",
-                "Fan bolted to vent port frame",
+                "Fan mounted on bracket in electronics zone",
                 "All cables routed through conduit sleeves",
                 "PG cable glands threaded into conduit outer ends",
-                "Full electrical test BEFORE closing panels"
+                "Full electrical test BEFORE installing lid"
               ]
             },
             {
               "step": 11,
-              "title": "Install insulation and close access panels",
-              "body": "Cut rigid foam insulation boards (25mm XPS or polyiso) for each access panel opening. Friction-fit insulation behind panels. Apply EPDM gasket to frames. Bolt access panels closed. Install vent baffles.",
+              "title": "Install lid and seal enclosure",
+              "body": "Place two 3D-printed TPU gaskets into cap rim's dual grooves (4mm wide × 2mm deep each — one outer, one inner). Lower lid onto cap, aligning bolt holes. Insert M4 × 16mm stainless socket head cap screws through lid clearance holes into cap brass inserts. Torque evenly in a star pattern to compress both gaskets uniformly.",
               "checkpoints": [
-                "Battery zone insulation board cut and fit-checked",
-                "Electronics zone insulation board cut and fit-checked",
-                "EPDM gasket applied to battery panel frame",
-                "EPDM gasket applied to electronics panel frame",
-                "Battery access panel bolted (stainless M4)",
-                "Electronics access panel bolted (stainless M4)",
-                "Vent baffles installed with insect mesh",
-                "Winter vent plugs prepared"
+                "TPU gaskets seated in both cap grooves — continuous loops, no gaps",
+                "Lid placed on cap — all 22 bolt holes aligned",
+                "M4 bolts inserted and hand-tightened in star pattern",
+                "Final torque applied evenly — both gaskets compressed uniformly",
+                "Visual check: no gaps between lid and cap around perimeter"
               ]
             },
             {
               "step": 12,
               "title": "Finish and install",
-              "body": "Apply stone-texture paint and UV topcoat. Place in position, connect panels and pumps, verify operation. Confirm serviceability by opening and re-closing one access panel.",
+              "body": "Apply stone-texture paint and UV topcoat. Place in position, connect solar panels and pumps, verify operation. Confirm serviceability by unbolting lid, verifying full top-down access, and re-sealing.",
               "checkpoints": [
                 "Stone texture paint applied (light color)",
                 "UV-resistant clear topcoat applied",
                 "Boulder placed in final position",
-                "Panels connected — solar charging confirmed",
+                "Solar panels connected — charging confirmed",
                 "All pump controllers connected and running",
-                "Serviceability test: open battery panel, verify access, re-close",
+                "Serviceability test: unbolt lid, verify top-down access, re-seal",
                 "Full system operational verification complete"
               ]
             }
@@ -924,27 +1081,87 @@
           ],
           "rows": [
             [
-              "LiFePO4 prismatic cells (Grade B)",
-              "12",
-              "200Ah 3.2V (EVE/CATL/CALB)",
-              "$540–900"
+              "Narada 105Ah 3.2V LiFePO4 prismatic cells",
+              "26",
+              "3.2V 105Ah 336Wh (new) — 24 active + 2 spare",
+              "$780 (purchased @ $30/cell)"
             ],
             [
-              "4S LiFePO4 BMS",
+              "4S 100A Smart LiFePO4 BMS w/ low-temp cutoff",
+              "2",
+              "4S, 100A continuous, temp cutoff, balance, Smart BMS",
+              "$79.98 (purchased @ $39.99 ea.)"
+            ],
+            [
+              "Bluetooth module for Smart BMS",
               "1",
-              "60A+, temp cutoff, balance (JK or Daly)",
-              "$40–80"
+              "Wireless monitoring module for Smart BMS",
+              "$7.99 (purchased)"
             ],
             [
-              "EPever Tracer MPPT controller",
+              "LEM HASS 200-S hall-effect current sensor",
+              "1",
+              "200A, with wiring harness — inline on main bus",
+              "$2.00 (purchased)"
+            ],
+            [
+              "50A Narada busbars",
+              "52",
+              "Fits Narada 50/80/105Ah cells — 1 per cell terminal",
+              "$26.00 (purchased @ $0.50 ea.)"
+            ],
+            [
+              "MC4 connectors 10-pack + spanners",
+              "2",
+              "10× M + 10× F per pack + 2× spanner tools",
+              "$14.00 (purchased @ $7.00/pack)"
+            ],
+            [
+              "Fish paper battery insulation tape 205mm",
+              "7",
+              "5 ft × 205mm per roll = 35 ft total",
+              "$43.75 (purchased @ $6.25/roll)"
+            ],
+            [
+              "EPever Tracer 2210AN MPPT controller",
               "3",
-              "2210AN — 20A load output",
-              "$35–55 ea."
+              "20A load output — salvaged from Solariver kits",
+              "Salvaged ($0)"
+            ],
+            [
+              "Solariver solar panels",
+              "3",
+              "2× 40W 18V + 1× 25W 18V",
+              "Salvaged ($0)"
+            ],
+            [
+              "Renogy RNG-100D-SS solar panel",
+              "2",
+              "100W, Vmp 20.4V, Voc 24.3V, 1062×530×35mm, 6.4kg",
+              "From storage ($0)"
+            ],
+            [
+              "EPever Tracer 2210AN MPPT controller (4th unit)",
+              "1",
+              "20A charge, max PV 50V — for 2× Renogy 100W panels in parallel, battery charging only",
+              "~$40–55 (to purchase)"
+            ],
+            [
+              "Renogy Wanderer RNG-CTRL-WND30-LI PWM controller",
+              "1",
+              "12V / 30A PWM, max PV 25V — retained as backup spare (came with Renogy kit)",
+              "Spare ($0)"
+            ],
+            [
+              "Renogy kit cables + accessories",
+              "1 set",
+              "MC4 panel cables, ring terminals, temp sensor cable",
+              "With Renogy kit ($0)"
             ],
             [
               "Distribution bus bar",
               "1",
-              "12V pos + neg, 6+ terminals",
+              "12V positive + negative bus, 6+ terminals",
               "$15–25"
             ],
             [
@@ -960,112 +1177,100 @@
               "$10–18"
             ],
             [
-              "STC-1000 thermostat controller",
-              "1",
-              "Dual stage, relay output",
-              "$12–18"
-            ],
-            [
-              "PTC ceramic heater element",
-              "1",
-              "12V, 10–15W, self-limiting",
-              "$8–15"
-            ],
-            [
-              "12V brushless fan",
-              "1",
-              "80–120mm, 3–5W",
-              "$8–12"
-            ],
-            [
               "8 AWG tinned marine wire",
-              "~5m",
-              "Main bus runs",
-              "$15–25"
+              "~10m",
+              "Main bus + satellite unit leads",
+              "$25–40"
             ],
             [
               "18–20 AWG tinned marine wire",
-              "~10m",
-              "Branch runs",
-              "$10–18"
+              "~15m",
+              "Branch runs + BMS sense wires to satellite units",
+              "$15–25"
             ],
             [
               "PG cable glands (assorted)",
-              "6–8",
-              "PG9 and PG13.5",
-              "$10–20"
+              "8–12",
+              "PG9 and PG13.5 — main unit + each satellite unit",
+              "$15–28"
             ],
             [
-              "EPDM foam tape (gasket)",
-              "~1m",
-              "3–5mm closed-cell",
-              "$5–10"
+              "STC-1000 thermostat controller",
+              "2+",
+              "Dual stage, relay output — 1 per enclosure (main + each satellite)",
+              "$24–36+"
             ],
             [
-              "Stainless M4 bolts + inserts",
-              "8–10 sets",
-              "Service panel fasteners",
-              "$8–15"
+              "PTC ceramic heater element",
+              "2+",
+              "12V, 10–15W, self-limiting — 1 per enclosure",
+              "$16–30+"
             ],
             [
-              "Stainless M8 inserts + anchors",
-              "4 sets",
-              "Base anchoring (optional)",
-              "$8–12"
+              "12V brushless fan",
+              "2+",
+              "80–120mm, 3–5W — 1 per enclosure",
+              "$16–24+"
             ],
             [
               "Cell compression kit",
-              "1",
-              "Threaded rod + end plates for 4S3P",
-              "$15–30"
-            ],
-            [
-              "Nickel-plated copper bus bars",
-              "12",
-              "Cell-to-cell connections",
-              "$12–25"
+              "2+",
+              "Threaded rod + end plates sized for Narada 105Ah (measure cells first)",
+              "$15–30 ea."
             ],
             [
               "2-part pour foam kit",
-              "1",
-              "2 lb closed-cell, 1–2 gallon",
-              "$20–35"
+              "2+",
+              "2 lb closed-cell PU, 1–2 gallon — 1 per enclosure",
+              "$20–35 ea."
             ],
             [
               "ASA filament",
-              "5–7 kg",
-              "Larger boulder for 4S3P stack",
-              "$80–175"
+              "2–3 kg/enclosure",
+              "Outer boulder shell + UV-exposed surfaces only",
+              "$50–90 ea."
+            ],
+            [
+              "PETG filament",
+              "3–4 kg/enclosure",
+              "Inner shells, brackets, conduits (main unit); all shells (satellite)",
+              "$60–110 ea."
             ],
             [
               "Stone texture paint + UV topcoat",
-              "1 set",
+              "1 set/enclosure",
               "Light color, exterior",
               "$20–35"
             ],
             [
-              "MC4 connectors (pairs)",
-              "6",
-              "Panel-to-controller connections",
-              "$10–18"
-            ],
-            [
               "DIN rail (35mm)",
               "~0.5m",
-              "Standard mounting rail for MPPTs, thermostat, BMS clip",
+              "Main unit only — for MPPTs, BMS, thermostat",
               "$5–10"
             ],
             [
-              "Rigid foam insulation board (XPS or polyiso)",
-              "1 sheet",
-              "25mm thick, cut to fit access panel openings. Cheap, replaceable.",
-              "$8–15"
+              "TPU filament (lid gasket)",
+              "~50g/enclosure",
+              "95A Shore, lid seal",
+              "$3–5 ea."
+            ],
+            [
+              "Stainless M4 × 16mm socket head cap screws",
+              "22+/enclosure",
+              "Lid fasteners",
+              "$8–15 ea."
+            ],
+            [
+              "M4 heat-set brass inserts",
+              "22+/enclosure",
+              "Lid seat inserts",
+              "$8–12 ea."
             ]
           ]
         },
         {
           "type": "text",
-          "body": "Estimated total (excluding salvaged panels, pump units, and controllers): $980–$1,650. The cell pack represents 55–60% of total cost. The 4S3P Grade B approach costs roughly the same as the original 4S2P Grade A design while providing 50% more usable capacity. The three-shell serviceable design adds minimal cost (~$15–25 for DIN rail and insulation board) while making every component replaceable."
+          "body": "Confirmed purchased total: $953.72 (cells $780 + BMS $79.98 + Bluetooth $7.99 + current sensor $2.00 + busbars $26.00 + MC4 $14.00 + fish paper $43.75). Salvaged/storage items: $0. Additional to purchase: 1× EPever Tracer 2210AN (~$40–55). Remaining estimated: $440–755 per enclosure for MPPT + filament, foam, hardware, thermal components, and wiring. Two enclosures (main unit + first satellite) estimated $880–1,510 additional spend."
         }
       ]
     },
@@ -1087,8 +1292,8 @@
             "Always connect the BMS before connecting any load or charge source to the pack.",
             "Do not charge below 0°C — the thermostat/BMS interlock exists for this reason. Never bypass it.",
             "The foam pour (step 9) is irreversible — but no components live in the foam cavity. Verify all conduit sleeves are clear with pull wires before and after foam pour.",
-            "Every component must remain removable through an access panel. Never glue, foam, or permanently bond any electrical component to the enclosure.",
-            "Test thermostat, heater, and fan independently during step 10 before closing access panels in step 11.",
+            "Every component must remain removable by lifting out through the top. Never glue, foam, or permanently bond any electrical component to the enclosure.",
+            "Test thermostat, heater, and fan independently during step 10 before installing lid in step 11.",
             "The ANL fuse on the positive bus is your primary fault protection. Install within 30cm of battery positive terminal.",
             "When disposing of old Solariver batteries, take to a battery recycling facility.",
             "The 4S3P pack stores 7,680 Wh — significantly more energy than the original 4S2P design. Treat it with proportional respect.",
@@ -1105,7 +1310,7 @@
       "content": [
         {
           "type": "text",
-          "body": "All three Tracer 2210AN controllers must be programmed with identical LiFePO4 battery settings."
+          "body": "All four Tracer 2210AN controllers must be programmed with identical LiFePO4 battery settings. The 4th controller (Renogy 100W panels) does not use its load output terminals — set Load Working Mode to OFF or leave unconnected."
         },
         {
           "type": "heading",
@@ -1234,7 +1439,7 @@
         },
         {
           "type": "text",
-          "body": "The JK B2A20S20P BMS has built-in Bluetooth. Use the 'JK BMS' app to view individual cell group voltages (4 series groups), pack current, SOC, temperature, and MOSFET status. For persistent logging, use a Raspberry Pi Zero W with jkbms_ble."
+          "body": "The Smart BMS units include Bluetooth capability via the purchased Bluetooth module. Use the manufacturer BMS app (typically \"Smart BMS\" on iOS/Android) to monitor cell voltages, temperatures, current, and state of charge from a phone. The LEM HASS 200-S current sensor provides independent system-wide current measurement on the main bus — wire its output to an analog input on any monitoring device (ESP32, Arduino, Raspberry Pi)."
         },
         {
           "type": "heading",
@@ -1257,15 +1462,15 @@
           "rows": [
             [
               "Spring (Mar–Apr)",
-              "Remove winter vent plugs. Check cell balance. Inspect seals. Clean panels. Test all pumps."
+              "Check cell balance. Inspect seals. Clean panels. Test all pumps."
             ],
             [
               "Summer (Jun–Aug)",
-              "Monitor battery temp weekly (<42°C). Verify fan cycling. Check solar harvest. Inspect vents."
+              "Monitor battery temp weekly (<42°C). Verify fan cycling. Check solar harvest."
             ],
             [
               "Fall (Sep–Oct)",
-              "Install winter vent plugs. Test heater. Verify charge inhibit. Clean panels. Full health check."
+              "Test heater. Verify charge inhibit. Clean panels. Full health check."
             ],
             [
               "Winter (Dec–Feb)",

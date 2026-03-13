@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="700" height="250" viewBox="-15 -15 255.0 105.0">
+<rect x="-15" y="-15" width="255.0" height="105.0" fill="#1a1a1a"/>
+<rect x="0.0" y="0.0" width="25.0" height="30.0" stroke="#cc44cc" stroke-width="0.8" fill="rgba(204,68,204,0.3)"/>
+<text x="0.0" y="40.0" fill="#cccccc" font-family="monospace" font-size="5">PLAN VIEW</text>
+<rect x="75.0" y="0.0" width="25.0" height="25.0" stroke="#cc44cc" stroke-width="0.8" fill="rgba(204,68,204,0.3)"/>
+<text x="75.0" y="35.0" fill="#cccccc" font-family="monospace" font-size="5">FRONT VIEW</text>
+<rect x="150.0" y="0.0" width="30.0" height="25.0" stroke="#cc44cc" stroke-width="0.8" fill="rgba(204,68,204,0.3)"/>
+<text x="150.0" y="35.0" fill="#cccccc" font-family="monospace" font-size="5">SIDE VIEW</text>
+<text x="0.0" y="87.0" fill="#cccccc" font-family="monospace" font-size="5">MID-WALL SPACER — PETG  |  Qty: 12  |  25x30x25mm</text>
+</svg>

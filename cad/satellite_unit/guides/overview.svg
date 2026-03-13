@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="560" viewBox="0 0 1000 560">
+  <style>text { font-family: Arial, Helvetica, sans-serif; }</style>
+  <rect width="1000" height="560" fill="white"/>
+  <text x="20.0" y="30.0" font-size="18" fill="#333" text-anchor="start" font-weight="bold" font-family="Arial, sans-serif">SATELLITE UNIT — SPLIT GUIDE OVERVIEW (Rev 3.2)</text>
+  <text x="20.0" y="50.0" font-size="11" fill="#555" text-anchor="start" font-weight="normal" font-family="Arial, sans-serif">Compact expansion pod  |  Prusa Core One: 250 x 220 mm</text>
+  <rect x="15.0" y="65.0" width="970.0" height="120.0" fill="#f8f9fa" stroke="#dee2e6" stroke-width="1.5" opacity="1.0" rx="4"/>
+  <text x="25.0" y="84.0" font-size="13" fill="#333" text-anchor="start" font-weight="bold" font-family="Arial, sans-serif">DESIGN NOTES</text>
+  <text x="35.0" y="106.0" font-size="10" fill="#333" text-anchor="start" font-weight="normal" font-family="Arial, sans-serif">Satellite outer shell: 337 x 233 x 333 mm  (vs main unit)</text>
+  <text x="35.0" y="122.0" font-size="10" fill="#333" text-anchor="start" font-weight="normal" font-family="Arial, sans-serif">4S cell zone: 158 x 139 x 290 mm  |  Cell PLACEHOLDER: 129L x 36W x 256H mm</text>
+  <text x="35.0" y="138.0" font-size="10" fill="#333" text-anchor="start" font-weight="normal" font-family="Arial, sans-serif">Thermal zone: 70 x 139 x 290 mm  (heater + 80mm fan + STC-1000)</text>
+  <text x="35.0" y="154.0" font-size="10" fill="#333" text-anchor="start" font-weight="normal" font-family="Arial, sans-serif">NO BMS / NO MPPT in satellite — all electronics in main unit</text>
+  <text x="35.0" y="170.0" font-size="10" fill="#333" text-anchor="start" font-weight="normal" font-family="Arial, sans-serif">Satellite connects via: +/- power leads + BMS sense wire bundle + 12V thermal feed</text>
+  <text x="20.0" y="210.0" font-size="13" fill="#333" text-anchor="start" font-weight="bold" font-family="Arial, sans-serif">SHELL SUMMARY</text>
+  <rect x="15.0" y="228.0" width="970.0" height="22.0" fill="#e9ecef" stroke="#ccc" stroke-width="1.5" opacity="1.0" rx="3"/>
+  <text x="25.0" y="244.0" font-size="9" fill="#333" text-anchor="start" font-weight="bold" font-family="Arial, sans-serif">Shell</text>
+  <text x="110.0" y="244.0" font-size="9" fill="#333" text-anchor="start" font-weight="bold" font-family="Arial, sans-serif">Material</text>
+  <text x="210.0" y="244.0" font-size="9" fill="#333" text-anchor="start" font-weight="bold" font-family="Arial, sans-serif">Dimensions (mm)</text>
+  <text x="420.0" y="244.0" font-size="9" fill="#333" text-anchor="start" font-weight="bold" font-family="Arial, sans-serif">Split Planes</text>
+  <text x="620.0" y="244.0" font-size="9" fill="#333" text-anchor="start" font-weight="bold" font-family="Arial, sans-serif">Panels</text>
+  <text x="720.0" y="244.0" font-size="9" fill="#333" text-anchor="start" font-weight="bold" font-family="Arial, sans-serif">Join</text>
+  <rect x="15.0" y="252.0" width="970.0" height="22.0" fill="#fff8f0" stroke="#eee" stroke-width="1.5" opacity="1.0" rx="2"/>
+  <rect x="20.0" y="257.0" width="14.0" height="14.0" fill="#ff9a3c" stroke="#cc6600" stroke-width="1" opacity="1.0" rx="2"/>
+  <text x="40.0" y="268.0" font-size="10" fill="#884400" text-anchor="start" font-weight="bold" font-family="Arial, sans-serif">1</text>
+  <text x="110.0" y="268.0" font-size="9" fill="#333" text-anchor="start" font-weight="normal" font-family="Arial, sans-serif">ASA</text>
+  <text x="210.0" y="268.0" font-size="9" fill="#333" text-anchor="start" font-weight="normal" font-family="Arial, sans-serif">337 x 233 x 333</text>
+  <text x="420.0" y="268.0" font-size="9" fill="#333" text-anchor="start" font-weight="normal" font-family="Arial, sans-serif">1x X + 0x Y + 1x Z = 2 total</text>
+  <text x="620.0" y="268.0" font-size="9" fill="#333" text-anchor="start" font-weight="bold" font-family="Arial, sans-serif">14 panels</text>
+  <text x="720.0" y="268.0" font-size="9" fill="#333" text-anchor="start" font-weight="normal" font-family="Arial, sans-serif">Acetone/MEK weld</text>
+  <rect x="15.0" y="276.0" width="970.0" height="22.0" fill="white" stroke="#eee" stroke-width="1.5" opacity="1.0" rx="2"/>
+  <rect x="20.0" y="281.0" width="14.0" height="14.0" fill="#51cf66" stroke="#2b8a3e" stroke-width="1" opacity="1.0" rx="2"/>
+  <text x="40.0" y="292.0" font-size="10" fill="#1a6628" text-anchor="start" font-weight="bold" font-family="Arial, sans-serif">2</text>
+  <text x="110.0" y="292.0" font-size="9" fill="#333" text-anchor="start" font-weight="normal" font-family="Arial, sans-serif">PETG</text>
+  <text x="210.0" y="292.0" font-size="9" fill="#333" text-anchor="start" font-weight="normal" font-family="Arial, sans-serif">271 x 167 x 297</text>
+  <text x="420.0" y="292.0" font-size="9" fill="#333" text-anchor="start" font-weight="normal" font-family="Arial, sans-serif">1x X + 0x Y + 1x Z = 2 total</text>
+  <text x="620.0" y="292.0" font-size="9" fill="#333" text-anchor="start" font-weight="bold" font-family="Arial, sans-serif">14 panels</text>
+  <text x="720.0" y="292.0" font-size="9" fill="#333" text-anchor="start" font-weight="normal" font-family="Arial, sans-serif">CA glue</text>
+  <text x="25.0" y="316.0" font-size="10" fill="#555" text-anchor="start" font-weight="normal" font-family="Arial, sans-serif">Total: 28 panels across 2 shells</text>
+  <rect x="15.0" y="337.0" width="970.0" height="90.0" fill="#fff8e1" stroke="#ffd54f" stroke-width="1.5" opacity="1.0" rx="4"/>
+  <text x="25.0" y="356.0" font-size="12" fill="#884400" text-anchor="start" font-weight="bold" font-family="Arial, sans-serif">EXPANSION PLAN</text>
+  <text x="35.0" y="378.0" font-size="10" fill="#555" text-anchor="start" font-weight="normal" font-family="Arial, sans-serif">Main unit: 4S2P (8 cells, ~2,150 Wh usable) — initial build</text>
+  <text x="35.0" y="392.0" font-size="10" fill="#555" text-anchor="start" font-weight="normal" font-family="Arial, sans-serif">Satellite 1 adds 4S string: 4S3P (12 cells, ~3,225 Wh) — connect +/- leads to expansion bus</text>
+  <text x="35.0" y="406.0" font-size="10" fill="#555" text-anchor="start" font-weight="normal" font-family="Arial, sans-serif">Satellites 2-4: up to 4S6P (24 cells, ~6,451 Wh) — BMS sense wires extend to each satellite</text>
+  <text x="35.0" y="420.0" font-size="10" fill="#555" text-anchor="start" font-weight="normal" font-family="Arial, sans-serif">All 4 satellite slots pre-wired (conduit sleeves embedded during foam pour)</text>
+</svg>

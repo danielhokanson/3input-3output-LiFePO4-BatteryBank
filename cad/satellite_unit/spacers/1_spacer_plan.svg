@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="700" height="500" viewBox="-198.5 -146.5 397.0 323.0">
+<rect x="-198.5" y="-146.5" width="397.0" height="323.0" fill="#1a1a1a"/>
+<rect x="-168.5" y="-116.5" width="337.0" height="233.0" stroke="#ff4444" stroke-width="0.8" fill="none"/>
+<rect x="-165.5" y="-113.5" width="331.0" height="227.0" stroke="#ff4444" stroke-width="0.8" fill="none"/>
+<rect x="-135.5" y="-83.5" width="271.0" height="167.0" stroke="#44cc44" stroke-width="0.8" fill="none"/>
+<rect x="-135.5" y="-83.5" width="25.0" height="12.0" stroke="#cc44cc" stroke-width="0.8" fill="rgba(204,68,204,0.3)"/>
+<rect x="-135.5" y="-83.5" width="12.0" height="25.0" stroke="#cc44cc" stroke-width="0.8" fill="rgba(204,68,204,0.3)"/>
+<circle cx="-129.5" cy="-77.5" r="2.2" stroke="#cccc44" stroke-width="0.6" fill="none"/>
+<rect x="110.5" y="-83.5" width="25.0" height="12.0" stroke="#cc44cc" stroke-width="0.8" fill="rgba(204,68,204,0.3)"/>
+<rect x="123.5" y="-83.5" width="12.0" height="25.0" stroke="#cc44cc" stroke-width="0.8" fill="rgba(204,68,204,0.3)"/>
+<circle cx="129.5" cy="-77.5" r="2.2" stroke="#cccc44" stroke-width="0.6" fill="none"/>
+<rect x="110.5" y="71.5" width="25.0" height="12.0" stroke="#cc44cc" stroke-width="0.8" fill="rgba(204,68,204,0.3)"/>
+<rect x="123.5" y="58.5" width="12.0" height="25.0" stroke="#cc44cc" stroke-width="0.8" fill="rgba(204,68,204,0.3)"/>
+<circle cx="129.5" cy="77.5" r="2.2" stroke="#cccc44" stroke-width="0.6" fill="none"/>
+<rect x="-135.5" y="71.5" width="25.0" height="12.0" stroke="#cc44cc" stroke-width="0.8" fill="rgba(204,68,204,0.3)"/>
+<rect x="-135.5" y="58.5" width="12.0" height="25.0" stroke="#cc44cc" stroke-width="0.8" fill="rgba(204,68,204,0.3)"/>
+<circle cx="-129.5" cy="77.5" r="2.2" stroke="#cccc44" stroke-width="0.6" fill="none"/>
+<rect x="-67.8" y="53.5" width="25.0" height="30.0" stroke="#cc44cc" stroke-width="0.8" fill="rgba(204,68,204,0.2)"/>
+<rect x="-67.8" y="-83.5" width="25.0" height="30.0" stroke="#cc44cc" stroke-width="0.8" fill="rgba(204,68,204,0.2)"/>
+<rect x="42.8" y="53.5" width="25.0" height="30.0" stroke="#cc44cc" stroke-width="0.8" fill="rgba(204,68,204,0.2)"/>
+<rect x="42.8" y="-83.5" width="25.0" height="30.0" stroke="#cc44cc" stroke-width="0.8" fill="rgba(204,68,204,0.2)"/>
+<rect x="-135.5" y="-12.5" width="30.0" height="25.0" stroke="#cc44cc" stroke-width="0.8" fill="rgba(204,68,204,0.2)"/>
+<rect x="105.5" y="-12.5" width="30.0" height="25.0" stroke="#cc44cc" stroke-width="0.8" fill="rgba(204,68,204,0.2)"/>
+<text x="-193.5" y="168.5" fill="#cccccc" font-family="monospace" font-size="5">SPACER PLAN — Satellite  |  4 corner + 6 mid-wall x2</text>
+</svg>

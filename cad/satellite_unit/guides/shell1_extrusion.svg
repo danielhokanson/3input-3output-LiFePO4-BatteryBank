@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="750" viewBox="0 0 1100 750">
+  <style>text { font-family: Arial, Helvetica, sans-serif; }</style>
+  <rect width="1100" height="750" fill="white"/>
+  <text x="20.0" y="30.0" font-size="18" fill="#333" text-anchor="start" font-weight="bold">SATELLITE UNIT — SHELL 1 EXTRUSION (ASA)</text>
+  <text x="20.0" y="50.0" font-size="11" fill="#555" text-anchor="start" font-weight="normal">Rev 3.2  |  Plan: 343 x 239mm  |  Extrude: 340mm  |  Z-offset: 0mm</text>
+  <text x="250.0" y="115.0" font-size="13" fill="#333" text-anchor="middle" font-weight="bold">PLAN VIEW (top-down)</text>
+  <rect x="60.0" y="130.0" width="380.0" height="264.8" fill="#fff3e6" stroke="#ff9a3c" stroke-width="2.5" opacity="1.0" rx="0"/>
+  <line x1="60.0" y1="409.8" x2="60.0" y2="419.8" stroke="#cc6600" stroke-width="1"/>
+  <line x1="440.0" y1="409.8" x2="440.0" y2="419.8" stroke="#cc6600" stroke-width="1"/>
+  <line x1="60.0" y1="414.8" x2="440.0" y2="414.8" stroke="#cc6600" stroke-width="1"/>
+  <text x="250.0" y="410.8" font-size="10" fill="#cc6600" text-anchor="middle" font-weight="normal">343mm</text>
+  <line x1="450.0" y1="130.0" x2="460.0" y2="130.0" stroke="#cc6600" stroke-width="1"/>
+  <line x1="450.0" y1="394.8" x2="460.0" y2="394.8" stroke="#cc6600" stroke-width="1"/>
+  <line x1="455.0" y1="130.0" x2="455.0" y2="394.8" stroke="#cc6600" stroke-width="1"/>
+  <text x="461.0" y="266.4" font-size="10" fill="#cc6600" text-anchor="start" font-weight="normal">239mm</text>
+  <line x1="235.0" y1="262.4" x2="265.0" y2="262.4" stroke="#ff9a3c" stroke-width="0.5"/>
+  <line x1="250.0" y1="247.4" x2="250.0" y2="277.4" stroke="#ff9a3c" stroke-width="0.5"/>
+  <line x1="155.0" y1="130.0" x2="155.0" y2="136.0" stroke="#ff8f00" stroke-width="1.5"/>
+  <line x1="155.0" y1="388.8" x2="155.0" y2="394.8" stroke="#ff8f00" stroke-width="1.5"/>
+  <line x1="250.0" y1="130.0" x2="250.0" y2="136.0" stroke="#ff8f00" stroke-width="1.5"/>
+  <line x1="250.0" y1="388.8" x2="250.0" y2="394.8" stroke="#ff8f00" stroke-width="1.5"/>
+  <line x1="345.0" y1="130.0" x2="345.0" y2="136.0" stroke="#ff8f00" stroke-width="1.5"/>
+  <line x1="345.0" y1="388.8" x2="345.0" y2="394.8" stroke="#ff8f00" stroke-width="1.5"/>
+  <line x1="60.0" y1="196.2" x2="66.0" y2="196.2" stroke="#ff8f00" stroke-width="1.5"/>
+  <line x1="434.0" y1="196.2" x2="440.0" y2="196.2" stroke="#ff8f00" stroke-width="1.5"/>
+  <line x1="60.0" y1="262.4" x2="66.0" y2="262.4" stroke="#ff8f00" stroke-width="1.5"/>
+  <line x1="434.0" y1="262.4" x2="440.0" y2="262.4" stroke="#ff8f00" stroke-width="1.5"/>
+  <line x1="60.0" y1="328.6" x2="66.0" y2="328.6" stroke="#ff8f00" stroke-width="1.5"/>
+  <line x1="434.0" y1="328.6" x2="440.0" y2="328.6" stroke="#ff8f00" stroke-width="1.5"/>
+  <rect x="60.0" y="130.0" width="5.0" height="5.0" fill="#d35400" stroke="#d35400" stroke-width="0.5" opacity="0.8" rx="0"/>
+  <rect x="435.0" y="130.0" width="5.0" height="5.0" fill="#d35400" stroke="#d35400" stroke-width="0.5" opacity="0.8" rx="0"/>
+  <rect x="60.0" y="389.8" width="5.0" height="5.0" fill="#d35400" stroke="#d35400" stroke-width="0.5" opacity="0.8" rx="0"/>
+  <rect x="435.0" y="389.8" width="5.0" height="5.0" fill="#d35400" stroke="#d35400" stroke-width="0.5" opacity="0.8" rx="0"/>
+  <text x="250.0" y="444.8" font-size="10" fill="#555" text-anchor="middle" font-weight="normal">Source: 1_top_view.dxf</text>
+  <circle cx="409.6" cy="222.7" r="8.9" fill="white" stroke="#e64980" stroke-width="1.5"/>
+  <text x="409.6" y="241.5" font-size="7" fill="#e64980" text-anchor="middle" font-weight="normal">LEADS</text>
+  <circle cx="409.6" cy="275.6" r="5.5" fill="white" stroke="#e64980" stroke-width="1.5"/>
+  <text x="409.6" y="291.2" font-size="7" fill="#e64980" text-anchor="middle" font-weight="normal">12V</text>
+  <circle cx="409.6" cy="315.3" r="4.4" fill="white" stroke="#e64980" stroke-width="1.5"/>
+  <text x="409.6" y="329.8" font-size="7" fill="#e64980" text-anchor="middle" font-weight="normal">PROBE</text>
+  <circle cx="409.6" cy="262.4" r="44.3" fill="white" stroke="#e64980" stroke-width="1.5"/>
+  <text x="409.6" y="316.7" font-size="7" fill="#e64980" text-anchor="middle" font-weight="normal">FAN</text>
+  <text x="250.0" y="459.8" font-size="9" fill="#e64980" text-anchor="middle" font-weight="normal">Conduit holes — cut after extrusion (see DXF Drawing 4)</text>
+  <text x="785.0" y="115.0" font-size="13" fill="#333" text-anchor="middle" font-weight="bold">SIDE PROFILE (extrusion direction)</text>
+  <rect x="620.0" y="377.8" width="250.0" height="4.0" fill="#ff9a3c" stroke="#cc6600" stroke-width="1.5" opacity="1.0" rx="0"/>
+  <text x="745.0" y="397.8" font-size="10" fill="#cc6600" text-anchor="middle" font-weight="normal">343mm</text>
+  <rect x="620.0" y="130.0" width="250.0" height="247.8" fill="none" stroke="#ff9a3c" stroke-width="1.5" stroke-dasharray="6,4"/>
+  <rect x="621.0" y="131.0" width="248.0" height="245.8" fill="#fff3e6" stroke="none" stroke-width="0" opacity="0.4" rx="0"/>
+  <rect x="627.3" y="167.2" width="7.3" height="2.2" fill="#ff8f00" stroke="#ff8f00" stroke-width="0.5" opacity="1.0" rx="0"/>
+  <rect x="855.4" y="167.2" width="7.3" height="2.2" fill="#ff8f00" stroke="#ff8f00" stroke-width="0.5" opacity="1.0" rx="0"/>
+  <rect x="627.3" y="240.1" width="7.3" height="2.2" fill="#ff8f00" stroke="#ff8f00" stroke-width="0.5" opacity="1.0" rx="0"/>
+  <rect x="855.4" y="240.1" width="7.3" height="2.2" fill="#ff8f00" stroke="#ff8f00" stroke-width="0.5" opacity="1.0" rx="0"/>
+  <rect x="627.3" y="312.9" width="7.3" height="2.2" fill="#ff8f00" stroke="#ff8f00" stroke-width="0.5" opacity="1.0" rx="0"/>
+  <rect x="855.4" y="312.9" width="7.3" height="2.2" fill="#ff8f00" stroke="#ff8f00" stroke-width="0.5" opacity="1.0" rx="0"/>
+  <rect x="620.0" y="203.6" width="21.9" height="10.9" fill="#d35400" stroke="#d35400" stroke-width="0.5" opacity="0.8" rx="0"/>
+  <rect x="848.1" y="203.6" width="21.9" height="10.9" fill="#d35400" stroke="#d35400" stroke-width="0.5" opacity="0.8" rx="0"/>
+  <rect x="620.0" y="276.5" width="21.9" height="10.9" fill="#d35400" stroke="#d35400" stroke-width="0.5" opacity="0.8" rx="0"/>
+  <rect x="848.1" y="276.5" width="21.9" height="10.9" fill="#d35400" stroke="#d35400" stroke-width="0.5" opacity="0.8" rx="0"/>
+  <line x1="890.0" y1="130.0" x2="890.0" y2="377.8" stroke="#ff9a3c" stroke-width="2"/>
+  <polygon points="890.0,377.8 886.0,369.8 894.0,369.8" fill="#ff9a3c"/>
+  <polygon points="890.0,130.0 886.0,138.0 894.0,138.0" fill="#ff9a3c"/>
+  <text x="900.0" y="247.9" font-size="12" fill="#cc6600" text-anchor="start" font-weight="bold">Extrude Z = 340mm</text>
+  <text x="900.0" y="263.9" font-size="10" fill="#555" text-anchor="start" font-weight="normal">(upward from Z = 0mm)</text>
+  <line x1="600.0" y1="377.8" x2="880.0" y2="377.8" stroke="#ff9a3c" stroke-width="1" stroke-dasharray="4,3"/>
+  <text x="595.0" y="381.8" font-size="9" fill="#cc6600" text-anchor="end" font-weight="normal">Z=0</text>
+  <line x1="600.0" y1="130.0" x2="880.0" y2="130.0" stroke="#ff9a3c" stroke-width="1" stroke-dasharray="4,3"/>
+  <text x="595.0" y="134.0" font-size="9" fill="#cc6600" text-anchor="end" font-weight="normal">Z=340</text>
+  <rect x="15.0" y="437.8" width="1070.0" height="243.0" fill="#f8f9fa" stroke="#dee2e6" stroke-width="1" opacity="1.0" rx="4"/>
+  <text x="30.0" y="457.8" font-size="14" fill="#333" text-anchor="start" font-weight="bold">FUSION 360 WORKFLOW</text>
+  <text x="40.0" y="482.8" font-size="11" fill="#333" text-anchor="start" font-weight="normal">1. Import 1_top_view.dxf → Insert > Insert DXF (select XY plane)</text>
+  <text x="40.0" y="504.8" font-size="11" fill="#333" text-anchor="start" font-weight="normal">2. Extrude profile upward: Z = 340mm (New Body)</text>
+  <text x="40.0" y="526.8" font-size="11" fill="#333" text-anchor="start" font-weight="normal">3. Shell command: wall thickness = 5mm, select top face to hollow</text>
+  <text x="40.0" y="548.8" font-size="11" fill="#333" text-anchor="start" font-weight="normal">4. Shell 1 sits at Z = 0 (no translation needed)</text>
+  <text x="40.0" y="570.8" font-size="11" fill="#333" text-anchor="start" font-weight="normal">5. Cut conduit holes (Extrude > Cut) per 4_lead_exit_view.dxf</text>
+  <text x="40.0" y="592.8" font-size="11" fill="#333" text-anchor="start" font-weight="normal">6. Add foam-pressure ribs on inner face: 3mm x 10mm, 100mm spacing</text>
+  <text x="40.0" y="614.8" font-size="11" fill="#333" text-anchor="start" font-weight="normal">7. Add spacer nubs between ribs: 30mm inward (full foam gap), corners + mid-walls</text>
+  <text x="40.0" y="636.8" font-size="11" fill="#333" text-anchor="start" font-weight="normal">8. Add conduit sleeves: 5mm-wall tubes around conduit holes, 30mm inward</text>
+  <text x="40.0" y="658.8" font-size="11" fill="#333" text-anchor="start" font-weight="normal">9. Verify outer dims: 343 x 239 x 340mm</text>
+</svg>

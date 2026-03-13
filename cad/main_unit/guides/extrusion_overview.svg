@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="870" viewBox="0 0 1100 870">
+  <style>text { font-family: Arial, Helvetica, sans-serif; }</style>
+  <rect width="1100" height="870" fill="white"/>
+  <text x="20" y="30" font-size="18" fill="#333" text-anchor="start" font-weight="bold">MAIN UNIT —EXTRUSION OVERVIEW (Rev 3.2)</text>
+  <text x="20" y="50" font-size="11" fill="#555" text-anchor="start" font-weight="normal">Front cross-section showing nested shells, foam cavity, and Z-offsets</text>
+  <rect x="69.99999999999994" y="256.25418060200667" width="700.0000000000001" height="423.74581939799333" fill="#fff0f0" stroke="#ff6b6b" stroke-width="2.5" opacity="1.0" rx="2"/>
+  <rect x="75.85284280936449" y="262.1070234113712" width="688.294314381271" height="412.04013377926424" fill="#fff4e6" stroke="#ff922b" stroke-width="1.5" opacity="1.0" rx="1"/>
+  <text x="420.0" y="277.1070234113712" font-size="9" fill="#d9480f" text-anchor="middle" font-weight="bold">FOAM (30mm)</text>
+  <rect x="110.9698996655518" y="262.1070234113712" width="618.0602006688964" height="376.92307692307696" fill="#f0fff4" stroke="#51cf66" stroke-width="2.5" opacity="1.0" rx="2"/>
+  <rect x="75.85284280936449" y="617.9598662207358" width="11.705685618729099" height="3.5117056856187294" fill="#ff922b" stroke="#d9480f" stroke-width="0.8" opacity="0.8" rx="0"/>
+  <rect x="752.4414715719063" y="617.9598662207358" width="11.705685618729099" height="3.5117056856187294" fill="#ff922b" stroke="#d9480f" stroke-width="0.8" opacity="0.8" rx="0"/>
+  <rect x="75.85284280936449" y="500.9030100334448" width="11.705685618729099" height="3.5117056856187294" fill="#ff922b" stroke="#d9480f" stroke-width="0.8" opacity="0.8" rx="0"/>
+  <rect x="752.4414715719063" y="500.9030100334448" width="11.705685618729099" height="3.5117056856187294" fill="#ff922b" stroke="#d9480f" stroke-width="0.8" opacity="0.8" rx="0"/>
+  <rect x="75.85284280936449" y="383.8461538461538" width="11.705685618729099" height="3.5117056856187294" fill="#ff922b" stroke="#d9480f" stroke-width="0.8" opacity="0.8" rx="0"/>
+  <rect x="752.4414715719063" y="383.8461538461538" width="11.705685618729099" height="3.5117056856187294" fill="#ff922b" stroke="#d9480f" stroke-width="0.8" opacity="0.8" rx="0"/>
+  <rect x="99.2642140468227" y="576.989966555184" width="11.705685618729099" height="3.5117056856187294" fill="#ff922b" stroke="#d9480f" stroke-width="0.8" opacity="0.8" rx="0"/>
+  <rect x="729.0301003344482" y="576.989966555184" width="11.705685618729099" height="3.5117056856187294" fill="#ff922b" stroke="#d9480f" stroke-width="0.8" opacity="0.8" rx="0"/>
+  <rect x="99.2642140468227" y="459.93311036789294" width="11.705685618729099" height="3.5117056856187294" fill="#ff922b" stroke="#d9480f" stroke-width="0.8" opacity="0.8" rx="0"/>
+  <rect x="729.0301003344482" y="459.93311036789294" width="11.705685618729099" height="3.5117056856187294" fill="#ff922b" stroke="#d9480f" stroke-width="0.8" opacity="0.8" rx="0"/>
+  <rect x="99.2642140468227" y="342.87625418060196" width="11.705685618729099" height="3.5117056856187294" fill="#ff922b" stroke="#d9480f" stroke-width="0.8" opacity="0.8" rx="0"/>
+  <rect x="729.0301003344482" y="342.87625418060196" width="11.705685618729099" height="3.5117056856187294" fill="#ff922b" stroke="#d9480f" stroke-width="0.8" opacity="0.8" rx="0"/>
+  <text x="91.55852842809358" y="623.7157190635452" font-size="7" fill="#d9480f" text-anchor="start" font-weight="bold">RIBS</text>
+  <rect x="75.85284280936449" y="557.0903010033445" width="35.1170568561873" height="17.55852842809365" fill="#c2410c" stroke="#c2410c" stroke-width="0.8" opacity="0.7" rx="0"/>
+  <rect x="729.0301003344481" y="557.0903010033445" width="35.1170568561873" height="17.55852842809365" fill="#c2410c" stroke="#c2410c" stroke-width="0.8" opacity="0.7" rx="0"/>
+  <rect x="75.85284280936449" y="440.0334448160535" width="35.1170568561873" height="17.55852842809365" fill="#c2410c" stroke="#c2410c" stroke-width="0.8" opacity="0.7" rx="0"/>
+  <rect x="729.0301003344481" y="440.0334448160535" width="35.1170568561873" height="17.55852842809365" fill="#c2410c" stroke="#c2410c" stroke-width="0.8" opacity="0.7" rx="0"/>
+  <text x="114.9698996655518" y="569.8695652173913" font-size="7" fill="#c2410c" text-anchor="start" font-weight="bold">NUBS</text>
+  <text x="77.99999999999994" y="274.25418060200667" font-size="10" fill="#cc3333" text-anchor="start" font-weight="bold">S1 (ASA)</text>
+  <text x="118.9698996655518" y="280.1070234113712" font-size="10" fill="#2b8a3e" text-anchor="start" font-weight="bold">S2 (PETG)</text>
+  <line x1="800.0" y1="256.25418060200667" x2="800.0" y2="680" stroke="#ff6b6b" stroke-width="2"/>
+  <polygon points="800.0,256.25418060200667 796.0,264.25418060200667 804.0,264.25418060200667" fill="#ff6b6b"/>
+  <polygon points="800.0,680 796.0,672 804.0,672" fill="#ff6b6b"/>
+  <text x="808.0" y="472.12709030100336" font-size="10" fill="#cc3333" text-anchor="start" font-weight="bold">362mm</text>
+  <line x1="855.0" y1="262.1070234113712" x2="855.0" y2="639.0301003344482" stroke="#51cf66" stroke-width="2"/>
+  <polygon points="855.0,262.1070234113712 851.0,270.1070234113712 859.0,270.1070234113712" fill="#51cf66"/>
+  <polygon points="855.0,639.0301003344482 851.0,631.0301003344482 859.0,631.0301003344482" fill="#51cf66"/>
+  <text x="863.0" y="454.5685618729097" font-size="10" fill="#2b8a3e" text-anchor="start" font-weight="bold">322mm</text>
+  <line x1="39.99999999999994" y1="680" x2="84.99999999999994" y2="680" stroke="#999" stroke-width="1" stroke-dasharray="4 2"/>
+  <text x="24.999999999999943" y="684" font-size="9" fill="#666" text-anchor="end" font-weight="normal">Z=0mm</text>
+  <line x1="39.99999999999994" y1="639.0301003344482" x2="125.9698996655518" y2="639.0301003344482" stroke="#999" stroke-width="1" stroke-dasharray="4 2"/>
+  <text x="24.999999999999943" y="643.0301003344482" font-size="9" fill="#666" text-anchor="end" font-weight="normal">Z=35mm</text>
+  <text x="20" y="720" font-size="13" fill="#333" text-anchor="start" font-weight="bold">LEGEND</text>
+  <rect x="25" y="730" width="14" height="14" fill="#ff6b6b" stroke="#cc3333" stroke-width="1" opacity="1.0" rx="2"/>
+  <text x="48" y="742" font-size="10" fill="#333" text-anchor="start" font-weight="normal">Shell 1 (ASA outer) —598 x 368 x 362mm, Z=0</text>
+  <rect x="25" y="752" width="14" height="14" fill="#51cf66" stroke="#2b8a3e" stroke-width="1" opacity="1.0" rx="2"/>
+  <text x="48" y="764" font-size="10" fill="#333" text-anchor="start" font-weight="normal">Shell 2 (PETG structural) —528 x 298 x 322mm, Z=35</text>
+  <rect x="25" y="774" width="14" height="14" fill="#ff922b" stroke="#d9480f" stroke-width="1" opacity="1.0" rx="2"/>
+  <text x="48" y="786" font-size="10" fill="#333" text-anchor="start" font-weight="normal">Foam cavity —30mm insulation between S1 and S2</text>
+  <rect x="25" y="796" width="14" height="14" fill="#ff922b" stroke="#d9480f" stroke-width="1" opacity="1.0" rx="2"/>
+  <text x="48" y="808" font-size="10" fill="#333" text-anchor="start" font-weight="normal">Foam-pressure ribs —3mm x 10mm, spaced 100mm, on S1 inner + S2 outer</text>
+  <rect x="25" y="818" width="14" height="14" fill="#c2410c" stroke="#c2410c" stroke-width="1" opacity="1.0" rx="2"/>
+  <text x="48" y="830" font-size="10" fill="#333" text-anchor="start" font-weight="normal">Spacer nubs —15mm x 30mm (full foam gap), S1 inner wall</text>
+</svg>

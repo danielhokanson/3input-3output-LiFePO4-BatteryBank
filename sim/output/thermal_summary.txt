@@ -1,0 +1,114 @@
+============================================================
+THERMAL SIMULATION RESULTS  [BASELINE]
+LiFePO4 Battery Enclosure -- Salt Lake City
+============================================================
+
+ENCLOSURE PROPERTIES
+  Thermal mass:          25200 J/K (24 kg cells)
+  Wall R-value:          1.621 K/W
+  UA value:              0.62 W/K
+  Surface area:          0.761 m^2
+  Foam thickness:        30 mm
+
+TEMPERATURE EXTREMES (internal)
+  Minimum:               -0.8 C
+  Maximum:               44.1 C
+  Hours below 0C:        15
+
+HEATER PERFORMANCE
+  Heater ON hours:       824 hrs/year
+  Total heater energy:   9.9 kWh/year
+  Avg daily (winter):    0.3 kWh/day (when heating)
+
+FAN PERFORMANCE
+  Fan ON hours:          127 hrs/year
+  Total fan energy:      0.5 kWh/year
+
+CHARGE INHIBIT (BMS, below 0C)
+  Charge blocked hours:  15 hrs/year
+
+ASSESSMENT
+  [PASS] Min internal temp -0.8C > -5C
+         Heater keeps cells within safe discharge range
+  [INFO] Cells reach -0.8C - charging blocked 15 hrs/year
+         This is expected and handled by BMS charge inhibit
+  [PASS] Max internal temp 44.1C < 45C LiFePO4 limit
+
+  Annual thermal energy: 10.4 kWh
+  Avg winter heating:    0.08 kWh/day
+  Battery impact:        1.3% of usable capacity per winter day
+
+============================================================
+
+============================================================
+THERMAL SIMULATION RESULTS  [CLIMATE STRESS]
+LiFePO4 Battery Enclosure -- Salt Lake City
+============================================================
+
+ENCLOSURE PROPERTIES
+  Thermal mass:          25200 J/K (24 kg cells)
+  Wall R-value:          1.621 K/W
+  UA value:              0.62 W/K
+  Surface area:          0.761 m^2
+  Foam thickness:        30 mm
+
+TEMPERATURE EXTREMES (internal)
+  Minimum:               -0.8 C
+  Maximum:               48.0 C
+  Hours below 0C:        15
+
+HEATER PERFORMANCE
+  Heater ON hours:       824 hrs/year
+  Total heater energy:   9.9 kWh/year
+  Avg daily (winter):    0.3 kWh/day (when heating)
+
+FAN PERFORMANCE
+  Fan ON hours:          724 hrs/year
+  Total fan energy:      2.9 kWh/year
+
+CHARGE INHIBIT (BMS, below 0C)
+  Charge blocked hours:  15 hrs/year
+
+ASSESSMENT
+  [PASS] Min internal temp -0.8C > -5C
+         Heater keeps cells within safe discharge range
+  [INFO] Cells reach -0.8C - charging blocked 15 hrs/year
+         This is expected and handled by BMS charge inhibit
+  [FAIL] Max internal temp 48.0C exceeds 45C!
+         Need stronger cooling or better ventilation
+
+  Annual thermal energy: 12.8 kWh
+  Avg winter heating:    0.08 kWh/day
+  Battery impact:        1.3% of usable capacity per winter day
+
+============================================================
+
+
+============================================================
+SCENARIO COMPARISON: BASELINE vs CLIMATE STRESS
+============================================================
+
+Climate stress scenario applies:
+  - Elevated summer baselines (Jul +3.5C, Aug +4.0C highs)
+  - 5 heat wave events Jun-Aug (vs 1 baseline)
+  - Peak ambient: 46C (vs 42C baseline)
+
+  Metric                           Baseline     Stress      Delta
+  ------------------------------ ---------- ---------- ----------
+  Max internal (C)                     44.1       48.0       +4.0
+  Min internal (C)                     -0.8       -0.8       +0.0
+  Fan ON hours                          127        724       +597
+  Fan energy (kWh)                      0.5        2.9       +2.4
+  Heater ON hours                       824        824         +0
+  Heater energy (kWh)                   9.9        9.9       +0.0
+  Charge inhibit hours                   15         15         +0
+  Total thermal energy (kWh)           10.4       12.8       +2.4
+
+  ** CLIMATE STRESS EXCEEDS 45C LIMIT **
+  Recommendations:
+    - Upgrade to larger fan (80CFM+) or add second fan
+    - Add reflective/white coating to reduce solar absorption
+    - Consider shade structure or partial burial
+    - Increase vent port diameter for better passive airflow
+
+============================================================

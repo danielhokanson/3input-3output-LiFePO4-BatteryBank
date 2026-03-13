@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="800" viewBox="0 0 1100 800">
+  <style>text { font-family: Arial, Helvetica, sans-serif; }</style>
+  <rect width="1100" height="800" fill="white"/>
+  <text x="20.0" y="28.0" font-size="16" fill="#884400" text-anchor="start" font-weight="bold" font-family="Arial, sans-serif">SATELLITE UNIT — SHELL 1 SPLIT GUIDE (ASA)</text>
+  <text x="20.0" y="46.0" font-size="11" fill="#555" text-anchor="start" font-weight="normal" font-family="Arial, sans-serif">337 x 233 x 333 mm | 14 panels | Acetone/MEK weld | Z-offset: +0 mm</text>
+  <text x="20.0" y="65.0" font-size="12" fill="#333" text-anchor="start" font-weight="bold" font-family="Arial, sans-serif">TOP VIEW (XY)</text>
+  <rect x="110.9" y="95.0" width="318.2" height="220.0" fill="#ff9a3c" stroke="#cc6600" stroke-width="2" opacity="0.15"/>
+  <line x1="270.0" y1="85.0" x2="270.0" y2="325.0" stroke="#e03131" stroke-width="2" stroke-dasharray="6,3"/>
+  <text x="270.0" y="81.0" font-size="8" fill="#e03131" text-anchor="middle" font-weight="bold" font-family="Arial, sans-serif">X=+0.0</text>
+  <text x="190.5" y="208.0" font-size="7" fill="#884400" text-anchor="middle" font-weight="normal" font-family="Arial, sans-serif">S1_base_A1</text>
+  <text x="349.5" y="208.0" font-size="7" fill="#884400" text-anchor="middle" font-weight="normal" font-family="Arial, sans-serif">S1_base_B1</text>
+  <text x="270.0" y="67.0" font-size="9" fill="#888" text-anchor="middle" font-weight="normal" font-family="Arial, sans-serif">X (width)</text>
+  <text x="80.9" y="205.0" font-size="9" fill="#888" text-anchor="middle" font-weight="normal" font-family="Arial, sans-serif" transform="rotate(-90,80.9,205.0)">Y</text>
+  <text x="270.0" y="343.0" font-size="9" fill="#666" text-anchor="middle" font-weight="normal" font-family="Arial, sans-serif">W = 337 mm</text>
+  <text x="580.0" y="65.0" font-size="12" fill="#333" text-anchor="start" font-weight="bold" font-family="Arial, sans-serif">CONSTRUCTION PLANES</text>
+  <rect x="575.0" y="83.0" width="500.0" height="22.0" fill="#e9ecef" stroke="#ccc" stroke-width="1.5" opacity="1.0" rx="3"/>
+  <text x="580.0" y="99.0" font-size="9" fill="#333" text-anchor="start" font-weight="bold" font-family="Arial, sans-serif">#</text>
+  <text x="605.0" y="99.0" font-size="9" fill="#333" text-anchor="start" font-weight="bold" font-family="Arial, sans-serif">Type</text>
+  <text x="710.0" y="99.0" font-size="9" fill="#333" text-anchor="start" font-weight="bold" font-family="Arial, sans-serif">Offset</text>
+  <text x="810.0" y="99.0" font-size="9" fill="#333" text-anchor="start" font-weight="bold" font-family="Arial, sans-serif">Splits</text>
+  <rect x="575.0" y="107.0" width="500.0" height="22.0" fill="#f8f8f8" stroke="#eee" stroke-width="1.5" opacity="1.0" rx="2"/>
+  <rect x="582.0" y="112.0" width="12.0" height="12.0" fill="#e03131" stroke="#333" stroke-width="1.5" opacity="1.0" rx="2"/>
+  <text x="598.0" y="123.0" font-size="9" fill="#e03131" text-anchor="start" font-weight="bold" font-family="Arial, sans-serif">1</text>
+  <text x="605.0" y="123.0" font-size="9" fill="#333" text-anchor="start" font-weight="normal" font-family="Arial, sans-serif">YZ Plane</text>
+  <text x="710.0" y="123.0" font-size="9" fill="#e03131" text-anchor="start" font-weight="bold" font-family="Arial, sans-serif">X = +0.0 mm</text>
+  <text x="810.0" y="123.0" font-size="9" fill="#555" text-anchor="start" font-weight="normal" font-family="Arial, sans-serif">Front, Back, Base</text>
+  <rect x="575.0" y="131.0" width="500.0" height="22.0" fill="white" stroke="#eee" stroke-width="1.5" opacity="1.0" rx="2"/>
+  <rect x="582.0" y="136.0" width="12.0" height="12.0" fill="#2f9e44" stroke="#333" stroke-width="1.5" opacity="1.0" rx="2"/>
+  <text x="598.0" y="147.0" font-size="9" fill="#2f9e44" text-anchor="start" font-weight="bold" font-family="Arial, sans-serif">2</text>
+  <text x="605.0" y="147.0" font-size="9" fill="#333" text-anchor="start" font-weight="normal" font-family="Arial, sans-serif">XY Plane</text>
+  <text x="710.0" y="147.0" font-size="9" fill="#2f9e44" text-anchor="start" font-weight="bold" font-family="Arial, sans-serif">Z = 166.5 mm</text>
+  <text x="810.0" y="147.0" font-size="9" fill="#555" text-anchor="start" font-weight="normal" font-family="Arial, sans-serif">All walls (height)</text>
+  <text x="580.0" y="167.0" font-size="10" fill="#666" text-anchor="start" font-weight="normal" font-family="Arial, sans-serif">2 construction plane(s)</text>
+  <text x="20.0" y="380.0" font-size="12" fill="#333" text-anchor="start" font-weight="bold" font-family="Arial, sans-serif">FRONT VIEW (XZ)</text>
+  <rect x="178.9" y="405.0" width="182.2" height="180.0" fill="#ff9a3c" stroke="#cc6600" stroke-width="2" opacity="0.2"/>
+  <line x1="270.0" y1="397.0" x2="270.0" y2="593.0" stroke="#e03131" stroke-width="2" stroke-dasharray="6,3"/>
+  <line x1="168.9" y1="495.0" x2="371.1" y2="495.0" stroke="#2f9e44" stroke-width="2" stroke-dasharray="6,3"/>
+  <text x="375.1" y="499.0" font-size="8" fill="#2f9e44" text-anchor="start" font-weight="bold" font-family="Arial, sans-serif">Z=166.5</text>
+  <text x="224.5" y="543.0" font-size="7" fill="#884400" text-anchor="middle" font-weight="normal" font-family="Arial, sans-serif">S1_front_A1</text>
+  <text x="224.5" y="453.0" font-size="7" fill="#884400" text-anchor="middle" font-weight="normal" font-family="Arial, sans-serif">S1_front_A2</text>
+  <text x="315.5" y="543.0" font-size="7" fill="#884400" text-anchor="middle" font-weight="normal" font-family="Arial, sans-serif">S1_front_B1</text>
+  <text x="315.5" y="453.0" font-size="7" fill="#884400" text-anchor="middle" font-weight="normal" font-family="Arial, sans-serif">S1_front_B2</text>
+  <text x="270.0" y="613.0" font-size="9" fill="#666" text-anchor="middle" font-weight="normal" font-family="Arial, sans-serif">W = 337 mm</text>
+  <text x="20.0" y="640.0" font-size="12" fill="#333" text-anchor="start" font-weight="bold" font-family="Arial, sans-serif">PANEL INVENTORY</text>
+  <rect x="15.0" y="656.0" width="1070.0" height="20.0" fill="#e9ecef" stroke="#ccc" stroke-width="1.5" opacity="1.0" rx="3"/>
+  <text x="25.0" y="671.0" font-size="9" fill="#333" text-anchor="start" font-weight="bold" font-family="Arial, sans-serif">Face</text>
+  <text x="95.0" y="671.0" font-size="9" fill="#333" text-anchor="start" font-weight="bold" font-family="Arial, sans-serif">Count</text>
+  <text x="175.0" y="671.0" font-size="9" fill="#333" text-anchor="start" font-weight="bold" font-family="Arial, sans-serif">Panel Size (mm)</text>
+  <text x="340.0" y="671.0" font-size="9" fill="#333" text-anchor="start" font-weight="bold" font-family="Arial, sans-serif">Fits Bed?</text>
+  <text x="440.0" y="671.0" font-size="9" fill="#333" text-anchor="start" font-weight="bold" font-family="Arial, sans-serif">IDs</text>
+  <rect x="15.0" y="678.0" width="1070.0" height="20.0" fill="#f8f8f8" stroke="#eee" stroke-width="1.5" opacity="1.0" rx="2"/>
+  <text x="25.0" y="693.0" font-size="9" fill="#333" text-anchor="start" font-weight="normal" font-family="Arial, sans-serif">Front wall</text>
+  <text x="95.0" y="693.0" font-size="9" fill="#333" text-anchor="start" font-weight="normal" font-family="Arial, sans-serif">2x2 = 4</text>
+  <text x="175.0" y="693.0" font-size="9" fill="#333" text-anchor="start" font-weight="bold" font-family="Arial, sans-serif">168.5 x 166.5</text>
+  <text x="340.0" y="693.0" font-size="9" fill="#2f9e44" text-anchor="start" font-weight="normal" font-family="Arial, sans-serif">Yes</text>
+  <text x="440.0" y="693.0" font-size="8" fill="#888" text-anchor="start" font-weight="normal" font-family="Arial, sans-serif">S1_front_A1, S1_front_A2, S1_front_B1, S1_front_B2</text>
+  <rect x="15.0" y="700.0" width="1070.0" height="20.0" fill="white" stroke="#eee" stroke-width="1.5" opacity="1.0" rx="2"/>
+  <text x="25.0" y="715.0" font-size="9" fill="#333" text-anchor="start" font-weight="normal" font-family="Arial, sans-serif">Back wall</text>
+  <text x="95.0" y="715.0" font-size="9" fill="#333" text-anchor="start" font-weight="normal" font-family="Arial, sans-serif">2x2 = 4</text>
+  <text x="175.0" y="715.0" font-size="9" fill="#333" text-anchor="start" font-weight="bold" font-family="Arial, sans-serif">168.5 x 166.5</text>
+  <text x="340.0" y="715.0" font-size="9" fill="#2f9e44" text-anchor="start" font-weight="normal" font-family="Arial, sans-serif">Yes</text>
+  <text x="440.0" y="715.0" font-size="8" fill="#888" text-anchor="start" font-weight="normal" font-family="Arial, sans-serif">S1_back_A1, S1_back_A2, S1_back_B1, S1_back_B2</text>
+  <rect x="15.0" y="722.0" width="1070.0" height="20.0" fill="#f8f8f8" stroke="#eee" stroke-width="1.5" opacity="1.0" rx="2"/>
+  <text x="25.0" y="737.0" font-size="9" fill="#333" text-anchor="start" font-weight="normal" font-family="Arial, sans-serif">Left wall</text>
+  <text x="95.0" y="737.0" font-size="9" fill="#333" text-anchor="start" font-weight="normal" font-family="Arial, sans-serif">1x2 = 2</text>
+  <text x="175.0" y="737.0" font-size="9" fill="#333" text-anchor="start" font-weight="bold" font-family="Arial, sans-serif">227.0 x 166.5</text>
+  <text x="340.0" y="737.0" font-size="9" fill="#2f9e44" text-anchor="start" font-weight="normal" font-family="Arial, sans-serif">Yes</text>
+  <text x="440.0" y="737.0" font-size="8" fill="#888" text-anchor="start" font-weight="normal" font-family="Arial, sans-serif">S1_left_A1, S1_left_A2</text>
+  <rect x="15.0" y="744.0" width="1070.0" height="20.0" fill="white" stroke="#eee" stroke-width="1.5" opacity="1.0" rx="2"/>
+  <text x="25.0" y="759.0" font-size="9" fill="#333" text-anchor="start" font-weight="normal" font-family="Arial, sans-serif">Right wall</text>
+  <text x="95.0" y="759.0" font-size="9" fill="#333" text-anchor="start" font-weight="normal" font-family="Arial, sans-serif">1x2 = 2</text>
+  <text x="175.0" y="759.0" font-size="9" fill="#333" text-anchor="start" font-weight="bold" font-family="Arial, sans-serif">227.0 x 166.5</text>
+  <text x="340.0" y="759.0" font-size="9" fill="#2f9e44" text-anchor="start" font-weight="normal" font-family="Arial, sans-serif">Yes</text>
+  <text x="440.0" y="759.0" font-size="8" fill="#888" text-anchor="start" font-weight="normal" font-family="Arial, sans-serif">S1_right_A1, S1_right_A2</text>
+  <rect x="15.0" y="766.0" width="1070.0" height="20.0" fill="#f8f8f8" stroke="#eee" stroke-width="1.5" opacity="1.0" rx="2"/>
+  <text x="25.0" y="781.0" font-size="9" fill="#333" text-anchor="start" font-weight="normal" font-family="Arial, sans-serif">Base</text>
+  <text x="95.0" y="781.0" font-size="9" fill="#333" text-anchor="start" font-weight="normal" font-family="Arial, sans-serif">2x1 = 2</text>
+  <text x="175.0" y="781.0" font-size="9" fill="#333" text-anchor="start" font-weight="bold" font-family="Arial, sans-serif">168.5 x 233.0</text>
+  <text x="340.0" y="781.0" font-size="9" fill="#2f9e44" text-anchor="start" font-weight="normal" font-family="Arial, sans-serif">Yes</text>
+  <text x="440.0" y="781.0" font-size="8" fill="#888" text-anchor="start" font-weight="normal" font-family="Arial, sans-serif">S1_base_A1, S1_base_B1</text>
+  <text x="25.0" y="800.0" font-size="10" fill="#884400" text-anchor="start" font-weight="bold" font-family="Arial, sans-serif">Total: 14 panels | ASA | Acetone/MEK weld</text>
+</svg>

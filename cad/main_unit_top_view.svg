@@ -1,0 +1,153 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1157.6" height="821.5999999999999" viewBox="0 0 1157.6 821.5999999999999">
+<defs>
+
+</defs>
+<rect width="100%" height="100%" fill="#1a1a2e"/>
+  <text x="578.8" y="30.0" font-size="18" fill="#e0e0e0" text-anchor="middle" font-weight="bold" font-family="monospace">MAIN UNIT — Top View (Open, Looking Down)</text>
+  <text x="578.8" y="50.0" font-size="11" fill="#aaa" text-anchor="middle" font-weight="normal" font-family="monospace">Shell 1: 598×368mm  |  Shell 2: 528×298mm  |  Interior: 518×288mm</text>
+  <rect x="80.0" y="140.0" width="717.6" height="441.6" fill="#4a3728" stroke="#8B6914" stroke-width="2" fill-opacity="0.3" rx="8"/>
+  <rect x="86.0" y="146.0" width="705.6" height="429.6" fill="#f0e68c" stroke="#b8a000" stroke-width="1" fill-opacity="0.15" rx="0"/>
+  <rect x="122.0" y="182.0" width="633.6" height="357.6" fill="#2a4a6a" stroke="#4a9ade" stroke-width="2" fill-opacity="0.25" rx="4"/>
+  <rect x="128.0" y="188.0" width="621.6" height="345.6" fill="none" stroke="#4a9ade" stroke-width="0.5" fill-opacity="1.0" rx="0" stroke-dasharray="4,3"/>
+  <rect x="140.0" y="200.0" width="189.6" height="321.6" fill="#1a3a1a" stroke="#2d8a2d" stroke-width="1.5" fill-opacity="0.3" rx="0"/>
+  <rect x="140.0" y="206.0" width="4.8" height="309.6" fill="#888" stroke="#666" stroke-width="0.5" fill-opacity="0.5" rx="0"/>
+  <rect x="324.8" y="206.0" width="4.8" height="309.6" fill="#888" stroke="#666" stroke-width="0.5" fill-opacity="0.5" rx="0"/>
+  <rect x="147.2" y="206.0" width="43.2" height="154.8" fill="#2d7a2d" stroke="#1a5a1a" stroke-width="1" fill-opacity="0.7" rx="1"/>
+  <text x="168.8" y="277.4" font-size="8" fill="#c0ffc0" text-anchor="middle" font-weight="normal" font-family="monospace">C1</text>
+  <text x="168.8" y="291.8" font-size="6" fill="#90d090" text-anchor="middle" font-weight="normal" font-family="monospace">36×129</text>
+  <circle cx="168.8" cy="212.0" r="3.0" fill="#ffd700" stroke="#333" stroke-width="0.5" fill-opacity="0.8"/>
+  <rect x="192.8" y="206.0" width="43.2" height="154.8" fill="#258a25" stroke="#1a5a1a" stroke-width="1" fill-opacity="0.7" rx="1"/>
+  <text x="214.4" y="277.4" font-size="8" fill="#c0ffc0" text-anchor="middle" font-weight="normal" font-family="monospace">C2</text>
+  <text x="214.4" y="291.8" font-size="6" fill="#90d090" text-anchor="middle" font-weight="normal" font-family="monospace">36×129</text>
+  <circle cx="214.4" cy="212.0" r="3.0" fill="#c0c0c0" stroke="#333" stroke-width="0.5" fill-opacity="0.8"/>
+  <rect x="238.4" y="206.0" width="43.2" height="154.8" fill="#2d7a2d" stroke="#1a5a1a" stroke-width="1" fill-opacity="0.7" rx="1"/>
+  <text x="260.0" y="277.4" font-size="8" fill="#c0ffc0" text-anchor="middle" font-weight="normal" font-family="monospace">C3</text>
+  <text x="260.0" y="291.8" font-size="6" fill="#90d090" text-anchor="middle" font-weight="normal" font-family="monospace">36×129</text>
+  <circle cx="260.0" cy="212.0" r="3.0" fill="#ffd700" stroke="#333" stroke-width="0.5" fill-opacity="0.8"/>
+  <rect x="284.0" y="206.0" width="43.2" height="154.8" fill="#258a25" stroke="#1a5a1a" stroke-width="1" fill-opacity="0.7" rx="1"/>
+  <text x="305.6" y="277.4" font-size="8" fill="#c0ffc0" text-anchor="middle" font-weight="normal" font-family="monospace">C4</text>
+  <text x="305.6" y="291.8" font-size="6" fill="#90d090" text-anchor="middle" font-weight="normal" font-family="monospace">36×129</text>
+  <circle cx="305.6" cy="212.0" r="3.0" fill="#c0c0c0" stroke="#333" stroke-width="0.5" fill-opacity="0.8"/>
+  <rect x="147.2" y="372.8" width="43.2" height="154.8" fill="#2d7a2d" stroke="#1a5a1a" stroke-width="1" fill-opacity="0.7" rx="1"/>
+  <text x="168.8" y="444.2" font-size="8" fill="#c0ffc0" text-anchor="middle" font-weight="normal" font-family="monospace">C5</text>
+  <text x="168.8" y="458.6" font-size="6" fill="#90d090" text-anchor="middle" font-weight="normal" font-family="monospace">36×129</text>
+  <circle cx="168.8" cy="378.8" r="3.0" fill="#ffd700" stroke="#333" stroke-width="0.5" fill-opacity="0.8"/>
+  <rect x="192.8" y="372.8" width="43.2" height="154.8" fill="#258a25" stroke="#1a5a1a" stroke-width="1" fill-opacity="0.7" rx="1"/>
+  <text x="214.4" y="444.2" font-size="8" fill="#c0ffc0" text-anchor="middle" font-weight="normal" font-family="monospace">C6</text>
+  <text x="214.4" y="458.6" font-size="6" fill="#90d090" text-anchor="middle" font-weight="normal" font-family="monospace">36×129</text>
+  <circle cx="214.4" cy="378.8" r="3.0" fill="#c0c0c0" stroke="#333" stroke-width="0.5" fill-opacity="0.8"/>
+  <rect x="238.4" y="372.8" width="43.2" height="154.8" fill="#2d7a2d" stroke="#1a5a1a" stroke-width="1" fill-opacity="0.7" rx="1"/>
+  <text x="260.0" y="444.2" font-size="8" fill="#c0ffc0" text-anchor="middle" font-weight="normal" font-family="monospace">C7</text>
+  <text x="260.0" y="458.6" font-size="6" fill="#90d090" text-anchor="middle" font-weight="normal" font-family="monospace">36×129</text>
+  <circle cx="260.0" cy="378.8" r="3.0" fill="#ffd700" stroke="#333" stroke-width="0.5" fill-opacity="0.8"/>
+  <rect x="284.0" y="372.8" width="43.2" height="154.8" fill="#258a25" stroke="#1a5a1a" stroke-width="1" fill-opacity="0.7" rx="1"/>
+  <text x="305.6" y="444.2" font-size="8" fill="#c0ffc0" text-anchor="middle" font-weight="normal" font-family="monospace">C8</text>
+  <text x="305.6" y="458.6" font-size="6" fill="#90d090" text-anchor="middle" font-weight="normal" font-family="monospace">36×129</text>
+  <circle cx="305.6" cy="378.8" r="3.0" fill="#c0c0c0" stroke="#333" stroke-width="0.5" fill-opacity="0.8"/>
+  <rect x="186.8" y="209.6" width="27.6" height="9.6" fill="#cd7f32" stroke="#8B4513" stroke-width="0.5" fill-opacity="0.7" rx="0"/>
+  <rect x="186.8" y="376.4" width="27.6" height="9.6" fill="#cd7f32" stroke="#8B4513" stroke-width="0.5" fill-opacity="0.7" rx="0"/>
+  <rect x="232.4" y="209.6" width="27.6" height="9.6" fill="#cd7f32" stroke="#8B4513" stroke-width="0.5" fill-opacity="0.7" rx="0"/>
+  <rect x="232.4" y="376.4" width="27.6" height="9.6" fill="#cd7f32" stroke="#8B4513" stroke-width="0.5" fill-opacity="0.7" rx="0"/>
+  <rect x="278.0" y="209.6" width="27.6" height="9.6" fill="#cd7f32" stroke="#8B4513" stroke-width="0.5" fill-opacity="0.7" rx="0"/>
+  <rect x="278.0" y="376.4" width="27.6" height="9.6" fill="#cd7f32" stroke="#8B4513" stroke-width="0.5" fill-opacity="0.7" rx="0"/>
+  <text x="234.8" y="192.8" font-size="9" fill="#4ade4a" text-anchor="middle" font-weight="bold" font-family="monospace">BATTERY ZONE  158×268mm</text>
+  <text x="234.8" y="536.0" font-size="8" fill="#4ade4a" text-anchor="middle" font-weight="normal" font-family="monospace">4S2P — 8× Narada 105Ah</text>
+  <rect x="353.6" y="200.0" width="384.0" height="321.6" fill="#1a1a3a" stroke="#4a4ade" stroke-width="1.5" fill-opacity="0.3" rx="0"/>
+  <rect x="365.6" y="212.0" width="56.4" height="223.2" fill="#3a3a8a" stroke="#6a6ade" stroke-width="1" fill-opacity="0.6" rx="2"/>
+  <text x="393.8" y="314.0" font-size="8" fill="#c0c0ff" text-anchor="middle" font-weight="normal" font-family="monospace">MPPT1</text>
+  <text x="393.8" y="328.4" font-size="6" fill="#9090cc" text-anchor="middle" font-weight="normal" font-family="monospace">47×186</text>
+  <text x="393.8" y="340.4" font-size="5" fill="#8080aa" text-anchor="middle" font-weight="normal" font-family="monospace">EPever 2210AN</text>
+  <rect x="434.0" y="212.0" width="56.4" height="223.2" fill="#4040a0" stroke="#6a6ade" stroke-width="1" fill-opacity="0.6" rx="2"/>
+  <text x="462.2" y="314.0" font-size="8" fill="#c0c0ff" text-anchor="middle" font-weight="normal" font-family="monospace">MPPT2</text>
+  <text x="462.2" y="328.4" font-size="6" fill="#9090cc" text-anchor="middle" font-weight="normal" font-family="monospace">47×186</text>
+  <text x="462.2" y="340.4" font-size="5" fill="#8080aa" text-anchor="middle" font-weight="normal" font-family="monospace">EPever 2210AN</text>
+  <rect x="365.6" y="447.2" width="56.4" height="223.2" fill="#8a2020" stroke="#ff4444" stroke-width="2" fill-opacity="0.6" rx="2"/>
+  <text x="393.8" y="549.2" font-size="8" fill="#c0c0ff" text-anchor="middle" font-weight="normal" font-family="monospace">MPPT3</text>
+  <text x="393.8" y="563.6" font-size="6" fill="#9090cc" text-anchor="middle" font-weight="normal" font-family="monospace">47×186</text>
+  <text x="393.8" y="575.6" font-size="5" fill="#8080aa" text-anchor="middle" font-weight="normal" font-family="monospace">EPever 2210AN</text>
+  <rect x="353.6" y="521.6" width="384.0" height="148.8" fill="#ff0000" stroke="#ff0000" stroke-width="1" fill-opacity="0.1" rx="0" stroke-dasharray="3,2"/>
+  <text x="545.6" y="596.0" font-size="10" fill="#ff4444" text-anchor="middle" font-weight="bold" font-family="monospace">OVERFLOW: 124mm!</text>
+  <rect x="434.0" y="447.2" width="56.4" height="223.2" fill="#8a2020" stroke="#ff4444" stroke-width="2" fill-opacity="0.6" rx="2"/>
+  <text x="462.2" y="549.2" font-size="8" fill="#c0c0ff" text-anchor="middle" font-weight="normal" font-family="monospace">MPPT4</text>
+  <text x="462.2" y="563.6" font-size="6" fill="#9090cc" text-anchor="middle" font-weight="normal" font-family="monospace">47×186</text>
+  <text x="462.2" y="575.6" font-size="5" fill="#8080aa" text-anchor="middle" font-weight="normal" font-family="monospace">EPever 2210AN</text>
+  <rect x="514.4" y="212.0" width="210.0" height="30.0" fill="#6a3a6a" stroke="#9a6a9a" stroke-width="1" fill-opacity="0.6" rx="1"/>
+  <text x="619.4" y="230.6" font-size="7" fill="#d0a0d0" text-anchor="middle" font-weight="normal" font-family="monospace">BMS1  175×25</text>
+  <rect x="514.4" y="260.0" width="210.0" height="30.0" fill="#6a3a6a" stroke="#9a6a9a" stroke-width="1" fill-opacity="0.6" rx="1"/>
+  <text x="619.4" y="278.6" font-size="7" fill="#d0a0d0" text-anchor="middle" font-weight="normal" font-family="monospace">BMS2  175×25</text>
+  <rect x="736.4" y="212.0" width="36.0" height="297.6" fill="#8a2020" stroke="#ff4444" stroke-width="1" fill-opacity="0.5" rx="1"/>
+  <text x="754.4" y="363.1" font-size="7" fill="#dddd80" text-anchor="middle" font-family="monospace">BUS</text>
+  <text x="754.4" y="375.2" font-size="7" fill="#ff4444" text-anchor="middle" font-weight="bold" font-family="monospace">OVERFLOW!</text>
+  <rect x="514.4" y="320.0" width="96.0" height="48.0" fill="#8a6a20" stroke="#aa8a30" stroke-width="0.8" fill-opacity="0.5" rx="1"/>
+  <text x="562.4" y="346.0" font-size="6" fill="#ddcc80" text-anchor="middle" font-family="monospace">FUSE BLOCK 80×40</text>
+  <rect x="622.4" y="326.0" width="72.0" height="36.0" fill="#8a5020" stroke="#aa7030" stroke-width="0.8" fill-opacity="0.5" rx="1"/>
+  <text x="658.4" y="346.0" font-size="6" fill="#ddbb80" text-anchor="middle" font-family="monospace">80A ANL</text>
+  <rect x="514.4" y="380.0" width="52.8" height="38.4" fill="#20608a" stroke="#4090ba" stroke-width="0.8" fill-opacity="0.5" rx="1"/>
+  <text x="540.8" y="401.5" font-size="7" fill="#80c0e0" text-anchor="middle" font-family="monospace">LEM</text>
+  <rect x="359.6" y="377.6" width="120.0" height="132.0" fill="#6a2020" stroke="#aa4040" stroke-width="1" fill-opacity="0.3" rx="0" stroke-dasharray="3,2"/>
+  <text x="419.6" y="392.0" font-size="8" fill="#ee8080" text-anchor="middle" font-weight="bold" font-family="monospace">THERMAL</text>
+  <circle cx="419.6" cy="449.6" r="48.0" fill="#4a2020" stroke="#cc4444" stroke-width="0.8" fill-opacity="0.4"/>
+  <text x="419.6" y="451.9" font-size="7" fill="#ee8080" text-anchor="middle" font-family="monospace">FAN 80mm</text>
+  <rect x="365.6" y="491.6" width="108.0" height="14.4" fill="#cc4444" stroke="#ee6666" stroke-width="0.5" fill-opacity="0.4" rx="0"/>
+  <text x="419.6" y="500.8" font-size="6" fill="#ff9999" text-anchor="middle" font-family="monospace">HEATER</text>
+  <text x="545.6" y="192.8" font-size="9" fill="#6a6aff" text-anchor="middle" font-weight="bold" font-family="monospace">ELECTRONICS ZONE  320×268mm</text>
+  <text x="341.6" y="360.8" font-size="7" fill="#888" text-anchor="middle" font-weight="normal" font-family="monospace">20</text>
+  <line x1="332.0" y1="348.8" x2="332.0" y2="372.8" stroke="#666" stroke-width="0.5"/>
+  <line x1="351.2" y1="348.8" x2="351.2" y2="372.8" stroke="#666" stroke-width="0.5"/>
+  <line x1="80.0" y1="125.6" x2="797.6" y2="125.6" stroke="#8B6914" stroke-width="0.7"/>
+  <line x1="80.0" y1="122.6" x2="80.0" y2="128.6" stroke="#8B6914" stroke-width="0.7"/>
+  <line x1="797.6" y1="122.6" x2="797.6" y2="128.6" stroke="#8B6914" stroke-width="0.7"/>
+  <text x="438.8" y="120.6" font-size="8" fill="#8B6914" text-anchor="middle" font-weight="normal" font-family="monospace">S1: 598mm</text>
+  <line x1="122.0" y1="134.0" x2="755.6" y2="134.0" stroke="#4a9ade" stroke-width="0.7"/>
+  <line x1="122.0" y1="131.0" x2="122.0" y2="137.0" stroke="#4a9ade" stroke-width="0.7"/>
+  <line x1="755.6" y1="131.0" x2="755.6" y2="137.0" stroke="#4a9ade" stroke-width="0.7"/>
+  <text x="438.8" y="129.0" font-size="8" fill="#4a9ade" text-anchor="middle" font-weight="normal" font-family="monospace">S2: 528mm</text>
+  <line x1="65.6" y1="140.0" x2="65.6" y2="581.6" stroke="#8B6914" stroke-width="0.7"/>
+  <line x1="62.6" y1="140.0" x2="68.6" y2="140.0" stroke="#8B6914" stroke-width="0.7"/>
+  <line x1="62.6" y1="581.6" x2="68.6" y2="581.6" stroke="#8B6914" stroke-width="0.7"/>
+  <text x="73.6" y="360.8" font-size="8" fill="#8B6914" text-anchor="start" font-weight="normal" font-family="monospace">S1: 368mm</text>
+  <text x="104.0" y="360.8" font-size="7" fill="#b8a000" text-anchor="middle" font-weight="normal" font-family="monospace">FOAM 30mm</text>
+  <text x="438.8" y="599.6" font-size="9" fill="#8B6914" text-anchor="middle" font-weight="normal" font-family="monospace">Shell 1 (ASA outer)</text>
+  <text x="438.8" y="615.2" font-size="9" fill="#4a9ade" text-anchor="middle" font-weight="normal" font-family="monospace">Shell 2 (PETG structural)</text>
+  <text x="827.6" y="150.0" font-size="12" fill="#e0e0e0" text-anchor="start" font-weight="bold" font-family="monospace">LEGEND</text>
+  <rect x="827.6" y="162.0" width="14.0" height="14.0" fill="#4a3728" stroke="#8B6914" stroke-width="1" fill-opacity="0.7" rx="2"/>
+  <text x="847.6" y="173.0" font-size="9" fill="#ccc" text-anchor="start" font-weight="normal" font-family="monospace">Shell 1 (ASA) — 5mm wall</text>
+  <rect x="827.6" y="184.0" width="14.0" height="14.0" fill="#f0e68c" stroke="#b8a000" stroke-width="1" fill-opacity="0.7" rx="2"/>
+  <text x="847.6" y="195.0" font-size="9" fill="#ccc" text-anchor="start" font-weight="normal" font-family="monospace">Foam cavity — 30mm</text>
+  <rect x="827.6" y="206.0" width="14.0" height="14.0" fill="#2a4a6a" stroke="#4a9ade" stroke-width="1" fill-opacity="0.7" rx="2"/>
+  <text x="847.6" y="217.0" font-size="9" fill="#ccc" text-anchor="start" font-weight="normal" font-family="monospace">Shell 2 (PETG) — 5mm wall</text>
+  <rect x="827.6" y="228.0" width="14.0" height="14.0" fill="#2d7a2d" stroke="#1a5a1a" stroke-width="1" fill-opacity="0.7" rx="2"/>
+  <text x="847.6" y="239.0" font-size="9" fill="#ccc" text-anchor="start" font-weight="normal" font-family="monospace">LiFePO4 cell — 36×129mm</text>
+  <rect x="827.6" y="250.0" width="14.0" height="14.0" fill="#3a3a8a" stroke="#6a6ade" stroke-width="1" fill-opacity="0.7" rx="2"/>
+  <text x="847.6" y="261.0" font-size="9" fill="#ccc" text-anchor="start" font-weight="normal" font-family="monospace">EPever MPPT — 47×186mm</text>
+  <rect x="827.6" y="272.0" width="14.0" height="14.0" fill="#6a3a6a" stroke="#9a6a9a" stroke-width="1" fill-opacity="0.7" rx="2"/>
+  <text x="847.6" y="283.0" font-size="9" fill="#ccc" text-anchor="start" font-weight="normal" font-family="monospace">Smart BMS — 175×25mm</text>
+  <rect x="827.6" y="294.0" width="14.0" height="14.0" fill="#8a8a30" stroke="#aaaa50" stroke-width="1" fill-opacity="0.7" rx="2"/>
+  <text x="847.6" y="305.0" font-size="9" fill="#ccc" text-anchor="start" font-weight="normal" font-family="monospace">Distribution bus — 30mm wide</text>
+  <rect x="827.6" y="316.0" width="14.0" height="14.0" fill="#8a6a20" stroke="#aa8a30" stroke-width="1" fill-opacity="0.7" rx="2"/>
+  <text x="847.6" y="327.0" font-size="9" fill="#ccc" text-anchor="start" font-weight="normal" font-family="monospace">Fuse block / ANL fuse</text>
+  <rect x="827.6" y="338.0" width="14.0" height="14.0" fill="#20608a" stroke="#4090ba" stroke-width="1" fill-opacity="0.7" rx="2"/>
+  <text x="847.6" y="349.0" font-size="9" fill="#ccc" text-anchor="start" font-weight="normal" font-family="monospace">LEM sensor — 44×32mm</text>
+  <rect x="827.6" y="360.0" width="14.0" height="14.0" fill="#6a2020" stroke="#aa4040" stroke-width="1" fill-opacity="0.7" rx="2"/>
+  <text x="847.6" y="371.0" font-size="9" fill="#ccc" text-anchor="start" font-weight="normal" font-family="monospace">Thermal zone</text>
+  <rect x="827.6" y="382.0" width="14.0" height="14.0" fill="#888" stroke="#666" stroke-width="1" fill-opacity="0.7" rx="2"/>
+  <text x="847.6" y="393.0" font-size="9" fill="#ccc" text-anchor="start" font-weight="normal" font-family="monospace">Compression plates</text>
+  <rect x="827.6" y="404.0" width="14.0" height="14.0" fill="#cd7f32" stroke="#8B4513" stroke-width="1" fill-opacity="0.7" rx="2"/>
+  <text x="847.6" y="415.0" font-size="9" fill="#ccc" text-anchor="start" font-weight="normal" font-family="monospace">Busbars (series)</text>
+  <rect x="827.6" y="426.0" width="14.0" height="14.0" fill="#ff0000" stroke="#ff4444" stroke-width="1" fill-opacity="0.7" rx="2"/>
+  <text x="847.6" y="437.0" font-size="9" fill="#ccc" text-anchor="start" font-weight="normal" font-family="monospace">OVERFLOW (component > zone)</text>
+  <text x="827.6" y="476.0" font-size="12" fill="#ff6666" text-anchor="start" font-weight="bold" font-family="monospace">DIMENSIONAL ISSUES</text>
+  <text x="827.6" y="494.0" font-size="8" fill="#ccaa88" text-anchor="start" font-weight="normal" font-family="monospace">1. MPPT 2×2 grid depth: 392mm</text>
+  <text x="827.6" y="509.0" font-size="8" fill="#ccaa88" text-anchor="start" font-weight="normal" font-family="monospace">   vs zone depth: 268mm</text>
+  <text x="827.6" y="524.0" font-size="8" fill="#ff8888" text-anchor="start" font-weight="normal" font-family="monospace">   OVERFLOW: 124mm!</text>
+  <text x="827.6" y="539.0" font-size="8" fill="#ccaa88" text-anchor="start" font-weight="normal" font-family="monospace"></text>
+  <text x="827.6" y="554.0" font-size="8" fill="#ccaa88" text-anchor="start" font-weight="normal" font-family="monospace">2. BMS+Bus right edge: 349mm</text>
+  <text x="827.6" y="569.0" font-size="8" fill="#ccaa88" text-anchor="start" font-weight="normal" font-family="monospace">   vs zone width: 320mm</text>
+  <text x="827.6" y="584.0" font-size="8" fill="#ff8888" text-anchor="start" font-weight="normal" font-family="monospace">   OVERFLOW: 29mm!</text>
+  <text x="827.6" y="599.0" font-size="8" fill="#ccaa88" text-anchor="start" font-weight="normal" font-family="monospace"></text>
+  <text x="827.6" y="614.0" font-size="8" fill="#88cc88" text-anchor="start" font-weight="normal" font-family="monospace">SUGGESTED FIX:</text>
+  <text x="827.6" y="629.0" font-size="8" fill="#88cc88" text-anchor="start" font-weight="normal" font-family="monospace">  Arrange 4 MPPTs in single row:</text>
+  <text x="827.6" y="644.0" font-size="8" fill="#ccaa88" text-anchor="start" font-weight="normal" font-family="monospace">  4×47 + 3×10 = 218mm W</text>
+  <text x="827.6" y="659.0" font-size="8" fill="#88cc88" text-anchor="start" font-weight="normal" font-family="monospace">  × 186mm D — fits in zone!</text>
+  <text x="827.6" y="674.0" font-size="8" fill="#ccaa88" text-anchor="start" font-weight="normal" font-family="monospace">  BMS below MPPTs, bus beside</text>
+</svg>

@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1037.4" height="770.2" viewBox="0 0 1037.4 770.2">
+<defs>
+
+</defs>
+<rect width="100%" height="100%" fill="#1a1a2e"/>
+  <text x="518.7" y="30.0" font-size="18" fill="#e0e0e0" text-anchor="middle" font-weight="bold" font-family="monospace">SATELLITE UNIT — Top View (Open, Looking Down)</text>
+  <text x="518.7" y="50.0" font-size="11" fill="#aaa" text-anchor="middle" font-weight="normal" font-family="monospace">Shell 1: 343×239mm  |  Shell 2: 273×169mm  |  Interior: 263×159mm</text>
+  <rect x="80.0" y="140.0" width="617.4" height="430.2" fill="#4a3728" stroke="#8B6914" stroke-width="2" fill-opacity="0.3" rx="8"/>
+  <rect x="89.0" y="149.0" width="599.4" height="412.2" fill="#f0e68c" stroke="#b8a000" stroke-width="1" fill-opacity="0.15" rx="0"/>
+  <rect x="143.0" y="203.0" width="491.4" height="304.2" fill="#2a4a6a" stroke="#4a9ade" stroke-width="2" fill-opacity="0.25" rx="4"/>
+  <rect x="152.0" y="212.0" width="473.4" height="286.2" fill="none" stroke="#4a9ade" stroke-width="0.5" fill-opacity="1.0" rx="0" stroke-dasharray="4,3"/>
+  <rect x="170.0" y="230.0" width="284.4" height="250.2" fill="#1a3a1a" stroke="#2d8a2d" stroke-width="1.5" fill-opacity="0.3" rx="0"/>
+  <rect x="170.0" y="239.0" width="7.2" height="232.2" fill="#888" stroke="#666" stroke-width="0.5" fill-opacity="0.5" rx="0"/>
+  <rect x="447.2" y="239.0" width="7.2" height="232.2" fill="#888" stroke="#666" stroke-width="0.5" fill-opacity="0.5" rx="0"/>
+  <rect x="180.8" y="239.0" width="64.8" height="232.2" fill="#2d7a2d" stroke="#1a5a1a" stroke-width="1" fill-opacity="0.7" rx="1"/>
+  <text x="213.2" y="340.7" font-size="9" fill="#c0ffc0" text-anchor="middle" font-weight="normal" font-family="monospace">C1+</text>
+  <text x="213.2" y="365.9" font-size="7" fill="#90d090" text-anchor="middle" font-weight="normal" font-family="monospace">36×129</text>
+  <circle cx="213.2" cy="248.0" r="3.0" fill="#ffd700" stroke="#333" stroke-width="0.5" fill-opacity="0.8"/>
+  <rect x="249.2" y="239.0" width="64.8" height="232.2" fill="#258a25" stroke="#1a5a1a" stroke-width="1" fill-opacity="0.7" rx="1"/>
+  <text x="281.6" y="340.7" font-size="9" fill="#c0ffc0" text-anchor="middle" font-weight="normal" font-family="monospace">C2-</text>
+  <text x="281.6" y="365.9" font-size="7" fill="#90d090" text-anchor="middle" font-weight="normal" font-family="monospace">36×129</text>
+  <circle cx="281.6" cy="248.0" r="3.0" fill="#c0c0c0" stroke="#333" stroke-width="0.5" fill-opacity="0.8"/>
+  <rect x="317.6" y="239.0" width="64.8" height="232.2" fill="#2d7a2d" stroke="#1a5a1a" stroke-width="1" fill-opacity="0.7" rx="1"/>
+  <text x="350.0" y="340.7" font-size="9" fill="#c0ffc0" text-anchor="middle" font-weight="normal" font-family="monospace">C3+</text>
+  <text x="350.0" y="365.9" font-size="7" fill="#90d090" text-anchor="middle" font-weight="normal" font-family="monospace">36×129</text>
+  <circle cx="350.0" cy="248.0" r="3.0" fill="#ffd700" stroke="#333" stroke-width="0.5" fill-opacity="0.8"/>
+  <rect x="386.0" y="239.0" width="64.8" height="232.2" fill="#258a25" stroke="#1a5a1a" stroke-width="1" fill-opacity="0.7" rx="1"/>
+  <text x="418.4" y="340.7" font-size="9" fill="#c0ffc0" text-anchor="middle" font-weight="normal" font-family="monospace">C4-</text>
+  <text x="418.4" y="365.9" font-size="7" fill="#90d090" text-anchor="middle" font-weight="normal" font-family="monospace">36×129</text>
+  <circle cx="418.4" cy="248.0" r="3.0" fill="#c0c0c0" stroke="#333" stroke-width="0.5" fill-opacity="0.8"/>
+  <rect x="240.2" y="244.4" width="41.4" height="14.4" fill="#cd7f32" stroke="#8B4513" stroke-width="0.5" fill-opacity="0.7" rx="0"/>
+  <rect x="308.6" y="244.4" width="41.4" height="14.4" fill="#cd7f32" stroke="#8B4513" stroke-width="0.5" fill-opacity="0.7" rx="0"/>
+  <rect x="377.0" y="244.4" width="41.4" height="14.4" fill="#cd7f32" stroke="#8B4513" stroke-width="0.5" fill-opacity="0.7" rx="0"/>
+  <text x="312.2" y="219.2" font-size="9" fill="#4ade4a" text-anchor="middle" font-weight="bold" font-family="monospace">BATTERY  158×139mm</text>
+  <text x="312.2" y="501.8" font-size="8" fill="#4ade4a" text-anchor="middle" font-weight="normal" font-family="monospace">4S — 4× Narada 105Ah</text>
+  <rect x="481.4" y="230.0" width="126.0" height="250.2" fill="#3a1a1a" stroke="#aa4040" stroke-width="1.5" fill-opacity="0.3" rx="0" stroke-dasharray="3,2"/>
+  <rect x="490.4" y="239.0" width="108.0" height="27.0" fill="#cc4444" stroke="#ee6666" stroke-width="0.5" fill-opacity="0.5" rx="0"/>
+  <text x="544.4" y="254.8" font-size="7" fill="#ff9999" text-anchor="middle" font-family="monospace">HEATER</text>
+  <rect x="490.4" y="284.0" width="108.0" height="52.2" fill="#6a5020" stroke="#aa8040" stroke-width="0.8" fill-opacity="0.5" rx="0"/>
+  <text x="544.4" y="315.5" font-size="7" fill="#ddbb80" text-anchor="middle" font-weight="normal" font-family="monospace">STC-1000</text>
+  <text x="544.4" y="354.2" font-size="6" fill="#ff8844" text-anchor="middle" font-weight="normal" font-family="monospace">STC 71mm > zone 60mm!</text>
+  <circle cx="544.4" cy="399.2" r="72.0" fill="#4a2020" stroke="#cc4444" stroke-width="1" fill-opacity="0.35"/>
+  <text x="544.4" y="401.9" font-size="8" fill="#ee8080" text-anchor="middle" font-family="monospace">FAN 80mm</text>
+  <text x="544.4" y="489.2" font-size="7" fill="#ff8844" text-anchor="middle" font-weight="normal" font-family="monospace">Fan 80mm > zone 70mm</text>
+  <text x="544.4" y="219.2" font-size="9" fill="#ee8080" text-anchor="middle" font-weight="bold" font-family="monospace">THERMAL  70×139mm</text>
+  <circle cx="634.4" cy="266.0" r="14.4" fill="#555" stroke="#888" stroke-width="0.8" fill-opacity="0.6"/>
+  <text x="663.2" y="271.4" font-size="6" fill="#999" text-anchor="start" font-weight="normal" font-family="monospace">LEADS 16mm</text>
+  <circle cx="634.4" cy="347.0" r="9.0" fill="#555" stroke="#888" stroke-width="0.8" fill-opacity="0.6"/>
+  <text x="657.8" y="352.4" font-size="6" fill="#999" text-anchor="start" font-weight="normal" font-family="monospace">THERM 10mm</text>
+  <circle cx="634.4" cy="428.0" r="7.2" fill="#555" stroke="#888" stroke-width="0.8" fill-opacity="0.6"/>
+  <text x="656.0" y="433.4" font-size="6" fill="#999" text-anchor="start" font-weight="normal" font-family="monospace">PROBE 8mm</text>
+  <line x1="80.0" y1="118.4" x2="697.4" y2="118.4" stroke="#8B6914" stroke-width="0.7"/>
+  <line x1="80.0" y1="115.4" x2="80.0" y2="121.4" stroke="#8B6914" stroke-width="0.7"/>
+  <line x1="697.4" y1="115.4" x2="697.4" y2="121.4" stroke="#8B6914" stroke-width="0.7"/>
+  <text x="388.7" y="113.4" font-size="8" fill="#8B6914" text-anchor="middle" font-weight="normal" font-family="monospace">S1: 343mm</text>
+  <line x1="143.0" y1="131.0" x2="634.4" y2="131.0" stroke="#4a9ade" stroke-width="0.7"/>
+  <line x1="143.0" y1="128.0" x2="143.0" y2="134.0" stroke="#4a9ade" stroke-width="0.7"/>
+  <line x1="634.4" y1="128.0" x2="634.4" y2="134.0" stroke="#4a9ade" stroke-width="0.7"/>
+  <text x="388.7" y="126.0" font-size="8" fill="#4a9ade" text-anchor="middle" font-weight="normal" font-family="monospace">S2: 273mm</text>
+  <line x1="58.4" y1="140.0" x2="58.4" y2="570.2" stroke="#8B6914" stroke-width="0.7"/>
+  <line x1="55.4" y1="140.0" x2="61.4" y2="140.0" stroke="#8B6914" stroke-width="0.7"/>
+  <line x1="55.4" y1="570.2" x2="61.4" y2="570.2" stroke="#8B6914" stroke-width="0.7"/>
+  <text x="66.4" y="355.1" font-size="8" fill="#8B6914" text-anchor="start" font-weight="normal" font-family="monospace">S1: 239mm</text>
+  <text x="116.0" y="355.1" font-size="7" fill="#b8a000" text-anchor="middle" font-weight="normal" font-family="monospace">FOAM 30mm</text>
+  <text x="388.7" y="597.2" font-size="9" fill="#8B6914" text-anchor="middle" font-weight="normal" font-family="monospace">Shell 1 (ASA outer)</text>
+  <text x="388.7" y="620.6" font-size="9" fill="#4a9ade" text-anchor="middle" font-weight="normal" font-family="monospace">Shell 2 (PETG structural)</text>
+  <text x="727.4" y="150.0" font-size="12" fill="#e0e0e0" text-anchor="start" font-weight="bold" font-family="monospace">LEGEND</text>
+  <rect x="727.4" y="162.0" width="14.0" height="14.0" fill="#4a3728" stroke="#8B6914" stroke-width="1" fill-opacity="0.7" rx="2"/>
+  <text x="747.4" y="173.0" font-size="9" fill="#ccc" text-anchor="start" font-weight="normal" font-family="monospace">Shell 1 (ASA) — 5mm wall</text>
+  <rect x="727.4" y="184.0" width="14.0" height="14.0" fill="#f0e68c" stroke="#b8a000" stroke-width="1" fill-opacity="0.7" rx="2"/>
+  <text x="747.4" y="195.0" font-size="9" fill="#ccc" text-anchor="start" font-weight="normal" font-family="monospace">Foam cavity — 30mm</text>
+  <rect x="727.4" y="206.0" width="14.0" height="14.0" fill="#2a4a6a" stroke="#4a9ade" stroke-width="1" fill-opacity="0.7" rx="2"/>
+  <text x="747.4" y="217.0" font-size="9" fill="#ccc" text-anchor="start" font-weight="normal" font-family="monospace">Shell 2 (PETG) — 5mm wall</text>
+  <rect x="727.4" y="228.0" width="14.0" height="14.0" fill="#2d7a2d" stroke="#1a5a1a" stroke-width="1" fill-opacity="0.7" rx="2"/>
+  <text x="747.4" y="239.0" font-size="9" fill="#ccc" text-anchor="start" font-weight="normal" font-family="monospace">LiFePO4 cell — 36×129mm</text>
+  <rect x="727.4" y="250.0" width="14.0" height="14.0" fill="#888" stroke="#666" stroke-width="1" fill-opacity="0.7" rx="2"/>
+  <text x="747.4" y="261.0" font-size="9" fill="#ccc" text-anchor="start" font-weight="normal" font-family="monospace">Compression plates</text>
+  <rect x="727.4" y="272.0" width="14.0" height="14.0" fill="#cd7f32" stroke="#8B4513" stroke-width="1" fill-opacity="0.7" rx="2"/>
+  <text x="747.4" y="283.0" font-size="9" fill="#ccc" text-anchor="start" font-weight="normal" font-family="monospace">Busbars (series)</text>
+  <rect x="727.4" y="294.0" width="14.0" height="14.0" fill="#cc4444" stroke="#ee6666" stroke-width="1" fill-opacity="0.7" rx="2"/>
+  <text x="747.4" y="305.0" font-size="9" fill="#ccc" text-anchor="start" font-weight="normal" font-family="monospace">PTC heater — 50×15mm</text>
+  <rect x="727.4" y="316.0" width="14.0" height="14.0" fill="#6a5020" stroke="#aa8040" stroke-width="1" fill-opacity="0.7" rx="2"/>
+  <text x="747.4" y="327.0" font-size="9" fill="#ccc" text-anchor="start" font-weight="normal" font-family="monospace">STC-1000 — 71×29mm</text>
+  <rect x="727.4" y="338.0" width="14.0" height="14.0" fill="#4a2020" stroke="#cc4444" stroke-width="1" fill-opacity="0.7" rx="2"/>
+  <text x="747.4" y="349.0" font-size="9" fill="#ccc" text-anchor="start" font-weight="normal" font-family="monospace">Fan — 80mm diameter</text>
+  <rect x="727.4" y="360.0" width="14.0" height="14.0" fill="#555" stroke="#888" stroke-width="1" fill-opacity="0.7" rx="2"/>
+  <text x="747.4" y="371.0" font-size="9" fill="#ccc" text-anchor="start" font-weight="normal" font-family="monospace">Conduit penetrations</text>
+  <text x="727.4" y="405.0" font-size="11" fill="#e0e0e0" text-anchor="start" font-weight="bold" font-family="monospace">NOTES</text>
+  <text x="727.4" y="421.0" font-size="8" fill="#ff8844" text-anchor="start" font-weight="normal" font-family="monospace">Fan 80mm > zone width 70mm</text>
+  <text x="727.4" y="435.0" font-size="8" fill="#aaa" text-anchor="start" font-weight="normal" font-family="monospace">  (wall-mounted, extends into cell zone)</text>
+  <text x="727.4" y="449.0" font-size="8" fill="#ff8844" text-anchor="start" font-weight="normal" font-family="monospace">STC-1000: 71mm > zone width 60mm</text>
+  <text x="727.4" y="463.0" font-size="8" fill="#aaa" text-anchor="start" font-weight="normal" font-family="monospace">  (mount rotated or on zone wall)</text>
+  <text x="727.4" y="477.0" font-size="8" fill="#aaa" text-anchor="start" font-weight="normal" font-family="monospace">Conduits exit right wall to main unit</text>
+  <text x="727.4" y="491.0" font-size="8" fill="#aaa" text-anchor="start" font-weight="normal" font-family="monospace">No BMS/MPPT — all in main unit</text>
+</svg>

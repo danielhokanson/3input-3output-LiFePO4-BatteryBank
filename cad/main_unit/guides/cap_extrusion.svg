@@ -1,0 +1,221 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="1000" viewBox="0 0 1100 1000">
+  <style>text { font-family: Arial, Helvetica, sans-serif; }</style>
+  <rect width="1100" height="1000" fill="white"/>
+  <text x="20" y="30" font-size="18" fill="#333" text-anchor="start" font-weight="bold">CAP RIM — EXTRUSION GUIDE (Rev 3.2, Flush)</text>
+  <text x="20" y="50" font-size="12" fill="#555" text-anchor="start" font-weight="normal">Flush with S1: 598 x 368mm  |  Thickness: 8mm  |  Foam teeth: 5x26x10mm</text>
+  <text x="20" y="90" font-size="13" fill="#333" text-anchor="start" font-weight="bold">PLAN VIEW (cap rim —outer with inner cutout)</text>
+  <rect x="80.0" y="116.92307692307692" width="400.0" height="246.15384615384616" fill="#fff4e6" stroke="#ff922b" stroke-width="2.5" opacity="1.0" rx="3"/>
+  <rect x="80.0" y="116.92307692307692" width="400.0" height="246.15384615384616" fill="white" stroke="#d9480f" stroke-width="2" opacity="1.0" rx="2"/>
+  <rect x="86.7" y="123.6" width="386.6" height="232.8" fill="none" stroke="#e03131" stroke-width="1.5" stroke-dasharray="6,3" rx="1"/>
+  <rect x="100.1" y="137.0" width="359.9" height="206.0" fill="none" stroke="#e03131" stroke-width="1.5" stroke-dasharray="6,3" rx="1"/>
+  <circle cx="93.4" cy="130.3" r="2.0" fill="none" stroke="#495057" stroke-width="1.2"/>
+  <circle cx="155.6" cy="130.3" r="2.0" fill="none" stroke="#495057" stroke-width="1.2"/>
+  <circle cx="217.8" cy="130.3" r="2.0" fill="none" stroke="#495057" stroke-width="1.2"/>
+  <circle cx="280.0" cy="130.3" r="2.0" fill="none" stroke="#495057" stroke-width="1.2"/>
+  <circle cx="342.2" cy="130.3" r="2.0" fill="none" stroke="#495057" stroke-width="1.2"/>
+  <circle cx="404.4" cy="130.3" r="2.0" fill="none" stroke="#495057" stroke-width="1.2"/>
+  <circle cx="466.6" cy="130.3" r="2.0" fill="none" stroke="#495057" stroke-width="1.2"/>
+  <circle cx="93.4" cy="349.7" r="2.0" fill="none" stroke="#495057" stroke-width="1.2"/>
+  <circle cx="155.6" cy="349.7" r="2.0" fill="none" stroke="#495057" stroke-width="1.2"/>
+  <circle cx="217.8" cy="349.7" r="2.0" fill="none" stroke="#495057" stroke-width="1.2"/>
+  <circle cx="280.0" cy="349.7" r="2.0" fill="none" stroke="#495057" stroke-width="1.2"/>
+  <circle cx="342.2" cy="349.7" r="2.0" fill="none" stroke="#495057" stroke-width="1.2"/>
+  <circle cx="404.4" cy="349.7" r="2.0" fill="none" stroke="#495057" stroke-width="1.2"/>
+  <circle cx="466.6" cy="349.7" r="2.0" fill="none" stroke="#495057" stroke-width="1.2"/>
+  <circle cx="93.4" cy="130.3" r="2.0" fill="none" stroke="#495057" stroke-width="1.2"/>
+  <circle cx="93.4" cy="203.4" r="2.0" fill="none" stroke="#495057" stroke-width="1.2"/>
+  <circle cx="93.4" cy="276.6" r="2.0" fill="none" stroke="#495057" stroke-width="1.2"/>
+  <circle cx="93.4" cy="349.7" r="2.0" fill="none" stroke="#495057" stroke-width="1.2"/>
+  <circle cx="466.6" cy="130.3" r="2.0" fill="none" stroke="#495057" stroke-width="1.2"/>
+  <circle cx="466.6" cy="203.4" r="2.0" fill="none" stroke="#495057" stroke-width="1.2"/>
+  <circle cx="466.6" cy="276.6" r="2.0" fill="none" stroke="#495057" stroke-width="1.2"/>
+  <circle cx="466.6" cy="349.7" r="2.0" fill="none" stroke="#495057" stroke-width="1.2"/>
+  <text x="280" y="108.92307692307692" font-size="10" fill="#d9480f" text-anchor="middle" font-weight="bold">Outer: 598 x 368mm</text>
+  <text x="280" y="232" font-size="8" fill="#e03131" text-anchor="middle" font-weight="normal">Dual gasket grooves (red dashed)</text>
+  <text x="280" y="244" font-size="8" fill="#495057" text-anchor="middle" font-weight="normal">M4 bolt + 6mm insert (circles)</text>
+  <text x="280" y="256" font-size="9" fill="#666" text-anchor="middle" font-weight="normal">Inner cutout: 598 x 368mm</text>
+  <rect x="125.63697172392824" y="121.60535117056857" width="3.3444816053511706" height="17.391304347826086" fill="#c68c00" stroke="#8B6914" stroke-width="0.8" opacity="0.7" rx="0"/>
+  <rect x="125.63697172392824" y="341.0033444816053" width="3.3444816053511706" height="17.391304347826086" fill="#c68c00" stroke="#8B6914" stroke-width="0.8" opacity="0.7" rx="0"/>
+  <rect x="193.49954393432654" y="121.60535117056857" width="3.3444816053511706" height="17.391304347826086" fill="#c68c00" stroke="#8B6914" stroke-width="0.8" opacity="0.7" rx="0"/>
+  <rect x="193.49954393432654" y="341.0033444816053" width="3.3444816053511706" height="17.391304347826086" fill="#c68c00" stroke="#8B6914" stroke-width="0.8" opacity="0.7" rx="0"/>
+  <rect x="227.4308300395257" y="121.60535117056857" width="3.3444816053511706" height="17.391304347826086" fill="#c68c00" stroke="#8B6914" stroke-width="0.8" opacity="0.7" rx="0"/>
+  <rect x="227.4308300395257" y="341.0033444816053" width="3.3444816053511706" height="17.391304347826086" fill="#c68c00" stroke="#8B6914" stroke-width="0.8" opacity="0.7" rx="0"/>
+  <rect x="261.36211614472484" y="121.60535117056857" width="3.3444816053511706" height="17.391304347826086" fill="#c68c00" stroke="#8B6914" stroke-width="0.8" opacity="0.7" rx="0"/>
+  <rect x="261.36211614472484" y="341.0033444816053" width="3.3444816053511706" height="17.391304347826086" fill="#c68c00" stroke="#8B6914" stroke-width="0.8" opacity="0.7" rx="0"/>
+  <rect x="295.29340224992404" y="121.60535117056857" width="3.3444816053511706" height="17.391304347826086" fill="#c68c00" stroke="#8B6914" stroke-width="0.8" opacity="0.7" rx="0"/>
+  <rect x="295.29340224992404" y="341.0033444816053" width="3.3444816053511706" height="17.391304347826086" fill="#c68c00" stroke="#8B6914" stroke-width="0.8" opacity="0.7" rx="0"/>
+  <rect x="329.22468835512313" y="121.60535117056857" width="3.3444816053511706" height="17.391304347826086" fill="#c68c00" stroke="#8B6914" stroke-width="0.8" opacity="0.7" rx="0"/>
+  <rect x="329.22468835512313" y="341.0033444816053" width="3.3444816053511706" height="17.391304347826086" fill="#c68c00" stroke="#8B6914" stroke-width="0.8" opacity="0.7" rx="0"/>
+  <rect x="363.15597446032234" y="121.60535117056857" width="3.3444816053511706" height="17.391304347826086" fill="#c68c00" stroke="#8B6914" stroke-width="0.8" opacity="0.7" rx="0"/>
+  <rect x="363.15597446032234" y="341.0033444816053" width="3.3444816053511706" height="17.391304347826086" fill="#c68c00" stroke="#8B6914" stroke-width="0.8" opacity="0.7" rx="0"/>
+  <rect x="431.0185466707206" y="121.60535117056857" width="3.3444816053511706" height="17.391304347826086" fill="#c68c00" stroke="#8B6914" stroke-width="0.8" opacity="0.7" rx="0"/>
+  <rect x="431.0185466707206" y="341.0033444816053" width="3.3444816053511706" height="17.391304347826086" fill="#c68c00" stroke="#8B6914" stroke-width="0.8" opacity="0.7" rx="0"/>
+  <rect x="84.68227424749163" y="159.97133301481128" width="17.391304347826086" height="3.3444816053511706" fill="#c68c00" stroke="#8B6914" stroke-width="0.8" opacity="0.7" rx="0"/>
+  <rect x="457.92642140468223" y="159.97133301481128" width="17.391304347826086" height="3.3444816053511706" fill="#c68c00" stroke="#8B6914" stroke-width="0.8" opacity="0.7" rx="0"/>
+  <rect x="84.68227424749163" y="191.31390348781653" width="17.391304347826086" height="3.3444816053511706" fill="#c68c00" stroke="#8B6914" stroke-width="0.8" opacity="0.7" rx="0"/>
+  <rect x="457.92642140468223" y="191.31390348781653" width="17.391304347826086" height="3.3444816053511706" fill="#c68c00" stroke="#8B6914" stroke-width="0.8" opacity="0.7" rx="0"/>
+  <rect x="84.68227424749163" y="222.65647396082178" width="17.391304347826086" height="3.3444816053511706" fill="#c68c00" stroke="#8B6914" stroke-width="0.8" opacity="0.7" rx="0"/>
+  <rect x="457.92642140468223" y="222.65647396082178" width="17.391304347826086" height="3.3444816053511706" fill="#c68c00" stroke="#8B6914" stroke-width="0.8" opacity="0.7" rx="0"/>
+  <rect x="84.68227424749163" y="253.99904443382704" width="17.391304347826086" height="3.3444816053511706" fill="#c68c00" stroke="#8B6914" stroke-width="0.8" opacity="0.7" rx="0"/>
+  <rect x="457.92642140468223" y="253.99904443382704" width="17.391304347826086" height="3.3444816053511706" fill="#c68c00" stroke="#8B6914" stroke-width="0.8" opacity="0.7" rx="0"/>
+  <rect x="84.68227424749163" y="285.3416149068323" width="17.391304347826086" height="3.3444816053511706" fill="#c68c00" stroke="#8B6914" stroke-width="0.8" opacity="0.7" rx="0"/>
+  <rect x="457.92642140468223" y="285.3416149068323" width="17.391304347826086" height="3.3444816053511706" fill="#c68c00" stroke="#8B6914" stroke-width="0.8" opacity="0.7" rx="0"/>
+  <rect x="84.68227424749163" y="316.6841853798376" width="17.391304347826086" height="3.3444816053511706" fill="#c68c00" stroke="#8B6914" stroke-width="0.8" opacity="0.7" rx="0"/>
+  <rect x="457.92642140468223" y="316.6841853798376" width="17.391304347826086" height="3.3444816053511706" fill="#c68c00" stroke="#8B6914" stroke-width="0.8" opacity="0.7" rx="0"/>
+  <text x="280" y="268" font-size="8" fill="#d9480f" text-anchor="middle" font-weight="normal">Flush with Shell 1 outer</text>
+  <text x="280" y="280" font-size="7" fill="#8B6914" text-anchor="middle" font-weight="normal">Foam teeth (gold): 5x26x10mm every 50mm</text>
+  <line x1="80.0" y1="86.92307692307692" x2="480.0" y2="86.92307692307692" stroke="#555" stroke-width="1"/>
+  <line x1="80.0" y1="82.92307692307692" x2="80.0" y2="90.92307692307692" stroke="#555" stroke-width="1"/>
+  <line x1="480.0" y1="82.92307692307692" x2="480.0" y2="90.92307692307692" stroke="#555" stroke-width="1"/>
+  <text x="280.0" y="81.92307692307692" font-size="9" fill="#555" text-anchor="middle" font-weight="normal">598mm</text>
+  <line x1="55.0" y1="116.92307692307692" x2="55.0" y2="363.0769230769231" stroke="#555" stroke-width="1"/>
+  <line x1="51.0" y1="116.92307692307692" x2="59.0" y2="116.92307692307692" stroke="#555" stroke-width="1"/>
+  <line x1="51.0" y1="363.0769230769231" x2="59.0" y2="363.0769230769231" stroke="#555" stroke-width="1"/>
+  <text x="-5.0" y="244.0" font-size="9" fill="#555" text-anchor="start" font-weight="normal">368mm</text>
+  <text x="20" y="410" font-size="13" fill="#333" text-anchor="start" font-weight="bold">PROFILE CROSS-SECTION</text>
+  <rect x="130.0" y="545.9866220735786" width="300.0" height="4.013377926421405" fill="#fff4e6" stroke="#ff922b" stroke-width="2.5" opacity="1.0" rx="1"/>
+  <rect x="130.0" y="545.9866220735786" width="300.0" height="4.013377926421405" fill="white" stroke="#d9480f" stroke-width="1.5" opacity="1.0" rx="1"/>
+  <line x1="445.0" y1="545.9866220735786" x2="445.0" y2="550" stroke="#555" stroke-width="1"/>
+  <line x1="441.0" y1="545.9866220735786" x2="449.0" y2="545.9866220735786" stroke="#555" stroke-width="1"/>
+  <line x1="441.0" y1="550" x2="449.0" y2="550" stroke="#555" stroke-width="1"/>
+  <text x="453.0" y="551.9933110367892" font-size="9" fill="#555" text-anchor="start" font-weight="normal">8mm</text>
+  <line x1="130.0" y1="570" x2="430.0" y2="570" stroke="#555" stroke-width="1"/>
+  <line x1="130.0" y1="566" x2="130.0" y2="574" stroke="#555" stroke-width="1"/>
+  <line x1="430.0" y1="566" x2="430.0" y2="574" stroke="#555" stroke-width="1"/>
+  <text x="280.0" y="565" font-size="9" fill="#555" text-anchor="middle" font-weight="normal">598mm</text>
+  <rect x="413.4448160535117" y="550" width="13.043478260869565" height="10.033444816053512" fill="#c68c00" stroke="#8B6914" stroke-width="1" opacity="1.0" rx="0"/>
+  <rect x="133.51170568561872" y="550" width="13.043478260869565" height="10.033444816053512" fill="#c68c00" stroke="#8B6914" stroke-width="1" opacity="1.0" rx="0"/>
+  <text x="431.48829431438133" y="558.0167224080268" font-size="8" fill="#8B6914" text-anchor="start" font-weight="normal">Foam teeth (10mm)</text>
+  <line x1="490.0" y1="550" x2="490.0" y2="530.9866220735786" stroke="#ff922b" stroke-width="2"/>
+  <polygon points="490.0,530.9866220735786 485.0,540.9866220735786 495.0,540.9866220735786" fill="#ff922b"/>
+  <text x="502.0" y="551.9933110367892" font-size="11" fill="#d9480f" text-anchor="start" font-weight="bold">8mm</text>
+  <text x="20" y="590" font-size="13" fill="#333" text-anchor="start" font-weight="bold">BOLT + INSERT POCKET DETAIL (not to scale)</text>
+  <text x="20" y="607" font-size="10" fill="#666" text-anchor="start" font-weight="normal">Cross-section through a single M4 bolt hole in the cap rim</text>
+  <rect x="60.0" y="640" width="280" height="130" fill="#fff4e6" stroke="#ff922b" stroke-width="2" opacity="1.0" rx="0"/>
+  <text x="66.0" y="654" font-size="9" fill="#d9480f" text-anchor="start" font-weight="bold">CAP BODY (ASA)</text>
+  <rect x="115.0" y="640" width="30" height="35" fill="white" stroke="#e03131" stroke-width="1.5" opacity="1.0" rx="0"/>
+  <circle cx="130" cy="661.0" r="12.0" fill="#ffcccc" stroke="#e03131" stroke-width="1"/>
+  <text x="130" y="634" font-size="8" fill="#e03131" text-anchor="middle" font-weight="normal">Gasket groove</text>
+  <text x="130" y="687" font-size="7" fill="#e03131" text-anchor="middle" font-weight="normal">4W x 2.5D mm</text>
+  <rect x="196.0" y="640" width="28" height="130" fill="#e8e8e8" stroke="#495057" stroke-width="1.5" opacity="1.0" rx="0"/>
+  <line x1="210" y1="610" x2="210" y2="850" stroke="#495057" stroke-width="0.8" stroke-dasharray="4,3"/>
+  <rect x="203.0" y="625" width="14" height="175" fill="#a0a0a0" stroke="#495057" stroke-width="1" opacity="1.0" rx="0"/>
+  <rect x="185.0" y="603" width="50" height="22" fill="#6c757d" stroke="#333" stroke-width="1.5" opacity="1.0" rx="2"/>
+  <text x="210" y="618.0" font-size="8" fill="white" text-anchor="middle" font-weight="bold">M4 BOLT HEAD</text>
+  <rect x="186.0" y="710" width="48" height="60" fill="#fff3e0" stroke="#d9480f" stroke-width="2" opacity="1.0" rx="0"/>
+  <line x1="188.0" y1="714" x2="195.0" y2="714" stroke="#c68c00" stroke-width="1.5"/>
+  <line x1="225.0" y1="714" x2="232.0" y2="714" stroke="#c68c00" stroke-width="1.5"/>
+  <line x1="188.0" y1="719" x2="195.0" y2="719" stroke="#c68c00" stroke-width="1.5"/>
+  <line x1="225.0" y1="719" x2="232.0" y2="719" stroke="#c68c00" stroke-width="1.5"/>
+  <line x1="188.0" y1="724" x2="195.0" y2="724" stroke="#c68c00" stroke-width="1.5"/>
+  <line x1="225.0" y1="724" x2="232.0" y2="724" stroke="#c68c00" stroke-width="1.5"/>
+  <line x1="188.0" y1="729" x2="195.0" y2="729" stroke="#c68c00" stroke-width="1.5"/>
+  <line x1="225.0" y1="729" x2="232.0" y2="729" stroke="#c68c00" stroke-width="1.5"/>
+  <line x1="188.0" y1="734" x2="195.0" y2="734" stroke="#c68c00" stroke-width="1.5"/>
+  <line x1="225.0" y1="734" x2="232.0" y2="734" stroke="#c68c00" stroke-width="1.5"/>
+  <line x1="188.0" y1="739" x2="195.0" y2="739" stroke="#c68c00" stroke-width="1.5"/>
+  <line x1="225.0" y1="739" x2="232.0" y2="739" stroke="#c68c00" stroke-width="1.5"/>
+  <line x1="188.0" y1="744" x2="195.0" y2="744" stroke="#c68c00" stroke-width="1.5"/>
+  <line x1="225.0" y1="744" x2="232.0" y2="744" stroke="#c68c00" stroke-width="1.5"/>
+  <line x1="188.0" y1="749" x2="195.0" y2="749" stroke="#c68c00" stroke-width="1.5"/>
+  <line x1="225.0" y1="749" x2="232.0" y2="749" stroke="#c68c00" stroke-width="1.5"/>
+  <line x1="188.0" y1="754" x2="195.0" y2="754" stroke="#c68c00" stroke-width="1.5"/>
+  <line x1="225.0" y1="754" x2="232.0" y2="754" stroke="#c68c00" stroke-width="1.5"/>
+  <line x1="188.0" y1="759" x2="195.0" y2="759" stroke="#c68c00" stroke-width="1.5"/>
+  <line x1="225.0" y1="759" x2="232.0" y2="759" stroke="#c68c00" stroke-width="1.5"/>
+  <line x1="188.0" y1="764" x2="195.0" y2="764" stroke="#c68c00" stroke-width="1.5"/>
+  <line x1="225.0" y1="764" x2="232.0" y2="764" stroke="#c68c00" stroke-width="1.5"/>
+  <text x="210" y="744.0" font-size="7" fill="#8B6914" text-anchor="middle" font-weight="bold">BRASS</text>
+  <line x1="196.0" y1="718" x2="200.0" y2="721" stroke="#8B6914" stroke-width="0.8"/>
+  <line x1="224.0" y1="718" x2="220.0" y2="721" stroke="#8B6914" stroke-width="0.8"/>
+  <line x1="196.0" y1="726" x2="200.0" y2="729" stroke="#8B6914" stroke-width="0.8"/>
+  <line x1="224.0" y1="726" x2="220.0" y2="729" stroke="#8B6914" stroke-width="0.8"/>
+  <line x1="196.0" y1="734" x2="200.0" y2="737" stroke="#8B6914" stroke-width="0.8"/>
+  <line x1="224.0" y1="734" x2="220.0" y2="737" stroke="#8B6914" stroke-width="0.8"/>
+  <line x1="196.0" y1="742" x2="200.0" y2="745" stroke="#8B6914" stroke-width="0.8"/>
+  <line x1="224.0" y1="742" x2="220.0" y2="745" stroke="#8B6914" stroke-width="0.8"/>
+  <line x1="196.0" y1="750" x2="200.0" y2="753" stroke="#8B6914" stroke-width="0.8"/>
+  <line x1="224.0" y1="750" x2="220.0" y2="753" stroke="#8B6914" stroke-width="0.8"/>
+  <line x1="196.0" y1="758" x2="200.0" y2="761" stroke="#8B6914" stroke-width="0.8"/>
+  <line x1="224.0" y1="758" x2="220.0" y2="761" stroke="#8B6914" stroke-width="0.8"/>
+  <line x1="355.0" y1="640" x2="355.0" y2="770" stroke="#555" stroke-width="1"/>
+  <line x1="351.0" y1="640" x2="359.0" y2="640" stroke="#555" stroke-width="1"/>
+  <line x1="351.0" y1="770" x2="359.0" y2="770" stroke="#555" stroke-width="1"/>
+  <text x="363.0" y="709.0" font-size="9" fill="#555" text-anchor="start" font-weight="normal">8mm cap</text>
+  <line x1="40.0" y1="710" x2="50.0" y2="710" stroke="#d9480f" stroke-width="1"/>
+  <line x1="40.0" y1="770" x2="50.0" y2="770" stroke="#d9480f" stroke-width="1"/>
+  <line x1="45.0" y1="710" x2="45.0" y2="770" stroke="#d9480f" stroke-width="1"/>
+  <text x="42.0" y="744.0" font-size="9" fill="#d9480f" text-anchor="end" font-weight="bold">6mm</text>
+  <text x="254.0" y="690.0" font-size="9" fill="#495057" text-anchor="start" font-weight="normal">M4 thru-hole (4.5mm)</text>
+  <line x1="226.0" y1="695.0" x2="252.0" y2="687.0" stroke="#495057" stroke-width="0.8"/>
+  <text x="264.0" y="740.0" font-size="9" fill="#d9480f" text-anchor="start" font-weight="normal">Insert pocket (6mm OD)</text>
+  <line x1="236.0" y1="735.0" x2="262.0" y2="735.0" stroke="#d9480f" stroke-width="0.8"/>
+  <text x="470" y="610" font-size="11" fill="#8B6914" text-anchor="middle" font-weight="bold">FOAM ANCHOR TOOTH DETAIL</text>
+  <text x="470" y="624" font-size="8" fill="#666" text-anchor="middle" font-weight="normal">(cross-section, not to scale)</text>
+  <rect x="370.0" y="640" width="200" height="130" fill="#fff4e6" stroke="#ff922b" stroke-width="2" opacity="1.0" rx="0"/>
+  <text x="376.0" y="654" font-size="8" fill="#d9480f" text-anchor="start" font-weight="bold">CAP FLANGE</text>
+  <rect x="425.0" y="770" width="90" height="70" fill="#fff3e0" stroke="#8B6914" stroke-width="2" opacity="1.0" rx="0"/>
+  <line x1="428.0" y1="775" x2="512.0" y2="775" stroke="#c68c00" stroke-width="1"/>
+  <line x1="428.0" y1="781" x2="512.0" y2="781" stroke="#c68c00" stroke-width="1"/>
+  <line x1="428.0" y1="787" x2="512.0" y2="787" stroke="#c68c00" stroke-width="1"/>
+  <line x1="428.0" y1="793" x2="512.0" y2="793" stroke="#c68c00" stroke-width="1"/>
+  <line x1="428.0" y1="799" x2="512.0" y2="799" stroke="#c68c00" stroke-width="1"/>
+  <line x1="428.0" y1="805" x2="512.0" y2="805" stroke="#c68c00" stroke-width="1"/>
+  <line x1="428.0" y1="811" x2="512.0" y2="811" stroke="#c68c00" stroke-width="1"/>
+  <line x1="428.0" y1="817" x2="512.0" y2="817" stroke="#c68c00" stroke-width="1"/>
+  <line x1="428.0" y1="823" x2="512.0" y2="823" stroke="#c68c00" stroke-width="1"/>
+  <line x1="428.0" y1="829" x2="512.0" y2="829" stroke="#c68c00" stroke-width="1"/>
+  <line x1="428.0" y1="835" x2="512.0" y2="835" stroke="#c68c00" stroke-width="1"/>
+  <text x="470" y="809.0" font-size="9" fill="#8B6914" text-anchor="middle" font-weight="bold">TOOTH</text>
+  <rect x="397.0" y="630" width="20" height="220" fill="#fff0f0" stroke="#ff6b6b" stroke-width="1.5" opacity="1.0" rx="0"/>
+  <text x="407.0" y="845" font-size="7" fill="#cc3333" text-anchor="middle" font-weight="normal">S1</text>
+  <rect x="523.0" y="630" width="20" height="220" fill="#f0fff4" stroke="#51cf66" stroke-width="1.5" opacity="1.0" rx="0"/>
+  <text x="533.0" y="845" font-size="7" fill="#2b8a3e" text-anchor="middle" font-weight="normal">S2</text>
+  <rect x="417.0" y="840" width="106.0" height="20" fill="#fff4e6" stroke="#ff922b" stroke-width="1" opacity="0.6" rx="0"/>
+  <text x="470" y="854" font-size="7" fill="#d9480f" text-anchor="middle" font-weight="normal">FOAM (cured)</text>
+  <line x1="552.0" y1="770" x2="558.0" y2="770" stroke="#8B6914" stroke-width="1"/>
+  <line x1="552.0" y1="840" x2="558.0" y2="840" stroke="#8B6914" stroke-width="1"/>
+  <line x1="555.0" y1="770" x2="555.0" y2="840" stroke="#8B6914" stroke-width="1"/>
+  <text x="560.0" y="809.0" font-size="9" fill="#8B6914" text-anchor="start" font-weight="bold">10mm</text>
+  <line x1="425.0" y1="870" x2="515.0" y2="870" stroke="#8B6914" stroke-width="1"/>
+  <line x1="425.0" y1="866" x2="425.0" y2="874" stroke="#8B6914" stroke-width="1"/>
+  <line x1="515.0" y1="866" x2="515.0" y2="874" stroke="#8B6914" stroke-width="1"/>
+  <text x="470.0" y="865" font-size="9" fill="#8B6914" text-anchor="middle" font-weight="normal">26mm (fills gap)</text>
+  <text x="421.0" y="809.0" font-size="7" fill="#999" text-anchor="end" font-weight="normal">2mm</text>
+  <text x="519.0" y="809.0" font-size="7" fill="#999" text-anchor="start" font-weight="normal">2mm</text>
+  <rect x="20" y="900" width="540" height="115" fill="#f8f9fa" stroke="#dee2e6" stroke-width="1" opacity="1.0" rx="4"/>
+  <text x="30" y="916" font-size="10" fill="#333" text-anchor="start" font-weight="bold">HOW IT WORKS:</text>
+  <text x="30" y="932" font-size="9" fill="#555" text-anchor="start" font-weight="normal">1. Drill 4.5mm through-holes + counterbore 6x6mm insert pockets (see bolt detail left)</text>
+  <text x="30" y="946" font-size="9" fill="#555" text-anchor="start" font-weight="normal">2. Press M4 brass heat-set inserts with soldering iron at 220-240C</text>
+  <text x="30" y="960" font-size="9" fill="#555" text-anchor="start" font-weight="normal">3. Foam teeth (5x26x10mm) are printed as part of the cap — no assembly needed</text>
+  <text x="30" y="974" font-size="9" fill="#555" text-anchor="start" font-weight="normal">4. Place cap on shells while PU foam is still wet — teeth embed in foam</text>
+  <text x="30" y="988" font-size="9" fill="#555" text-anchor="start" font-weight="normal">5. Foam cures around teeth: permanent alignment + mechanical interlock + seal</text>
+  <text x="30" y="1002" font-size="9" fill="#555" text-anchor="start" font-weight="normal">6. M4 bolts through cap + lid compress gaskets for weather seal</text>
+  <rect x="580" y="75" width="490" height="577" fill="#fff4e6" stroke="#ff922b" stroke-width="1.5" opacity="1.0" rx="6"/>
+  <text x="600" y="100" font-size="14" fill="#d9480f" text-anchor="start" font-weight="bold">FUSION 360 WORKFLOW</text>
+  <text x="600" y="125" font-size="10" fill="#333" text-anchor="start" font-weight="bold">1. Import DXF profiles</text>
+  <text x="600" y="144" font-size="10" fill="#333" text-anchor="start" font-weight="normal">   File &gt; Insert &gt; Insert DXF</text>
+  <text x="600" y="163" font-size="10" fill="#333" text-anchor="start" font-weight="normal">   Select 7_cap_top_view.dxf (plan outline)</text>
+  <text x="600" y="182" font-size="10" fill="#333" text-anchor="start" font-weight="normal">   Select 8_cap_profile.dxf (cross-section)</text>
+  <text x="600" y="201" font-size="10" fill="#999" text-anchor="start" font-weight="normal"></text>
+  <text x="600" y="220" font-size="10" fill="#333" text-anchor="start" font-weight="bold">2. Extrude cap rim: 8mm upward</text>
+  <text x="600" y="239" font-size="10" fill="#333" text-anchor="start" font-weight="normal">   Cap is FLUSH with Shell 1 outer (598x368mm)</text>
+  <text x="600" y="258" font-size="10" fill="#333" text-anchor="start" font-weight="normal">   Inner lip drops inside Shell 2 for centering</text>
+  <text x="600" y="277" font-size="10" fill="#999" text-anchor="start" font-weight="normal"></text>
+  <text x="600" y="296" font-size="10" fill="#333" text-anchor="start" font-weight="bold">3. Cut dual gasket grooves into cap top surface</text>
+  <text x="600" y="315" font-size="10" fill="#333" text-anchor="start" font-weight="normal">   4mm wide x 2.5mm deep (Extrude &gt; Cut)</text>
+  <text x="600" y="334" font-size="10" fill="#999" text-anchor="start" font-weight="normal"></text>
+  <text x="600" y="353" font-size="10" fill="#333" text-anchor="start" font-weight="bold">4. Drill M4 bolt through-holes (4.5mm dia)</text>
+  <text x="600" y="372" font-size="10" fill="#333" text-anchor="start" font-weight="normal">   Between gaskets, ~90mm spacing</text>
+  <text x="600" y="391" font-size="10" fill="#999" text-anchor="start" font-weight="normal"></text>
+  <text x="600" y="410" font-size="10" fill="#333" text-anchor="start" font-weight="bold">5. Counterbore 6mm x 6mm insert pockets</text>
+  <text x="600" y="429" font-size="10" fill="#333" text-anchor="start" font-weight="normal">   From cap underside — press M4 brass heat-set inserts</text>
+  <text x="600" y="448" font-size="10" fill="#999" text-anchor="start" font-weight="normal"></text>
+  <text x="600" y="467" font-size="10" fill="#333" text-anchor="start" font-weight="bold">6. Add foam anchor teeth on flange underside</text>
+  <text x="600" y="486" font-size="10" fill="#333" text-anchor="start" font-weight="normal">   5x26x10mm, every 50mm</text>
+  <text x="600" y="505" font-size="10" fill="#333" text-anchor="start" font-weight="normal">   Fill foam gap for alignment + cure into foam</text>
+  <text x="600" y="524" font-size="10" fill="#999" text-anchor="start" font-weight="normal"></text>
+  <text x="600" y="543" font-size="10" fill="#333" text-anchor="start" font-weight="bold">7. May split into panels for print bed if needed</text>
+  <rect x="580" y="662" width="490" height="30" fill="#ff922b" stroke="#d9480f" stroke-width="1" opacity="1.0" rx="4"/>
+  <text x="825" y="682" font-size="12" fill="white" text-anchor="middle" font-weight="bold">Material: ASA/PETG  |  Thickness: 8mm  |  M4 brass inserts</text>
+</svg>

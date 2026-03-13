@@ -8,6 +8,11 @@ Desktop.ini
 
 # Editor/IDE
 .vscode/
+.claude/
 *.swp
 *.swo
 *~
+
+# Python
+__pycache__/
+*.pyc

@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="600" viewBox="0 0 1000 600">
+  <style>text { font-family: Arial, Helvetica, sans-serif; }</style>
+  <rect width="1000" height="600" fill="white"/>
+  <text x="20.0" y="30.0" font-size="18" fill="#333" text-anchor="start" font-weight="bold" font-family="Arial, sans-serif">MAIN UNIT — SPLIT GUIDE OVERVIEW (Rev 3.2)</text>
+  <text x="20.0" y="50.0" font-size="11" fill="#555" text-anchor="start" font-weight="normal" font-family="Arial, sans-serif">Prusa Core One build volume: 250 x 220 mm</text>
+  <rect x="15.0" y="65.0" width="970.0" height="110.0" fill="#f8f9fa" stroke="#dee2e6" stroke-width="1.5" opacity="1.0" rx="4"/>
+  <text x="25.0" y="84.0" font-size="13" fill="#333" text-anchor="start" font-weight="bold" font-family="Arial, sans-serif">DESIGN NOTES</text>
+  <text x="35.0" y="106.0" font-size="10" fill="#333" text-anchor="start" font-weight="normal" font-family="Arial, sans-serif">Main unit outer shell: 592 x 362 x 355 mm</text>
+  <text x="35.0" y="122.0" font-size="10" fill="#333" text-anchor="start" font-weight="normal" font-family="Arial, sans-serif">Battery zone (4S2P): 158 x 268 x 290 mm  | Cell PLACEHOLDER: 129L x 36W x 256H — verify Narada datasheet</text>
+  <text x="35.0" y="138.0" font-size="10" fill="#333" text-anchor="start" font-weight="normal" font-family="Arial, sans-serif">Electronics zone: 320 x 268 x 312 mm</text>
+  <text x="35.0" y="154.0" font-size="10" fill="#333" text-anchor="start" font-weight="normal" font-family="Arial, sans-serif">Two-shell construction: Shell 1 ASA (outer boulder) + 30mm foam + Shell 2 PETG (structural, direct inner container)</text>
+  <text x="35.0" y="170.0" font-size="10" fill="#333" text-anchor="start" font-weight="normal" font-family="Arial, sans-serif">Satellite units connect via external leads; no satellite cells in main unit (expandable)</text>
+  <text x="20.0" y="200.0" font-size="13" fill="#333" text-anchor="start" font-weight="bold" font-family="Arial, sans-serif">SHELL SUMMARY</text>
+  <rect x="15.0" y="218.0" width="970.0" height="22.0" fill="#e9ecef" stroke="#ccc" stroke-width="1.5" opacity="1.0" rx="3"/>
+  <text x="25.0" y="234.0" font-size="9" fill="#333" text-anchor="start" font-weight="bold" font-family="Arial, sans-serif">Shell</text>
+  <text x="110.0" y="234.0" font-size="9" fill="#333" text-anchor="start" font-weight="bold" font-family="Arial, sans-serif">Material</text>
+  <text x="210.0" y="234.0" font-size="9" fill="#333" text-anchor="start" font-weight="bold" font-family="Arial, sans-serif">Dimensions (mm)</text>
+  <text x="420.0" y="234.0" font-size="9" fill="#333" text-anchor="start" font-weight="bold" font-family="Arial, sans-serif">Split Planes</text>
+  <text x="620.0" y="234.0" font-size="9" fill="#333" text-anchor="start" font-weight="bold" font-family="Arial, sans-serif">Panels</text>
+  <text x="720.0" y="234.0" font-size="9" fill="#333" text-anchor="start" font-weight="bold" font-family="Arial, sans-serif">Join Method</text>
+  <rect x="15.0" y="242.0" width="970.0" height="22.0" fill="#fff0f0" stroke="#eee" stroke-width="1.5" opacity="1.0" rx="2"/>
+  <rect x="20.0" y="247.0" width="14.0" height="14.0" fill="#ff6b6b" stroke="#cc3333" stroke-width="1" opacity="1.0" rx="2"/>
+  <text x="40.0" y="258.0" font-size="10" fill="#991111" text-anchor="start" font-weight="bold" font-family="Arial, sans-serif">1</text>
+  <text x="110.0" y="258.0" font-size="9" fill="#333" text-anchor="start" font-weight="normal" font-family="Arial, sans-serif">ASA</text>
+  <text x="210.0" y="258.0" font-size="9" fill="#333" text-anchor="start" font-weight="normal" font-family="Arial, sans-serif">592 x 362 x 355</text>
+  <text x="420.0" y="258.0" font-size="9" fill="#333" text-anchor="start" font-weight="normal" font-family="Arial, sans-serif">2x X + 1x Y + 1x Z = 4 total</text>
+  <text x="620.0" y="258.0" font-size="9" fill="#333" text-anchor="start" font-weight="bold" font-family="Arial, sans-serif">26 panels</text>
+  <text x="720.0" y="258.0" font-size="9" fill="#333" text-anchor="start" font-weight="normal" font-family="Arial, sans-serif">Acetone/MEK weld</text>
+  <rect x="15.0" y="266.0" width="970.0" height="22.0" fill="white" stroke="#eee" stroke-width="1.5" opacity="1.0" rx="2"/>
+  <rect x="20.0" y="271.0" width="14.0" height="14.0" fill="#51cf66" stroke="#2b8a3e" stroke-width="1" opacity="1.0" rx="2"/>
+  <text x="40.0" y="282.0" font-size="10" fill="#1a6628" text-anchor="start" font-weight="bold" font-family="Arial, sans-serif">2</text>
+  <text x="110.0" y="282.0" font-size="9" fill="#333" text-anchor="start" font-weight="normal" font-family="Arial, sans-serif">PETG</text>
+  <text x="210.0" y="282.0" font-size="9" fill="#333" text-anchor="start" font-weight="normal" font-family="Arial, sans-serif">526 x 296 x 319</text>
+  <text x="420.0" y="282.0" font-size="9" fill="#333" text-anchor="start" font-weight="normal" font-family="Arial, sans-serif">2x X + 1x Y + 1x Z = 4 total</text>
+  <text x="620.0" y="282.0" font-size="9" fill="#333" text-anchor="start" font-weight="bold" font-family="Arial, sans-serif">26 panels</text>
+  <text x="720.0" y="282.0" font-size="9" fill="#333" text-anchor="start" font-weight="normal" font-family="Arial, sans-serif">CA glue</text>
+  <text x="25.0" y="306.0" font-size="10" fill="#555" text-anchor="start" font-weight="normal" font-family="Arial, sans-serif">Total: 52 panels across 2 shells</text>
+  <rect x="15.0" y="332.0" width="970.0" height="150.0" fill="#f0f4ff" stroke="#339af0" stroke-width="1.5" opacity="1.0" rx="4"/>
+  <text x="25.0" y="351.0" font-size="13" fill="#0d4a8a" text-anchor="start" font-weight="bold" font-family="Arial, sans-serif">FUSION WORKFLOW</text>
+  <text x="35.0" y="373.0" font-size="10" fill="#333" text-anchor="start" font-weight="normal" font-family="Arial, sans-serif">1. Build monolithic shell body (Insert DXFs from main_unit/dxf/ &gt; Extrude &gt; Shell cmd)</text>
+  <text x="35.0" y="391.0" font-size="10" fill="#333" text-anchor="start" font-weight="normal" font-family="Arial, sans-serif">2. Construct &gt; Offset Plane — create planes at positions shown in shell split guides</text>
+  <text x="35.0" y="409.0" font-size="10" fill="#333" text-anchor="start" font-weight="normal" font-family="Arial, sans-serif">3. Modify &gt; Split Body — select shell body + all construction planes as split tools</text>
+  <text x="35.0" y="427.0" font-size="10" fill="#333" text-anchor="start" font-weight="normal" font-family="Arial, sans-serif">4. Orient each segment flat (Arrange on XY), add finger joints on split faces</text>
+  <text x="35.0" y="445.0" font-size="10" fill="#333" text-anchor="start" font-weight="normal" font-family="Arial, sans-serif">5. Extrude Join tabs on side A, Extrude Cut pockets on side B</text>
+  <text x="35.0" y="463.0" font-size="10" fill="#333" text-anchor="start" font-weight="normal" font-family="Arial, sans-serif">6. Right-click each body &gt; Save as Mesh (STL) &gt; slice for Prusa Core One</text>
+</svg>
